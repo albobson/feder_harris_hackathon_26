@@ -120,22 +120,6 @@ specific to phage integration.
 - The 5 unclassified small *E. coli* candidates warrant a closer look
   (e.g. against ISfinder/PHASTER) before concluding what they are.
 
-### Files
-
-- `analysis/fetch_genomes.py` — pulls genome assemblies from NCBI Datasets API
-  (as of Part 3: random sample of 20 strains/species from a pool of up to
-  1000 complete genomes, fixed random seed)
-- `analysis/find_divergent_disruptions.py` — core scan (divergent-pair
-  discovery, circular-aware cross-strain comparison, mobile-element keyword
-  check); parsing/matching functions importable via `run_full_scan()` guard
-- `analysis/find_functional_pair_disruptions.py` — Part 4 script: curated
-  functionally-coupled pairs + general regulator-heuristic scan, reusing the
-  above module
-- `data/species_list.txt`, `data/genome_manifest.tsv` — exact species/accessions used
-- `data/genomes/` — downloaded GFF3 + FASTA per genome (180 genomes as of Part 3)
-- `data/divergent_disruption_results.json` — full raw output of the Part 1/3 scan
-- `data/functional_pair_results.json` — full raw output of the Part 4 scan
-
 ## Part 2: Are the 12 *E. coli* candidate pairs functionally coupled (like *torS*/*torT*)?
 
 ### Motivation
@@ -359,3 +343,127 @@ biology specifically, but neither is it the default outcome whenever an
 element lands between two divergent genes — most such landings appear to be
 functionally silent with respect to the two flanking genes' own regulatory
 relationship.
+
+## Part 5: How much data would it take to say anything about selection?
+
+### Motivation
+
+Parts 1–4 are descriptive: they establish that insertions into the shared
+regulatory regions of divergent pairs happen, and that a handful of those
+pairs are genuinely functionally coupled. They do not address the
+evolutionary question — is there **selection for or against** elements
+landing between divergent, functionally-related genes? This part asks what it
+would actually take to answer that, using the base rates we measured rather
+than guesses (`analysis/power_analysis.py`, rerunnable; derives its rates
+directly from the two result JSONs).
+
+### Empirical base rates (from the 213 usable genomes of Part 3)
+
+| Quantity | Value |
+|---|---|
+| Divergent pairs monitored (all species) | 4,099 |
+| ...regulator-headed (coupling proxy) | 771 |
+| ...non-regulator-headed | 3,328 |
+| Strain-level disruption hits | 108 |
+| **Unique pairs** disrupted in ≥1 strain | **26** (4.2x pseudo-replication collapse) |
+| P(disrupted \| any divergent pair) | 0.63% |
+| P(disrupted \| regulator-headed) | 0.78% |
+| P(disrupted \| non-regulator-headed) | 0.60% |
+| P(disrupted \| literature-verified coupled) | 0.31% |
+
+### Headline result: the current data cannot determine even the SIGN of the effect
+
+Running the comparative test two ways, on the *same* genomes, gives opposite
+answers depending only on how "functionally related" is defined:
+
+| Definition of "functionally coupled" | Coupled vs non-coupled | Odds ratio (95% CI) | Fisher exact p |
+|---|---|---|---|
+| Regulator-headed heuristic (unverified) | 1.17% vs 0.51% — **enriched** | 2.30 [1.02, 5.18] | 0.046 |
+| Only literature-verified pairs | 0.26% vs 0.51% — **depleted** | 0.51 [0.12, 2.20] | 0.556 |
+
+The unverified heuristic yields a nominally significant *enrichment*; the
+verified subset points to *depletion* and is nowhere near significant. This
+is the single most important design finding in the whole survey: **the binding
+constraint is the functional-coupling annotation, not the number of genomes.**
+Scaling to 10,000 genomes while still using the unverified heuristic would buy
+a confidently wrong answer with a very small p-value. Part 4 already showed
+why: a majority of heuristic hits (*btsS*/*mlrA*, *purT*/*ybfI*,
+*fabR*/*sthA*) did not survive literature checking, and those false positives
+are exactly what drives the spurious enrichment signal.
+
+### Genomes required (80% power, alpha = 0.05)
+
+| Goal | Genomes needed |
+|---|---|
+| Tier 1: "does this happen beyond *torS*/*torT*?" | ~180 — **already achieved** (*metE*/*metR*, *yyaT*/*yybA*) |
+| Tier 2: rate estimate to ±30% | ~1,000 |
+| Tier 2: rate estimate to ±20% | ~2,200 |
+| Tier 3: detect 5x depletion (strong purifying selection) | ~700 |
+| Tier 3: detect 2x depletion (moderate) | ~2,200 |
+| Tier 3: detect 1.5x depletion (weak) | ~5,400 |
+| Tier 3: detect 5x enrichment (hotspot/adaptive) | ~130 |
+
+Sampling depth instead of breadth helps: at 100 strains/species (raising the
+chance of catching polymorphic, recent insertions) a 2x depletion becomes
+detectable with ~1,800 genomes across ~18 species, versus ~2,200 across ~91
+species at 20 strains each.
+
+**All of these are floors.** They assume independent insertion events, but our
+108 strain-level hits collapse to 26 unique pairs, and strains sharing an
+insertion by common descent represent one evolutionary event, not many.
+Correcting for phylogeny (counting insertions per independent lineage on a
+core-genome tree) plausibly inflates every number above by 2–5x.
+
+**Practical bottom line:** ~500–1,000 genomes for a provisional read if the
+effect is strong; ~2,000–5,000 for moderate effects; ~10,000+ after
+phylogenetic correction for weak ones. At the download throughput achieved in
+Part 3, genome acquisition is 1–2 days of wall-clock — genuinely not the
+hard part.
+
+### One provisional conclusion available right now
+
+A 5x effect in either direction would need only ~130–700 genomes to detect,
+and we do not see one. So **very strong selection for or against insertion at
+functionally-coupled divergent pairs is provisionally excluded**; whatever is
+happening is a modest effect, which is precisely why it is expensive to
+measure.
+
+### Three design changes that beat brute-force scaling
+
+1. **Replace hand-verification with a scalable coupling annotation** —
+   RegPrecise/RegulonDB regulon assignments, STRING interaction scores, or
+   KEGG pathway co-membership. Highest-value fix by far; without it the sign
+   of the effect stays undetermined at any N.
+2. **Flip the denominator.** Instead of "what fraction of coupled pairs get
+   disrupted" (a rare-event regime needing huge N), ask "of all insertions
+   genome-wide, are they positioned to disrupt shared regulatory elements more
+   or less often than expected?" That yields thousands of events from genomes
+   already in hand, with spacer length, AT content, and attB-site presence as
+   covariates to control for the non-selective drivers of insertion site
+   preference.
+3. **Use allele frequencies rather than presence/absence.** Insertions at
+   coupled pairs that remain polymorphic and never fix within a clade imply
+   purifying selection; ones fixed across whole clades imply neutral or
+   beneficial. Far more informative per genome, but requires within-species
+   population depth (~100 strains each) rather than breadth.
+
+## Files
+
+- `analysis/fetch_genomes.py` — pulls genome assemblies from NCBI Datasets API
+  (as of Part 3: random sample of 20 strains/species from a pool of up to
+  1000 complete genomes, fixed random seed)
+- `analysis/find_divergent_disruptions.py` — core scan (divergent-pair
+  discovery, circular-aware cross-strain comparison, mobile-element keyword
+  check); parsing/matching functions importable via `run_full_scan()` guard
+- `analysis/find_functional_pair_disruptions.py` — Part 4 script: curated
+  functionally-coupled pairs + general regulator-heuristic scan, reusing the
+  above module
+- `analysis/power_analysis.py` — Part 5 design/power analysis; derives base
+  rates from the result JSONs and reports genomes needed per goal
+- `data/species_list.txt`, `data/genome_manifest.tsv` — exact species/accessions used
+- `data/genomes/` — downloaded GFF3 + FASTA per genome (180 requested / 179
+  retrieved / 213 present including Part 1 holdovers, as of Part 3).
+  **Gitignored** — large and fully re-fetchable via `fetch_genomes.py`
+  plus `genome_manifest.tsv`
+- `data/divergent_disruption_results.json` — full raw output of the Part 1/3 scan
+- `data/functional_pair_results.json` — full raw output of the Part 4 scan

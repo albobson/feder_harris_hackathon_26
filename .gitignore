@@ -12,7 +12,15 @@ slurm-*.out
 # python cache
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
 
-# editor
+# bet-hedging model figure outputs (curated figures un-ignored below)
+figs/*.png
+figs/*.pdf
+!figs/phase_diagram.png
+!figs/crossover_line.png
+
+# editor / OS
 .vscode/
 .idea/
+.DS_Store

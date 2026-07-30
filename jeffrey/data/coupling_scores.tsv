@@ -1,170 +1,170 @@
 species	geneA	geneB	spacer	mapped	score_primary	score_with_coexpr	neighborhood	fusion	cooccurence	coexpression	experimental	database	textmining	combined_score	disrupted	n_strains_disrupted	max_expanded_len	mobile_kw
-Bfragilis	BF9343_RS00060	BF9343_RS00065	119	False											False	0		False
-Bfragilis	BF9343_RS00095	rbr	260	False											False	0		False
-Bfragilis	BF9343_RS00110	nadB	107	False											False	0		False
-Bfragilis	BF9343_RS00130	miaB	330	False											False	0		False
-Bfragilis	BF9343_RS21705	metK	208	False											False	0		False
+Bfragilis	BF9343_RS00060	BF9343_RS00065	119	True	41.0	41.0	735	0	0	0	0	0	0	734	False	0		False
+Bfragilis	BF9343_RS00095	rbr	260	True	41.0	41.0	497	0	0	0	0	0	0	497	False	0		False
+Bfragilis	BF9343_RS00110	nadB	107	True	41.0	41.0	743	0	0	0	0	0	0	742	False	0		False
+Bfragilis	BF9343_RS00130	miaB	330	True	41.0	41.0	629	0	0	0	0	0	0	629	False	0		False
+Bfragilis	BF9343_RS21705	metK	208	True	41.0	41.0	647	0	0	0	0	0	0	646	False	0		False
 Bfragilis	BF9343_RS00350	BF9343_RS00355	163	False											False	0		False
-Bfragilis	BF9343_RS00390	BF9343_RS00395	495	False											False	0		False
-Bfragilis	BF9343_RS00450	BF9343_RS00455	126	False											False	0		False
-Bfragilis	BF9343_RS00475	polA	85	False											False	0		False
-Bfragilis	BF9343_RS00540	ybeY	449	False											False	0		False
-Bfragilis	BF9343_RS00555	BF9343_RS00560	106	False											False	0		False
-Bfragilis	BF9343_RS00615	BF9343_RS00620	128	False											False	0		False
-Bfragilis	BF9343_RS00625	BF9343_RS00630	223	False											False	0		False
-Bfragilis	BF9343_RS00665	dapB	95	False											False	0		False
-Bfragilis	BF9343_RS00680	BF9343_RS00685	230	False											False	0		False
-Bfragilis	BF9343_RS00710	BF9343_RS00715	105	False											False	0		False
+Bfragilis	BF9343_RS00390	BF9343_RS00395	495	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS00450	BF9343_RS00455	126	True	41.0	41.0	583	0	0	0	0	0	0	583	False	0		False
+Bfragilis	BF9343_RS00475	polA	85	True	293.0	293.0	733	0	0	0	0	0	293	803	False	0		False
+Bfragilis	BF9343_RS00540	ybeY	449	True	41.0	41.0	398	0	0	0	0	0	0	398	False	0		False
+Bfragilis	BF9343_RS00555	BF9343_RS00560	106	True	41.0	41.0	743	0	0	0	0	0	0	743	False	0		False
+Bfragilis	BF9343_RS00615	BF9343_RS00620	128	True	41.0	41.0	743	0	0	0	0	0	0	743	False	0		False
+Bfragilis	BF9343_RS00625	BF9343_RS00630	223	True	41.0	41.0	476	0	0	0	0	0	0	476	False	0		False
+Bfragilis	BF9343_RS00665	dapB	95	True	41.0	41.0	744	0	0	0	0	0	0	744	False	0		False
+Bfragilis	BF9343_RS00680	BF9343_RS00685	230	True	41.0	41.0	478	0	0	0	0	0	0	479	False	0		False
+Bfragilis	BF9343_RS00710	BF9343_RS00715	105	True	41.0	41.0	548	0	0	0	0	0	0	548	False	0		False
 Bfragilis	BF9343_RS00745	BF9343_RS23540	178	False											False	0		False
-Bfragilis	BF9343_RS00780	mnmA	54	False											False	0		False
-Bfragilis	BF9343_RS00790	BF9343_RS00795	169	False											False	0		False
-Bfragilis	BF9343_RS00810	purN	98	False											False	0		False
-Bfragilis	BF9343_RS00825	pdxB	132	False											False	0		False
-Bfragilis	BF9343_RS00850	BF9343_RS00855	420	False											False	0		False
-Bfragilis	BF9343_RS00865	BF9343_RS00870	119	False											False	0		False
-Bfragilis	BF9343_RS00930	BF9343_RS00935	120	False											False	0		False
-Bfragilis	BF9343_RS00940	BF9343_RS00945	106	False											False	0		False
-Bfragilis	BF9343_RS01075	BF9343_RS01080	243	False											False	0		False
-Bfragilis	BF9343_RS01100	gpmI	285	False											False	0		False
+Bfragilis	BF9343_RS00780	mnmA	54	True	112.0	112.0	660	0	0	0	112	0	0	685	False	0		False
+Bfragilis	BF9343_RS00790	BF9343_RS00795	169	True	41.0	41.0	727	0	0	0	0	0	0	727	False	0		False
+Bfragilis	BF9343_RS00810	purN	98	True	83.0	121.2	733	0	0	81	0	0	83	755	False	0		False
+Bfragilis	BF9343_RS00825	pdxB	132	True	41.0	41.0	733	0	0	0	0	0	0	733	False	0		False
+Bfragilis	BF9343_RS00850	BF9343_RS00855	420	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS00865	BF9343_RS00870	119	True	41.0	41.0	740	0	0	0	0	0	0	740	False	0		False
+Bfragilis	BF9343_RS00930	BF9343_RS00935	120	True	41.0	41.0	718	0	0	0	0	0	0	718	False	0		False
+Bfragilis	BF9343_RS00940	BF9343_RS00945	106	True	41.0	41.0	572	0	0	0	0	0	0	572	False	0		False
+Bfragilis	BF9343_RS01075	BF9343_RS01080	243	True	41.0	41.0	459	0	0	0	0	0	0	459	False	0		False
+Bfragilis	BF9343_RS01100	gpmI	285	True	41.0	41.0	678	0	0	0	0	0	0	678	False	0		False
 Bfragilis	BF9343_RS01140	recO	298	False											False	0		False
-Bfragilis	BF9343_RS01225	BF9343_RS21765	197	False											False	0		False
-Bfragilis	BF9343_RS01255	dut	101	False											False	0		False
-Bfragilis	BF9343_RS01310	BF9343_RS01315	277	False											False	0		False
-Bfragilis	BF9343_RS01335	BF9343_RS01340	343	False											False	0		False
-Bfragilis	BF9343_RS01440	BF9343_RS01450	302	False											False	0		False
-Bfragilis	BF9343_RS01455	BF9343_RS01460	211	False											False	0		False
-Bfragilis	BF9343_RS01475	BF9343_RS01480	188	False											False	0		False
-Bfragilis	BF9343_RS01550	BF9343_RS01555	364	False											False	0		False
-Bfragilis	BF9343_RS01585	BF9343_RS01590	497	False											False	0		False
-Bfragilis	BF9343_RS24140	BF9343_RS24240	113	False											False	0		False
+Bfragilis	BF9343_RS01225	BF9343_RS21765	197	True	41.0	41.0	495	0	0	0	0	0	0	495	False	0		False
+Bfragilis	BF9343_RS01255	dut	101	True	41.0	41.0	748	0	0	0	0	0	0	748	False	0		False
+Bfragilis	BF9343_RS01310	BF9343_RS01315	277	True	41.0	41.0	449	0	462	0	0	0	0	691	False	0		False
+Bfragilis	BF9343_RS01335	BF9343_RS01340	343	True	41.0	41.0	357	0	0	0	0	0	0	357	False	0		False
+Bfragilis	BF9343_RS01440	BF9343_RS01450	302	True	41.0	41.0	474	0	0	0	0	0	0	474	False	0		False
+Bfragilis	BF9343_RS01455	BF9343_RS01460	211	True	41.0	68.0	484	0	0	68	0	0	0	499	False	0		False
+Bfragilis	BF9343_RS01475	BF9343_RS01480	188	True	41.0	41.0	721	0	0	0	0	0	0	721	False	0		False
+Bfragilis	BF9343_RS01550	BF9343_RS01555	364	True	41.0	41.0	336	0	157	0	0	0	0	416	False	0		False
+Bfragilis	BF9343_RS01585	BF9343_RS01590	497	True	41.0	41.0	328	0	0	0	0	0	0	328	False	0		False
+Bfragilis	BF9343_RS24140	BF9343_RS24240	113	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bfragilis	BF9343_RS01615	BF9343_RS01620	396	False											False	0		False
-Bfragilis	BF9343_RS01640	BF9343_RS01645	184	False											False	0		False
+Bfragilis	BF9343_RS01640	BF9343_RS01645	184	True	41.0	70.0	683	0	0	70	0	0	0	692	False	0		False
 Bfragilis	BF9343_RS01670	BF9343_RS23555	84	False											False	0		False
-Bfragilis	BF9343_RS01795	BF9343_RS01800	197	False											False	0		False
-Bfragilis	BF9343_RS01820	BF9343_RS01825	104	False											False	0		False
-Bfragilis	BF9343_RS01840	BF9343_RS24145	31	False											False	0		False
-Bfragilis	BF9343_RS01850	folP	111	False											False	0		False
+Bfragilis	BF9343_RS01795	BF9343_RS01800	197	True	41.0	41.0	718	0	0	0	0	0	0	718	False	0		False
+Bfragilis	BF9343_RS01820	BF9343_RS01825	104	True	41.0	41.0	743	0	0	0	0	0	0	742	False	0		False
+Bfragilis	BF9343_RS01840	BF9343_RS24145	31	True	41.0	41.0	565	0	0	0	0	0	0	565	False	0		False
+Bfragilis	BF9343_RS01850	folP	111	True	83.0	83.0	588	0	0	0	0	0	83	606	False	0		False
 Bfragilis	BF9343_RS01870	BF9343_RS23860	371	False											False	0		False
-Bfragilis	BF9343_RS01950	BF9343_RS01955	208	False											False	0		False
+Bfragilis	BF9343_RS01950	BF9343_RS01955	208	True	41.0	41.0	540	0	0	0	0	0	0	540	False	0		False
 Bfragilis	efp	rpmH	193	True	882.0	956.4	720	0	0	646	882	0	0	987	False	0		False
-Bfragilis	prmC	ribD	53	False											False	0		False
-Bfragilis	BF9343_RS02155	BF9343_RS02160	171	False											False	0		False
+Bfragilis	prmC	ribD	53	True	41.0	41.0	748	0	0	0	0	0	0	748	False	0		False
+Bfragilis	BF9343_RS02155	BF9343_RS02160	171	True	41.0	41.0	531	0	0	0	0	0	0	531	False	0		False
 Bfragilis	BF9343_RS02255	BF9343_RS02260	440	False											False	0		False
-Bfragilis	BF9343_RS02270	gadC	216	False											False	0		False
-Bfragilis	BF9343_RS02275	BF9343_RS02280	220	False											False	0		False
-Bfragilis	BF9343_RS02300	BF9343_RS02305	61	False											False	0		False
-Bfragilis	BF9343_RS02365	BF9343_RS02370	178	False											False	0		False
-Bfragilis	BF9343_RS02380	rplS	156	False											False	0		False
-Bfragilis	BF9343_RS02420	BF9343_RS02425	177	False											False	0		False
+Bfragilis	BF9343_RS02270	gadC	216	True	132.0	132.0	536	0	540	0	0	0	132	798	False	0		False
+Bfragilis	BF9343_RS02275	BF9343_RS02280	220	True	41.0	41.0	546	0	0	0	0	0	0	546	False	0		False
+Bfragilis	BF9343_RS02300	BF9343_RS02305	61	True	41.0	69.0	547	0	0	69	0	0	0	560	False	0		False
+Bfragilis	BF9343_RS02365	BF9343_RS02370	178	True	41.0	41.0	725	0	0	0	0	0	0	725	False	0		False
+Bfragilis	BF9343_RS02380	rplS	156	True	41.0	50.0	562	0	0	50	0	0	0	566	False	0		False
+Bfragilis	BF9343_RS02420	BF9343_RS02425	177	True	41.0	41.0	590	0	0	0	0	0	0	589	False	0		False
 Bfragilis	BF9343_RS02435	BF9343_RS23570	66	False											False	0		False
-Bfragilis	BF9343_RS02440	BF9343_RS02445	304	False											False	0		False
+Bfragilis	BF9343_RS02440	BF9343_RS02445	304	True	75.0	88.5	421	0	0	55	0	0	75	449	False	0		False
 Bfragilis	BF9343_RS02520	BF9343_RS02525	225	False											False	0		False
-Bfragilis	BF9343_RS21890	metA	159	False											False	0		False
-Bfragilis	BF9343_RS02595	thrA	493	False											False	0		False
-Bfragilis	BF9343_RS02635	BF9343_RS02640	212	False											False	0		False
-Bfragilis	BF9343_RS02645	BF9343_RS02650	127	False											False	0		False
-Bfragilis	BF9343_RS02705	BF9343_RS21905	182	False											False	0		False
-Bfragilis	BF9343_RS02720	BF9343_RS02725	4	False											False	0		False
-Bfragilis	BF9343_RS02770	BF9343_RS02775	453	False											False	0		False
-Bfragilis	BF9343_RS02920	BF9343_RS02925	199	False											False	0		False
-Bfragilis	BF9343_RS02950	BF9343_RS02955	137	False											False	0		False
-Bfragilis	BF9343_RS02975	dnaE	163	False											False	0		False
-Bfragilis	BF9343_RS03045	BF9343_RS03050	102	False											False	0		False
-Bfragilis	BF9343_RS03100	aroA	284	False											False	0		False
-Bfragilis	BF9343_RS03135	aroB	136	False											False	0		False
-Bfragilis	BF9343_RS03160	BF9343_RS03165	96	False											False	0		False
-Bfragilis	BF9343_RS03205	BF9343_RS03210	149	False											False	0		False
-Bfragilis	BF9343_RS03220	alaS	103	False											False	0		False
+Bfragilis	BF9343_RS21890	metA	159	True	41.0	41.0	717	0	0	0	0	0	0	717	False	0		False
+Bfragilis	BF9343_RS02595	thrA	493	True	816.3	816.3	152	0	0	0	0	800	119	837	False	0		False
+Bfragilis	BF9343_RS02635	BF9343_RS02640	212	True	41.0	41.0	713	0	0	0	0	0	0	713	False	0		False
+Bfragilis	BF9343_RS02645	BF9343_RS02650	127	True	41.0	41.0	534	0	0	0	0	0	0	534	False	0		False
+Bfragilis	BF9343_RS02705	BF9343_RS21905	182	True	41.0	41.0	505	0	0	0	0	0	0	505	False	0		False
+Bfragilis	BF9343_RS02720	BF9343_RS02725	4	True	41.0	41.0	741	0	0	0	0	0	0	741	False	0		False
+Bfragilis	BF9343_RS02770	BF9343_RS02775	453	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS02920	BF9343_RS02925	199	True	41.0	71.0	517	0	0	71	0	0	0	532	False	0		False
+Bfragilis	BF9343_RS02950	BF9343_RS02955	137	True	41.0	77.0	736	0	0	77	0	0	0	746	False	0		False
+Bfragilis	BF9343_RS02975	dnaE	163	True	41.0	41.0	748	0	0	0	0	0	0	748	False	0		False
+Bfragilis	BF9343_RS03045	BF9343_RS03050	102	True	41.0	41.0	587	0	0	0	0	0	0	587	False	0		False
+Bfragilis	BF9343_RS03100	aroA	284	True	41.0	41.0	419	0	0	0	0	0	0	419	False	0		False
+Bfragilis	BF9343_RS03135	aroB	136	True	41.0	41.0	736	0	0	0	0	0	0	736	False	0		False
+Bfragilis	BF9343_RS03160	BF9343_RS03165	96	True	41.0	41.0	744	0	296	0	0	0	0	812	False	0		False
+Bfragilis	BF9343_RS03205	BF9343_RS03210	149	True	41.0	41.0	552	0	0	0	0	0	0	551	False	0		False
+Bfragilis	BF9343_RS03220	alaS	103	True	57.0	95.3	743	0	0	80	0	0	57	757	False	0		False
 Bfragilis	BF9343_RS03285	rsfS	301	False											False	0		False
-Bfragilis	BF9343_RS03305	rsmA	49	False											False	0		False
-Bfragilis	BF9343_RS03330	BF9343_RS03335	222	False											False	0		False
-Bfragilis	BF9343_RS03365	BF9343_RS03370	93	False											False	0		False
+Bfragilis	BF9343_RS03305	rsmA	49	True	41.0	41.0	752	0	0	0	0	0	0	752	False	0		False
+Bfragilis	BF9343_RS03330	BF9343_RS03335	222	True	41.0	41.0	477	0	0	0	0	0	0	477	False	0		False
+Bfragilis	BF9343_RS03365	BF9343_RS03370	93	True	41.0	41.0	745	0	0	0	0	0	0	745	False	0		False
 Bfragilis	BF9343_RS03520	BF9343_RS03525	87	False											False	0		False
-Bfragilis	BF9343_RS03540	BF9343_RS03545	179	False											False	0		False
-Bfragilis	BF9343_RS03665	BF9343_RS03670	237	False											False	0		False
-Bfragilis	BF9343_RS03750	BF9343_RS03755	205	False											False	0		False
-Bfragilis	BF9343_RS03785	BF9343_RS03790	185	False											False	0		False
-Bfragilis	BF9343_RS03795	BF9343_RS03800	443	False											False	0		False
-Bfragilis	BF9343_RS03845	BF9343_RS22020	424	False											False	0		False
-Bfragilis	BF9343_RS03945	BF9343_RS03950	164	False											False	0		False
-Bfragilis	BF9343_RS03960	glaB	154	False											False	0		False
-Bfragilis	BF9343_RS04030	BF9343_RS04035	137	False											False	0		False
-Bfragilis	BF9343_RS04130	recF	160	False											False	0		False
+Bfragilis	BF9343_RS03540	BF9343_RS03545	179	True	41.0	41.0	507	0	0	0	0	0	0	507	False	0		False
+Bfragilis	BF9343_RS03665	BF9343_RS03670	237	True	41.0	41.0	509	0	0	0	0	0	0	509	False	0		False
+Bfragilis	BF9343_RS03750	BF9343_RS03755	205	True	41.0	41.0	490	0	0	0	0	0	0	490	False	0		False
+Bfragilis	BF9343_RS03785	BF9343_RS03790	185	True	41.0	41.0	419	0	186	0	0	0	0	507	False	0		False
+Bfragilis	BF9343_RS03795	BF9343_RS03800	443	True	41.0	41.0	308	0	0	0	0	0	0	308	False	0		False
+Bfragilis	BF9343_RS03845	BF9343_RS22020	424	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS03945	BF9343_RS03950	164	True	41.0	41.0	566	0	0	0	0	0	0	566	False	0		False
+Bfragilis	BF9343_RS03960	glaB	154	True	41.0	41.0	521	0	0	0	0	0	0	521	False	0		False
+Bfragilis	BF9343_RS04030	BF9343_RS04035	137	True	41.0	41.0	594	0	170	0	0	0	0	649	False	0		False
+Bfragilis	BF9343_RS04130	recF	160	True	41.0	67.0	730	0	180	67	0	0	0	775	False	0		False
 Bfragilis	gap	mscL	139	True	164.0	164.0	735	0	0	0	0	0	164	769	True	1	1741	True
 Bfragilis	BF9343_RS04235	BF9343_RS23585	257	False											False	0		False
-Bfragilis	BF9343_RS04285	BF9343_RS04290	171	False											False	0		False
-Bfragilis	BF9343_RS04315	BF9343_RS04320	115	False											False	0		False
-Bfragilis	BF9343_RS04325	BF9343_RS04330	170	False											False	0		False
-Bfragilis	BF9343_RS04350	panC	246	False											False	0		False
-Bfragilis	BF9343_RS04475	BF9343_RS04480	112	False											False	0		False
-Bfragilis	BF9343_RS04505	BF9343_RS04510	239	False											False	0		False
-Bfragilis	BF9343_RS04550	BF9343_RS04555	116	False											False	0		False
-Bfragilis	BF9343_RS04570	BF9343_RS04575	104	False											False	0		False
-Bfragilis	BF9343_RS04600	BF9343_RS04605	135	False											False	0		False
-Bfragilis	BF9343_RS04740	BF9343_RS04745	305	False											False	0		False
-Bfragilis	BF9343_RS04850	hpt	247	False											False	0		False
+Bfragilis	BF9343_RS04285	BF9343_RS04290	171	True	41.0	41.0	727	0	0	0	0	0	0	726	False	0		False
+Bfragilis	BF9343_RS04315	BF9343_RS04320	115	True	41.0	41.0	741	0	0	0	0	0	0	741	False	0		False
+Bfragilis	BF9343_RS04325	BF9343_RS04330	170	True	41.0	41.0	727	0	0	0	0	0	0	727	False	0		False
+Bfragilis	BF9343_RS04350	panC	246	True	41.0	81.0	614	0	0	81	0	0	0	630	False	0		False
+Bfragilis	BF9343_RS04475	BF9343_RS04480	112	True	41.0	75.0	741	0	0	75	0	0	0	750	False	0		False
+Bfragilis	BF9343_RS04505	BF9343_RS04510	239	True	41.0	41.0	698	0	0	0	0	0	0	698	False	0		False
+Bfragilis	BF9343_RS04550	BF9343_RS04555	116	True	41.0	41.0	740	0	0	0	0	0	0	740	False	0		False
+Bfragilis	BF9343_RS04570	BF9343_RS04575	104	True	111.0	198.1	543	0	639	135	111	0	0	856	False	0		False
+Bfragilis	BF9343_RS04600	BF9343_RS04605	135	True	144.4	228.2	533	0	337	135	111	0	77	740	False	0		False
+Bfragilis	BF9343_RS04740	BF9343_RS04745	305	True	41.0	41.0	397	0	0	0	0	0	0	397	False	0		False
+Bfragilis	BF9343_RS04850	hpt	247	True	41.0	41.0	551	0	0	0	0	0	0	551	False	0		False
 Bfragilis	BF9343_RS04890	ssrA	193	False											False	0		False
 Bfragilis	BF9343_RS04925	BF9343_RS24095	219	False											False	0		False
 Bfragilis	BF9343_RS04955	ribB	222	False											False	0		False
-Bfragilis	BF9343_RS04980	BF9343_RS04985	456	False											False	0		False
+Bfragilis	BF9343_RS04980	BF9343_RS04985	456	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bfragilis	BF9343_RS05090	BF9343_RS05095	483	False											False	0		False
-Bfragilis	BF9343_RS05270	mnmE	121	False											False	0		False
-Bfragilis	BF9343_RS05300	BF9343_RS05305	140	False											False	0		False
+Bfragilis	BF9343_RS05270	mnmE	121	True	41.0	59.0	594	0	0	59	0	0	0	602	False	0		False
+Bfragilis	BF9343_RS05300	BF9343_RS05305	140	True	41.0	71.0	735	0	0	71	0	0	0	743	False	0		False
 Bfragilis	BF9343_RS05340	BF9343_RS05345	307	False											False	0		False
-Bfragilis	BF9343_RS05365	crcB	154	False											False	0		False
+Bfragilis	BF9343_RS05365	crcB	154	True	41.0	41.0	571	0	0	0	0	0	0	571	False	0		False
 Bfragilis	BF9343_RS05370	BF9343_RS05375	227	False											False	0		False
-Bfragilis	BF9343_RS05400	nusB	168	False											False	0		False
-Bfragilis	BF9343_RS05440	clpB	222	False											False	0		False
-Bfragilis	BF9343_RS05465	BF9343_RS05470	84	False											False	0		False
-Bfragilis	BF9343_RS05490	BF9343_RS05495	124	False											False	0		False
-Bfragilis	BF9343_RS05535	BF9343_RS05540	135	False											False	0		False
-Bfragilis	BF9343_RS05555	BF9343_RS05560	134	False											False	0		False
+Bfragilis	BF9343_RS05400	nusB	168	True	41.0	41.0	630	0	0	0	0	0	0	630	False	0		False
+Bfragilis	BF9343_RS05440	clpB	222	True	41.0	41.0	709	0	0	0	0	0	0	709	False	0		False
+Bfragilis	BF9343_RS05465	BF9343_RS05470	84	True	41.0	41.0	550	0	0	0	0	0	0	550	False	0		False
+Bfragilis	BF9343_RS05490	BF9343_RS05495	124	True	41.0	41.0	739	0	0	0	0	0	0	738	False	0		False
+Bfragilis	BF9343_RS05535	BF9343_RS05540	135	True	41.0	41.0	736	0	0	0	0	0	0	736	False	0		False
+Bfragilis	BF9343_RS05555	BF9343_RS05560	134	True	41.0	41.0	531	0	0	0	0	0	0	531	False	0		False
 Bfragilis	BF9343_RS05650	BF9343_RS05655	154	False											False	0		False
 Bfragilis	BF9343_RS05790	mobA	357	False											False	0		False
 Bfragilis	BF9343_RS05815	BF9343_RS05820	245	False											False	0		False
 Bfragilis	BF9343_RS05850	BF9343_RS05855	395	False											False	0		False
-Bfragilis	BF9343_RS05890	BF9343_RS05895	126	False											False	0		False
-Bfragilis	BF9343_RS05910	BF9343_RS05915	282	False											False	0		False
-Bfragilis	BF9343_RS05930	BF9343_RS05935	237	False											False	0		False
-Bfragilis	BF9343_RS06065	BF9343_RS06070	165	False											False	0		False
-Bfragilis	BF9343_RS06110	BF9343_RS06115	141	False											False	0		False
-Bfragilis	BF9343_RS06120	BF9343_RS06125	188	False											False	0		False
+Bfragilis	BF9343_RS05890	BF9343_RS05895	126	True	41.0	41.0	545	0	0	0	0	0	0	545	False	0		False
+Bfragilis	BF9343_RS05910	BF9343_RS05915	282	True	84.0	109.8	395	0	0	68	0	0	84	438	False	0		False
+Bfragilis	BF9343_RS05930	BF9343_RS05935	237	True	41.0	74.0	473	0	0	74	0	0	0	491	False	0		False
+Bfragilis	BF9343_RS06065	BF9343_RS06070	165	True	111.0	198.1	566	0	666	135	111	0	0	873	False	0		False
+Bfragilis	BF9343_RS06110	BF9343_RS06115	141	True	145.0	145.0	735	0	236	0	0	0	145	811	False	0		False
+Bfragilis	BF9343_RS06120	BF9343_RS06125	188	True	157.0	179.9	554	0	0	67	0	0	157	618	False	0		False
 Bfragilis	BF9343_RS06145	pflB	254	False											False	0		False
-Bfragilis	BF9343_RS06160	BF9343_RS06170	318	False											False	0		False
-Bfragilis	BF9343_RS06190	BF9343_RS06195	106	False											False	0		False
-Bfragilis	BF9343_RS06205	BF9343_RS06210	169	False											False	0		False
-Bfragilis	feoB	tilS	124	False											False	0		False
-Bfragilis	BF9343_RS06290	BF9343_RS06295	18	False											False	0		False
+Bfragilis	BF9343_RS06160	BF9343_RS06170	318	True	41.0	41.0	387	0	0	0	0	0	0	387	False	0		False
+Bfragilis	BF9343_RS06190	BF9343_RS06195	106	True	41.0	60.0	705	0	0	60	0	0	0	711	False	0		False
+Bfragilis	BF9343_RS06205	BF9343_RS06210	169	True	41.0	41.0	758	0	0	0	0	0	0	758	False	0		False
+Bfragilis	feoB	tilS	124	True	146.0	146.0	583	0	0	0	0	0	146	629	False	0		False
+Bfragilis	BF9343_RS06290	BF9343_RS06295	18	True	41.0	41.0	479	0	0	0	0	0	0	479	False	0		False
 Bfragilis	BF9343_RS06365	BF9343_RS06370	140	False											False	0		False
 Bfragilis	BF9343_RS06380	BF9343_RS23605	97	False											False	0		False
-Bfragilis	BF9343_RS06410	BF9343_RS06415	252	False											False	0		False
-Bfragilis	BF9343_RS06425	BF9343_RS06430	222	False											False	0		False
-Bfragilis	BF9343_RS06440	BF9343_RS06445	163	False											False	0		False
-Bfragilis	BF9343_RS06470	rlmH	96	False											False	0		False
-Bfragilis	BF9343_RS06510	ald	188	False											False	0		False
-Bfragilis	BF9343_RS06590	BF9343_RS06595	115	False											False	0		False
-Bfragilis	BF9343_RS06640	BF9343_RS06645	316	False											False	0		False
-Bfragilis	BF9343_RS06710	aspT	131	False											False	0		False
+Bfragilis	BF9343_RS06410	BF9343_RS06415	252	True	41.0	242.0	451	0	0	242	0	0	0	566	False	0		False
+Bfragilis	BF9343_RS06425	BF9343_RS06430	222	True	41.0	41.0	532	0	0	0	0	0	0	532	False	0		False
+Bfragilis	BF9343_RS06440	BF9343_RS06445	163	True	41.0	68.0	540	0	0	68	0	0	0	553	False	0		False
+Bfragilis	BF9343_RS06470	rlmH	96	True	41.0	41.0	744	0	0	0	0	0	0	744	False	0		False
+Bfragilis	BF9343_RS06510	ald	188	True	41.0	41.0	721	0	0	0	0	0	0	721	False	0		False
+Bfragilis	BF9343_RS06590	BF9343_RS06595	115	True	41.0	41.0	741	0	0	0	0	0	0	741	False	0		False
+Bfragilis	BF9343_RS06640	BF9343_RS06645	316	True	41.0	41.0	385	0	0	0	0	0	0	385	False	0		False
+Bfragilis	BF9343_RS06710	aspT	131	True	41.0	41.0	516	0	0	0	0	0	0	516	False	0		False
 Bfragilis	BF9343_RS06890	traN	101	False											False	0		False
 Bfragilis	BF9343_RS06930	BF9343_RS06935	497	False											False	0		False
 Bfragilis	BF9343_RS07090	BF9343_RS23905	49	False											False	0		False
-Bfragilis	BF9343_RS07220	mutY	205	False											False	0		False
-Bfragilis	BF9343_RS07260	BF9343_RS22330	289	False											False	0		False
-Bfragilis	BF9343_RS07300	BF9343_RS07305	94	False											False	0		False
-Bfragilis	BF9343_RS07315	BF9343_RS07320	307	False											False	0		False
-Bfragilis	BF9343_RS07360	BF9343_RS07365	170	False											False	0		False
-Bfragilis	BF9343_RS07390	BF9343_RS07395	280	False											False	0		False
-Bfragilis	BF9343_RS07445	BF9343_RS07450	326	False											False	0		False
-Bfragilis	BF9343_RS07470	BF9343_RS07475	267	False											False	0		False
-Bfragilis	BF9343_RS07490	BF9343_RS07500	452	False											False	0		False
+Bfragilis	BF9343_RS07220	mutY	205	True	41.0	41.0	715	0	0	0	0	0	0	715	False	0		False
+Bfragilis	BF9343_RS07260	BF9343_RS22330	289	True	41.0	41.0	414	0	0	0	0	0	0	414	False	0		False
+Bfragilis	BF9343_RS07300	BF9343_RS07305	94	True	41.0	41.0	547	0	0	0	0	0	0	547	False	0		False
+Bfragilis	BF9343_RS07315	BF9343_RS07320	307	True	41.0	41.0	735	0	0	0	0	0	0	735	False	0		False
+Bfragilis	BF9343_RS07360	BF9343_RS07365	170	True	41.0	41.0	727	0	0	0	0	0	0	727	False	0		False
+Bfragilis	BF9343_RS07390	BF9343_RS07395	280	True	41.0	41.0	435	0	0	0	0	0	0	435	False	0		False
+Bfragilis	BF9343_RS07445	BF9343_RS07450	326	True	41.0	41.0	375	0	0	0	0	0	0	375	False	0		False
+Bfragilis	BF9343_RS07470	BF9343_RS07475	267	True	41.0	41.0	438	0	0	0	0	0	0	437	False	0		False
+Bfragilis	BF9343_RS07490	BF9343_RS07500	452	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bfragilis	BF9343_RS24260	prmA	123	False											False	0		False
-Bfragilis	BF9343_RS07665	BF9343_RS07670	263	False											False	0		False
-Bfragilis	BF9343_RS07690	BF9343_RS07695	190	False											False	0		False
-Bfragilis	BF9343_RS07770	BF9343_RS07775	371	False											False	0		False
-Bfragilis	BF9343_RS07810	BF9343_RS07815	302	False											False	0		False
+Bfragilis	BF9343_RS07665	BF9343_RS07670	263	True	154.0	154.0	496	0	0	0	0	0	154	555	False	0		False
+Bfragilis	BF9343_RS07690	BF9343_RS07695	190	True	41.0	69.0	560	0	0	69	0	0	0	573	False	0		False
+Bfragilis	BF9343_RS07770	BF9343_RS07775	371	True	41.0	41.0	412	0	0	0	0	0	0	412	False	0		False
+Bfragilis	BF9343_RS07810	BF9343_RS07815	302	True	108.0	108.0	401	0	0	0	108	0	0	443	False	0		False
 Bfragilis	BF9343_RS07870	BF9343_RS23615	145	False											False	0		False
 Bfragilis	BF9343_RS07880	BF9343_RS07885	198	False											False	0		False
-Bfragilis	BF9343_RS07910	BF9343_RS07915	297	False											False	0		False
+Bfragilis	BF9343_RS07910	BF9343_RS07915	297	True	101.0	237.9	468	0	174	187	0	0	101	635	False	0		False
 Bfragilis	BF9343_RS07970	BF9343_RS07975	286	False											False	0		False
 Bfragilis	BF9343_RS08040	BF9343_RS08045	277	False											False	0		False
 Bfragilis	BF9343_RS08160	BF9343_RS22400	12	False											False	0		False
@@ -172,260 +172,260 @@ Bfragilis	BF9343_RS08250	BF9343_RS08255	1	False											False	0		False
 Bfragilis	BF9343_RS08290	BF9343_RS08295	237	False											False	0		False
 Bfragilis	BF9343_RS08315	BF9343_RS08320	123	False											False	0		False
 Bfragilis	BF9343_RS08330	BF9343_RS23630	317	False											False	0		False
-Bfragilis	BF9343_RS08360	BF9343_RS08365	479	False											False	0		False
-Bfragilis	BF9343_RS08460	BF9343_RS08465	235	False											False	0		False
-Bfragilis	BF9343_RS08485	BF9343_RS08490	104	False											False	0		False
+Bfragilis	BF9343_RS08360	BF9343_RS08365	479	True	41.0	41.0	0	0	460	0	0	0	0	460	False	0		False
+Bfragilis	BF9343_RS08460	BF9343_RS08465	235	True	61.0	61.0	703	0	0	0	0	0	61	709	False	0		False
+Bfragilis	BF9343_RS08485	BF9343_RS08490	104	True	41.0	41.0	585	0	225	0	0	0	0	664	False	0		False
 Bfragilis	BF9343_RS08520	BF9343_RS22435	313	False											False	0		False
 Bfragilis	BF9343_RS08535	BF9343_RS23635	460	False											False	0		False
 Bfragilis	BF9343_RS08560	BF9343_RS08565	85	False											False	0		False
 Bfragilis	BF9343_RS08570	BF9343_RS08575	82	False											False	0		False
-Bfragilis	BF9343_RS08710	BF9343_RS08715	117	False											False	0		False
+Bfragilis	BF9343_RS08710	BF9343_RS08715	117	True	41.0	58.0	588	0	0	58	0	0	0	596	False	0		False
 Bfragilis	BF9343_RS08745	BF9343_RS08750	277	False											False	0		False
 Bfragilis	BF9343_RS08765	BF9343_RS24110	463	False											False	0		False
-Bfragilis	BF9343_RS08805	gmd	213	False											False	0		False
+Bfragilis	BF9343_RS08805	gmd	213	True	41.0	41.0	503	0	0	0	0	0	0	503	False	0		False
 Bfragilis	BF9343_RS08940	BF9343_RS24180	364	False											False	0		False
-Bfragilis	BF9343_RS08945	gnd	132	False											False	0		False
+Bfragilis	BF9343_RS08945	gnd	132	True	205.0	205.0	532	0	0	0	0	0	205	612	False	0		False
 Bfragilis	BF9343_RS09005	umuD	229	False											False	0		False
-Bfragilis	BF9343_RS09035	BF9343_RS09040	452	False											False	0		False
-Bfragilis	BF9343_RS09105	wecB	84	False											False	0		False
-Bfragilis	BF9343_RS09120	BF9343_RS09125	290	False											False	0		False
-Bfragilis	BF9343_RS09155	BF9343_RS09160	88	False											False	0		False
+Bfragilis	BF9343_RS09035	BF9343_RS09040	452	True	41.0	41.0	483	0	0	0	0	0	0	483	False	0		False
+Bfragilis	BF9343_RS09105	wecB	84	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS09120	BF9343_RS09125	290	True	41.0	41.0	413	0	0	0	0	0	0	413	False	0		False
+Bfragilis	BF9343_RS09155	BF9343_RS09160	88	True	49.0	88.7	549	0	0	81	0	0	49	571	False	0		False
 Bfragilis	BF9343_RS09185	BF9343_RS09190	240	False											False	0		False
-Bfragilis	BF9343_RS09285	BF9343_RS09290	470	False											False	0		False
-Bfragilis	BF9343_RS09485	BF9343_RS09490	347	False											False	0		False
-Bfragilis	BF9343_RS09505	dmpI	331	False											False	0		False
+Bfragilis	BF9343_RS09285	BF9343_RS09290	470	True	41.0	41.0	400	0	0	0	0	0	0	400	False	0		False
+Bfragilis	BF9343_RS09485	BF9343_RS09490	347	True	59.0	59.0	534	0	0	0	0	0	59	542	False	0		False
+Bfragilis	BF9343_RS09505	dmpI	331	True	41.0	41.0	512	0	0	0	0	0	0	512	False	0		False
 Bfragilis	BF9343_RS09560	ettA	116	False											False	0		False
 Bfragilis	BF9343_RS09630	BF9343_RS23650	80	False											False	0		False
-Bfragilis	BF9343_RS09660	BF9343_RS09665	163	False											False	0		False
-Bfragilis	BF9343_RS09760	BF9343_RS09765	138	False											False	0		False
-Bfragilis	BF9343_RS09785	lipB	65	False											False	0		False
-Bfragilis	BF9343_RS09825	BF9343_RS09830	188	False											False	0		False
-Bfragilis	BF9343_RS09870	recR	276	False											False	0		False
+Bfragilis	BF9343_RS09660	BF9343_RS09665	163	True	41.0	41.0	729	0	0	0	0	0	0	729	False	0		False
+Bfragilis	BF9343_RS09760	BF9343_RS09765	138	True	41.0	41.0	736	0	0	0	0	0	0	735	False	0		False
+Bfragilis	BF9343_RS09785	lipB	65	True	41.0	41.0	750	0	0	0	0	0	0	749	False	0		False
+Bfragilis	BF9343_RS09825	BF9343_RS09830	188	True	41.0	41.0	529	0	0	0	0	0	0	529	False	0		False
+Bfragilis	BF9343_RS09870	recR	276	True	120.0	120.0	446	0	0	0	120	0	0	492	False	0		False
 Bfragilis	BF9343_RS09895	BF9343_RS09900	172	False											False	0		False
 Bfragilis	BF9343_RS09930	mobA	490	False											False	0		False
 Bfragilis	BF9343_RS09970	BF9343_RS23945	106	False											False	0		False
 Bfragilis	BF9343_RS09985	BF9343_RS09990	77	False											False	0		False
-Bfragilis	BF9343_RS10175	BF9343_RS10180	326	False											False	0		False
-Bfragilis	BF9343_RS10200	BF9343_RS10205	301	False											False	0		False
-Bfragilis	BF9343_RS10210	BF9343_RS10215	156	False											False	0		False
-Bfragilis	BF9343_RS10225	BF9343_RS10230	200	False											False	0		False
-Bfragilis	BF9343_RS10270	BF9343_RS10275	251	False											False	0		False
-Bfragilis	BF9343_RS10300	BF9343_RS10305	256	False											False	0		False
-Bfragilis	BF9343_RS10325	BF9343_RS10330	187	False											False	0		False
-Bfragilis	BF9343_RS10345	BF9343_RS10350	171	False											False	0		False
-Bfragilis	BF9343_RS10380	BF9343_RS10385	254	False											False	0		False
-Bfragilis	BF9343_RS10415	BF9343_RS10420	107	False											False	0		False
-Bfragilis	BF9343_RS10450	BF9343_RS10455	107	False											False	0		False
-Bfragilis	BF9343_RS10520	BF9343_RS10525	228	False											False	0		False
-Bfragilis	BF9343_RS10560	BF9343_RS10565	113	False											False	0		False
-Bfragilis	BF9343_RS10600	BF9343_RS10605	206	False											False	0		False
-Bfragilis	BF9343_RS10610	BF9343_RS10615	168	False											False	0		False
-Bfragilis	BF9343_RS10650	pyrB	431	False											False	0		False
-Bfragilis	BF9343_RS10665	BF9343_RS10670	240	False											False	0		False
-Bfragilis	BF9343_RS10690	BF9343_RS10695	336	False											False	0		False
-Bfragilis	BF9343_RS10740	BF9343_RS10745	130	False											False	0		False
+Bfragilis	BF9343_RS10175	BF9343_RS10180	326	True	41.0	41.0	469	0	0	0	0	0	0	469	False	0		False
+Bfragilis	BF9343_RS10200	BF9343_RS10205	301	True	60.0	60.0	430	0	0	0	0	0	60	441	False	0		False
+Bfragilis	BF9343_RS10210	BF9343_RS10215	156	True	41.0	41.0	539	0	0	0	0	0	0	539	False	0		False
+Bfragilis	BF9343_RS10225	BF9343_RS10230	200	True	41.0	41.0	493	0	0	0	0	0	0	493	False	0		False
+Bfragilis	BF9343_RS10270	BF9343_RS10275	251	True	41.0	41.0	452	0	0	0	0	0	0	452	False	0		False
+Bfragilis	BF9343_RS10300	BF9343_RS10305	256	True	41.0	41.0	447	0	0	0	0	0	0	447	False	0		False
+Bfragilis	BF9343_RS10325	BF9343_RS10330	187	True	41.0	41.0	502	0	0	0	0	0	0	502	False	0		False
+Bfragilis	BF9343_RS10345	BF9343_RS10350	171	True	41.0	41.0	513	0	0	0	0	0	0	513	False	0		False
+Bfragilis	BF9343_RS10380	BF9343_RS10385	254	True	41.0	41.0	484	0	0	0	0	0	0	484	False	0		False
+Bfragilis	BF9343_RS10415	BF9343_RS10420	107	True	50.0	55.9	590	0	0	47	50	0	0	596	False	0		False
+Bfragilis	BF9343_RS10450	BF9343_RS10455	107	True	41.0	41.0	743	0	0	0	0	0	0	742	False	0		False
+Bfragilis	BF9343_RS10520	BF9343_RS10525	228	True	41.0	41.0	472	0	0	0	0	0	0	472	False	0		False
+Bfragilis	BF9343_RS10560	BF9343_RS10565	113	True	585.0	585.0	576	0	184	0	0	0	585	844	False	0		False
+Bfragilis	BF9343_RS10600	BF9343_RS10605	206	True	41.0	41.0	455	0	346	0	0	0	0	628	False	0		False
+Bfragilis	BF9343_RS10610	BF9343_RS10615	168	True	41.0	41.0	522	0	0	0	0	0	0	522	False	0		False
+Bfragilis	BF9343_RS10650	pyrB	431	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS10665	BF9343_RS10670	240	True	41.0	41.0	553	0	0	0	0	0	0	553	False	0		False
+Bfragilis	BF9343_RS10690	BF9343_RS10695	336	True	41.0	41.0	364	0	0	0	0	0	0	364	False	0		False
+Bfragilis	BF9343_RS10740	BF9343_RS10745	130	True	41.0	41.0	573	0	0	0	0	0	0	572	False	0		False
 Bfragilis	BF9343_RS10850	BF9343_RS10855	129	False											False	0		False
 Bfragilis	BF9343_RS10995	rrf	218	False											False	0		False
 Bfragilis	BF9343_RS11015	BF9343_RS11020	140	False											False	0		False
-Bfragilis	BF9343_RS11070	BF9343_RS11075	220	False											False	0		False
-Bfragilis	BF9343_RS11120	thiD	341	False											False	0		False
-Bfragilis	BF9343_RS11140	BF9343_RS11145	105	False											False	0		False
+Bfragilis	BF9343_RS11070	BF9343_RS11075	220	True	86.0	86.0	481	0	0	0	0	0	86	506	False	0		False
+Bfragilis	BF9343_RS11120	thiD	341	True	41.0	41.0	433	0	0	0	0	0	0	432	False	0		False
+Bfragilis	BF9343_RS11140	BF9343_RS11145	105	True	46.0	46.0	571	0	0	0	0	0	46	573	False	0		False
 Bfragilis	BF9343_RS11170	BF9343_RS11175	259	False											False	0		False
-Bfragilis	BF9343_RS11180	ileS	224	False											False	0		False
-Bfragilis	BF9343_RS11210	BF9343_RS11215	370	False											False	0		False
-Bfragilis	BF9343_RS11280	rfbC	158	False											False	0		False
-Bfragilis	BF9343_RS11310	serB	271	False											False	0		False
-Bfragilis	BF9343_RS11330	lon	184	False											False	0		False
+Bfragilis	BF9343_RS11180	ileS	224	True	41.0	41.0	496	0	0	0	0	0	0	497	False	0		False
+Bfragilis	BF9343_RS11210	BF9343_RS11215	370	True	41.0	41.0	330	0	0	0	0	0	0	330	False	0		False
+Bfragilis	BF9343_RS11280	rfbC	158	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS11310	serB	271	True	41.0	41.0	674	0	0	0	0	0	0	674	False	0		False
+Bfragilis	BF9343_RS11330	lon	184	True	41.0	41.0	723	0	0	0	0	0	0	723	False	0		False
 Bfragilis	BF9343_RS11365	BF9343_RS11370	349	False											False	0		False
 Bfragilis	BF9343_RS11510	BF9343_RS24115	209	False											False	0		False
-Bfragilis	BF9343_RS11560	BF9343_RS11565	157	False											False	0		False
+Bfragilis	BF9343_RS11560	BF9343_RS11565	157	True	41.0	41.0	520	0	0	0	0	0	0	520	False	0		False
 Bfragilis	BF9343_RS11590	BF9343_RS23735	185	False											False	0		False
-Bfragilis	BF9343_RS11610	BF9343_RS11615	362	False											False	0		False
-Bfragilis	BF9343_RS11670	spt	219	False											False	0		False
-Bfragilis	BF9343_RS11695	BF9343_RS11700	94	False											False	0		False
-Bfragilis	BF9343_RS11720	BF9343_RS11725	106	False											False	0		False
-Bfragilis	BF9343_RS11750	BF9343_RS11755	64	False											False	0		False
+Bfragilis	BF9343_RS11610	BF9343_RS11615	362	True	41.0	41.0	574	0	0	0	0	0	0	575	False	0		False
+Bfragilis	BF9343_RS11670	spt	219	True	175.0	175.0	523	0	0	0	116	0	105	589	False	0		False
+Bfragilis	BF9343_RS11695	BF9343_RS11700	94	True	41.0	41.0	745	0	0	0	0	0	0	745	False	0		False
+Bfragilis	BF9343_RS11720	BF9343_RS11725	106	True	41.0	41.0	743	0	0	0	0	0	0	743	False	0		False
+Bfragilis	BF9343_RS11750	BF9343_RS11755	64	True	41.0	41.0	750	0	0	0	0	0	0	749	False	0		False
 Bfragilis	ligA	trmD	76	True	109.0	136.9	748	0	313	71	0	0	109	837	False	0		False
-Bfragilis	BF9343_RS11800	BF9343_RS11805	299	False											False	0		False
-Bfragilis	BF9343_RS11835	gyrA	391	False											False	0		False
-Bfragilis	BF9343_RS11940	tsaD	32	False											False	0		False
+Bfragilis	BF9343_RS11800	BF9343_RS11805	299	True	41.0	41.0	410	0	0	0	0	0	0	410	False	0		False
+Bfragilis	BF9343_RS11835	gyrA	391	True	106.0	133.0	624	0	0	70	0	0	106	660	False	0		False
+Bfragilis	BF9343_RS11940	tsaD	32	True	41.0	41.0	717	0	0	0	0	0	0	717	False	0		False
 Bfragilis	BF9343_RS11965	cobU	64	False											False	0		False
-Bfragilis	BF9343_RS12190	BF9343_RS12195	121	False											False	0		False
-Bfragilis	ppdK	rlmD	266	False											False	0		False
-Bfragilis	BF9343_RS12335	BF9343_RS12340	69	False											False	0		False
-Bfragilis	BF9343_RS12350	BF9343_RS12355	142	False											False	0		False
-Bfragilis	dnaB	ispE	177	False											False	0		False
-Bfragilis	BF9343_RS12530	BF9343_RS12535	383	False											False	0		False
-Bfragilis	BF9343_RS12565	BF9343_RS12570	161	False											False	0		False
-Bfragilis	BF9343_RS12590	uvrA	176	False											False	0		False
-Bfragilis	BF9343_RS12620	uvrB	116	False											False	0		False
-Bfragilis	BF9343_RS12680	BF9343_RS12685	331	False											False	0		False
+Bfragilis	BF9343_RS12190	BF9343_RS12195	121	True	262.0	262.0	739	0	0	0	0	0	262	799	False	0		False
+Bfragilis	ppdK	rlmD	266	True	87.0	87.0	689	0	0	0	0	0	87	703	False	0		False
+Bfragilis	BF9343_RS12335	BF9343_RS12340	69	True	74.0	74.0	611	0	0	0	0	0	74	624	False	0		False
+Bfragilis	BF9343_RS12350	BF9343_RS12355	142	True	120.0	120.0	704	0	0	0	120	0	0	728	False	0		False
+Bfragilis	dnaB	ispE	177	True	41.0	41.0	725	0	0	0	0	0	0	725	False	0		False
+Bfragilis	BF9343_RS12530	BF9343_RS12535	383	True	41.0	41.0	627	0	0	0	0	0	0	627	False	0		False
+Bfragilis	BF9343_RS12565	BF9343_RS12570	161	True	41.0	41.0	730	0	0	0	0	0	0	730	False	0		False
+Bfragilis	BF9343_RS12590	uvrA	176	True	168.0	269.5	726	0	0	158	0	0	168	791	False	0		False
+Bfragilis	BF9343_RS12620	uvrB	116	True	41.0	41.0	740	0	0	0	0	0	0	740	False	0		False
+Bfragilis	BF9343_RS12680	BF9343_RS12685	331	True	41.0	41.0	447	0	0	0	0	0	0	447	False	0		False
 Bfragilis	BF9343_RS23745	BF9343_RS24265	362	False											False	0		False
-Bfragilis	BF9343_RS12745	BF9343_RS12750	170	False											False	0		False
-Bfragilis	BF9343_RS12840	BF9343_RS12845	209	False											False	0		False
-Bfragilis	BF9343_RS12985	BF9343_RS12990	253	False											False	0		False
-Bfragilis	BF9343_RS13000	BF9343_RS13005	348	False											False	0		False
-Bfragilis	BF9343_RS13040	BF9343_RS13045	314	False											False	0		False
-Bfragilis	BF9343_RS13090	potA	137	False											False	0		False
-Bfragilis	BF9343_RS13180	nagA	156	False											False	0		False
+Bfragilis	BF9343_RS12745	BF9343_RS12750	170	True	41.0	41.0	512	0	0	0	0	0	0	512	False	0		False
+Bfragilis	BF9343_RS12840	BF9343_RS12845	209	True	41.0	41.0	688	0	0	0	0	0	0	687	False	0		False
+Bfragilis	BF9343_RS12985	BF9343_RS12990	253	True	89.0	138.4	695	0	0	93	0	0	89	726	False	0		False
+Bfragilis	BF9343_RS13000	BF9343_RS13005	348	True	71.0	98.1	530	0	0	69	0	0	71	558	False	0		False
+Bfragilis	BF9343_RS13040	BF9343_RS13045	314	True	41.0	41.0	505	0	0	0	0	0	0	505	False	0		False
+Bfragilis	BF9343_RS13090	potA	137	True	41.0	68.0	589	0	0	68	0	0	0	600	False	0		False
+Bfragilis	BF9343_RS13180	nagA	156	True	52.0	52.0	520	0	0	0	0	0	52	526	False	0		False
 Bfragilis	BF9343_RS13230	rnpB	367	False											False	0		False
-Bfragilis	BF9343_RS13270	pstC	323	False											False	0		False
-Bfragilis	BF9343_RS13300	tpx	93	False											False	0		False
-Bfragilis	BF9343_RS13310	mpi	234	False											False	0		False
-Bfragilis	BF9343_RS13335	BF9343_RS13340	191	False											False	0		False
+Bfragilis	BF9343_RS13270	pstC	323	True	824.0	934.8	658	0	773	645	0	800	156	994	False	0		False
+Bfragilis	BF9343_RS13300	tpx	93	True	41.0	41.0	745	0	0	0	0	0	0	745	False	0		False
+Bfragilis	BF9343_RS13310	mpi	234	True	61.0	100.2	575	0	0	81	0	0	61	601	False	0		False
+Bfragilis	BF9343_RS13335	BF9343_RS13340	191	True	41.0	41.0	551	0	0	0	0	0	0	552	False	0		False
 Bfragilis	BF9343_RS13355	BF9343_RS23750	283	False											False	0		False
-Bfragilis	BF9343_RS13620	BF9343_RS13625	347	False											False	0		False
-Bfragilis	BF9343_RS13645	BF9343_RS13650	129	False											False	0		False
-Bfragilis	BF9343_RS13690	dnaN	152	False											False	0		False
-Bfragilis	BF9343_RS13715	kbl	136	False											False	0		False
-Bfragilis	BF9343_RS13785	BF9343_RS13790	207	False											False	0		False
+Bfragilis	BF9343_RS13620	BF9343_RS13625	347	True	41.0	41.0	353	0	0	0	0	0	0	353	False	0		False
+Bfragilis	BF9343_RS13645	BF9343_RS13650	129	True	41.0	41.0	738	0	0	0	0	0	0	737	False	0		False
+Bfragilis	BF9343_RS13690	dnaN	152	True	114.0	214.7	732	0	0	150	0	0	114	780	False	0		False
+Bfragilis	BF9343_RS13715	kbl	136	True	515.6	554.5	736	0	347	118	0	500	71	916	False	0		False
+Bfragilis	BF9343_RS13785	BF9343_RS13790	207	True	41.0	41.0	488	0	0	0	0	0	0	488	False	0		False
 Bfragilis	BF9343_RS13845	hisH	349	False											False	0		False
 Bfragilis	BF9343_RS13855	BF9343_RS24190	130	False											False	0		False
 Bfragilis	BF9343_RS13955	BF9343_RS13960	165	False											False	0		False
 Bfragilis	BF9343_RS13970	rlmF	90	False											False	0		False
-Bfragilis	BF9343_RS14000	BF9343_RS14005	85	False											False	0		False
-Bfragilis	BF9343_RS14020	BF9343_RS14025	155	False											False	0		False
-Bfragilis	BF9343_RS14090	BF9343_RS14095	323	False											False	0		False
-Bfragilis	BF9343_RS14115	BF9343_RS14120	318	False											False	0		False
-Bfragilis	BF9343_RS14195	mfd	192	False											False	0		False
-Bfragilis	BF9343_RS14230	BF9343_RS14240	291	False											False	0		False
-Bfragilis	BF9343_RS14245	BF9343_RS14255	288	False											False	0		False
-Bfragilis	BF9343_RS14290	BF9343_RS14295	88	False											False	0		False
-Bfragilis	BF9343_RS14385	BF9343_RS22895	230	False											False	0		False
-Bfragilis	BF9343_RS14400	BF9343_RS14405	238	False											False	0		False
-Bfragilis	BF9343_RS14430	trxA	174	False											False	0		False
-Bfragilis	BF9343_RS14465	BF9343_RS14470	110	False											False	0		False
-Bfragilis	BF9343_RS14515	BF9343_RS14520	121	False											False	0		False
-Bfragilis	BF9343_RS14530	udk	101	False											False	0		False
-Bfragilis	BF9343_RS14580	BF9343_RS14585	239	False											False	0		False
-Bfragilis	BF9343_RS14615	rho	274	False											False	0		False
+Bfragilis	BF9343_RS14000	BF9343_RS14005	85	True	41.0	41.0	550	0	0	0	0	0	0	550	False	0		False
+Bfragilis	BF9343_RS14020	BF9343_RS14025	155	True	41.0	41.0	521	0	0	0	0	0	0	521	False	0		False
+Bfragilis	BF9343_RS14090	BF9343_RS14095	323	True	41.0	41.0	378	0	0	0	0	0	0	378	False	0		False
+Bfragilis	BF9343_RS14115	BF9343_RS14120	318	True	63.0	63.0	447	0	0	0	0	0	63	460	False	0		False
+Bfragilis	BF9343_RS14195	mfd	192	True	41.0	41.0	721	0	156	0	0	0	0	754	False	0		False
+Bfragilis	BF9343_RS14230	BF9343_RS14240	291	True	41.0	41.0	537	0	0	0	0	0	0	537	False	0		False
+Bfragilis	BF9343_RS14245	BF9343_RS14255	288	True	41.0	41.0	547	0	0	0	0	0	0	547	False	0		False
+Bfragilis	BF9343_RS14290	BF9343_RS14295	88	True	41.0	81.0	588	0	0	81	0	0	0	605	False	0		False
+Bfragilis	BF9343_RS14385	BF9343_RS22895	230	True	41.0	41.0	470	0	0	0	0	0	0	470	False	0		False
+Bfragilis	BF9343_RS14400	BF9343_RS14405	238	True	41.0	41.0	529	0	0	0	0	0	0	529	False	0		False
+Bfragilis	BF9343_RS14430	trxA	174	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS14465	BF9343_RS14470	110	True	63.0	90.4	541	0	0	69	0	0	63	564	False	0		False
+Bfragilis	BF9343_RS14515	BF9343_RS14520	121	True	41.0	41.0	543	0	0	0	0	0	0	544	False	0		False
+Bfragilis	BF9343_RS14530	udk	101	True	41.0	41.0	719	0	0	0	0	0	0	719	False	0		False
+Bfragilis	BF9343_RS14580	BF9343_RS14585	239	True	41.0	41.0	519	0	192	0	0	0	0	594	False	0		False
+Bfragilis	BF9343_RS14615	rho	274	True	41.0	41.0	440	0	0	0	0	0	0	439	False	0		False
 Bfragilis	BF9343_RS14720	BF9343_RS14725	147	False											False	0		False
-Bfragilis	BF9343_RS14755	BF9343_RS14760	161	False											False	0		False
-Bfragilis	BF9343_RS14795	BF9343_RS14800	414	False											False	0		False
-Bfragilis	BF9343_RS14805	BF9343_RS14810	176	False											False	0		False
-Bfragilis	BF9343_RS14825	gpmA	156	False											False	0		False
+Bfragilis	BF9343_RS14755	BF9343_RS14760	161	True	41.0	41.0	720	0	0	0	0	0	0	720	False	0		False
+Bfragilis	BF9343_RS14795	BF9343_RS14800	414	True	41.0	53.0	69	0	312	53	0	0	0	340	False	0		False
+Bfragilis	BF9343_RS14805	BF9343_RS14810	176	True	41.0	41.0	509	0	0	0	0	0	0	509	False	0		False
+Bfragilis	BF9343_RS14825	gpmA	156	True	69.0	107.8	527	0	0	81	0	0	69	560	False	0		False
 Bfragilis	BF9343_RS14875	BF9343_RS14880	113	False											False	0		False
-Bfragilis	BF9343_RS14935	BF9343_RS14940	373	False											False	0		False
-Bfragilis	BF9343_RS14990	BF9343_RS14995	117	False											False	0		False
-Bfragilis	BF9343_RS15060	BF9343_RS15065	271	False											False	0		False
-Bfragilis	BF9343_RS15095	BF9343_RS15100	315	False											False	0		False
-Bfragilis	BF9343_RS15155	uvrA	169	False											False	0		False
-Bfragilis	BF9343_RS15175	BF9343_RS15180	267	False											False	0		False
-Bfragilis	BF9343_RS15310	BF9343_RS15315	197	False											False	0		False
-Bfragilis	BF9343_RS15340	BF9343_RS15345	170	False											False	0		False
-Bfragilis	BF9343_RS15360	BF9343_RS15365	189	False											False	0		False
-Bfragilis	BF9343_RS15450	BF9343_RS15455	133	False											False	0		False
-Bfragilis	BF9343_RS15460	BF9343_RS15465	240	False											False	0		False
-Bfragilis	BF9343_RS15560	BF9343_RS15565	302	False											False	0		False
-Bfragilis	BF9343_RS15580	hisS	95	False											False	0		False
-Bfragilis	BF9343_RS15605	BF9343_RS15610	95	False											False	0		False
-Bfragilis	BF9343_RS15625	recQ	233	False											False	0		False
-Bfragilis	BF9343_RS15645	cysK	90	False											False	0		False
+Bfragilis	BF9343_RS14935	BF9343_RS14940	373	True	41.0	41.0	333	0	0	0	0	0	0	333	False	0		False
+Bfragilis	BF9343_RS14990	BF9343_RS14995	117	True	41.0	41.0	594	0	0	0	0	0	0	594	False	0		False
+Bfragilis	BF9343_RS15060	BF9343_RS15065	271	True	41.0	41.0	690	0	0	0	0	0	0	690	False	0		False
+Bfragilis	BF9343_RS15095	BF9343_RS15100	315	True	58.0	58.0	386	0	358	0	0	0	58	596	False	0		False
+Bfragilis	BF9343_RS15155	uvrA	169	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS15175	BF9343_RS15180	267	True	41.0	41.0	735	0	0	0	0	0	0	735	False	0		False
+Bfragilis	BF9343_RS15310	BF9343_RS15315	197	True	41.0	41.0	710	0	770	0	0	0	0	930	False	0		False
+Bfragilis	BF9343_RS15340	BF9343_RS15345	170	True	41.0	41.0	554	0	0	0	0	0	0	555	False	0		False
+Bfragilis	BF9343_RS15360	BF9343_RS15365	189	True	41.0	41.0	501	0	0	0	0	0	0	501	False	0		False
+Bfragilis	BF9343_RS15450	BF9343_RS15455	133	True	41.0	41.0	737	0	0	0	0	0	0	738	False	0		False
+Bfragilis	BF9343_RS15460	BF9343_RS15465	240	True	41.0	41.0	475	0	0	0	0	0	0	475	False	0		False
+Bfragilis	BF9343_RS15560	BF9343_RS15565	302	True	41.0	41.0	400	0	0	0	0	0	0	400	False	0		False
+Bfragilis	BF9343_RS15580	hisS	95	True	41.0	41.0	581	0	0	0	0	0	0	581	False	0		False
+Bfragilis	BF9343_RS15605	BF9343_RS15610	95	True	41.0	41.0	563	0	0	0	0	0	0	563	False	0		False
+Bfragilis	BF9343_RS15625	recQ	233	True	41.0	41.0	709	0	0	0	0	0	0	709	False	0		False
+Bfragilis	BF9343_RS15645	cysK	90	True	41.0	41.0	540	0	0	0	0	0	0	540	False	0		False
 Bfragilis	BF9343_RS15815	BF9343_RS15820	342	False											False	0		False
-Bfragilis	BF9343_RS15910	BF9343_RS15915	112	False											False	0		False
-Bfragilis	BF9343_RS15925	BF9343_RS15930	219	False											False	0		False
-Bfragilis	BF9343_RS15965	BF9343_RS15970	308	False											False	0		False
-Bfragilis	BF9343_RS16055	BF9343_RS16060	297	False											False	0		False
-Bfragilis	BF9343_RS16070	pncB	229	False											False	0		False
-Bfragilis	BF9343_RS16105	BF9343_RS16110	396	False											False	0		False
-Bfragilis	BF9343_RS16120	BF9343_RS16125	177	False											False	0		False
+Bfragilis	BF9343_RS15910	BF9343_RS15915	112	True	41.0	41.0	554	0	153	0	0	0	0	606	False	0		False
+Bfragilis	BF9343_RS15925	BF9343_RS15930	219	True	41.0	41.0	479	0	493	0	0	0	0	725	False	0		False
+Bfragilis	BF9343_RS15965	BF9343_RS15970	308	True	41.0	41.0	394	0	0	0	0	0	0	394	False	0		False
+Bfragilis	BF9343_RS16055	BF9343_RS16060	297	True	41.0	41.0	406	0	0	0	0	0	0	406	False	0		False
+Bfragilis	BF9343_RS16070	pncB	229	True	41.0	41.0	471	0	0	0	0	0	0	471	False	0		False
+Bfragilis	BF9343_RS16105	BF9343_RS16110	396	True	41.0	41.0	535	0	0	0	0	0	0	535	False	0		False
+Bfragilis	BF9343_RS16120	BF9343_RS16125	177	True	41.0	41.0	501	0	0	0	0	0	0	501	False	0		False
 Bfragilis	BF9343_RS16130	BF9343_RS16135	150	False											False	0		False
-Bfragilis	BF9343_RS16150	BF9343_RS16155	169	False											False	0		False
-Bfragilis	BF9343_RS16165	BF9343_RS16170	156	False											False	0		False
-Bfragilis	BF9343_RS16205	BF9343_RS16210	188	False											False	0		False
-Bfragilis	BF9343_RS16240	BF9343_RS16245	136	False											False	0		False
-Bfragilis	BF9343_RS16260	BF9343_RS16265	224	False											False	0		False
-Bfragilis	BF9343_RS16280	msrB	171	False											False	0		False
-Bfragilis	BF9343_RS16290	BF9343_RS16295	148	False											False	0		False
-Bfragilis	BF9343_RS16320	BF9343_RS16325	106	False											False	0		False
-Bfragilis	BF9343_RS16360	BF9343_RS16365	190	False											False	0		False
-Bfragilis	BF9343_RS16405	queD	116	False											False	0		False
-Bfragilis	BF9343_RS16410	BF9343_RS16415	152	False											False	0		False
-Bfragilis	BF9343_RS16440	BF9343_RS16445	339	False											False	0		False
-Bfragilis	BF9343_RS16510	BF9343_RS16515	199	False											False	0		False
-Bfragilis	BF9343_RS16575	gdhA	414	False											False	0		False
-Bfragilis	BF9343_RS16605	BF9343_RS16610	172	False											False	0		False
-Bfragilis	BF9343_RS16750	BF9343_RS16755	267	False											False	0		False
-Bfragilis	BF9343_RS16765	BF9343_RS16770	72	False											False	0		False
-Bfragilis	BF9343_RS16795	ruvA	158	False											False	0		False
-Bfragilis	BF9343_RS16830	phnX	196	False											False	0		False
-Bfragilis	BF9343_RS16890	BF9343_RS16895	99	False											False	0		False
-Bfragilis	BF9343_RS16910	BF9343_RS16915	56	False											False	0		False
-Bfragilis	BF9343_RS16925	BF9343_RS16930	109	False											False	0		False
-Bfragilis	BF9343_RS17010	BF9343_RS17015	150	False											False	0		False
-Bfragilis	BF9343_RS17060	cmk	155	False											False	0		False
-Bfragilis	BF9343_RS17105	BF9343_RS17110	258	False											False	0		False
-Bfragilis	BF9343_RS17175	BF9343_RS17180	327	False											False	0		False
-Bfragilis	BF9343_RS17190	BF9343_RS17195	175	False											False	0		False
-Bfragilis	BF9343_RS17280	aroC	260	False											False	0		False
-Bfragilis	BF9343_RS17315	BF9343_RS17320	126	False											False	0		False
-Bfragilis	BF9343_RS17335	mutA	248	False											False	0		False
-Bfragilis	BF9343_RS17340	BF9343_RS17345	165	False											False	0		False
-Bfragilis	BF9343_RS17365	lysS	107	False											False	0		False
-Bfragilis	BF9343_RS17385	BF9343_RS17390	97	False											False	0		False
+Bfragilis	BF9343_RS16150	BF9343_RS16155	169	True	41.0	41.0	727	0	0	0	0	0	0	727	False	0		False
+Bfragilis	BF9343_RS16165	BF9343_RS16170	156	True	41.0	41.0	520	0	0	0	0	0	0	520	False	0		False
+Bfragilis	BF9343_RS16205	BF9343_RS16210	188	True	41.0	41.0	501	0	0	0	0	0	0	501	False	0		False
+Bfragilis	BF9343_RS16240	BF9343_RS16245	136	True	41.0	41.0	556	0	0	0	0	0	0	556	False	0		False
+Bfragilis	BF9343_RS16260	BF9343_RS16265	224	True	41.0	41.0	523	0	0	0	0	0	0	524	False	0		False
+Bfragilis	BF9343_RS16280	msrB	171	True	41.0	41.0	563	0	0	0	0	0	0	563	False	0		False
+Bfragilis	BF9343_RS16290	BF9343_RS16295	148	True	41.0	41.0	733	0	0	0	0	0	0	733	False	0		False
+Bfragilis	BF9343_RS16320	BF9343_RS16325	106	True	562.0	562.0	710	0	0	0	0	0	562	867	False	0		False
+Bfragilis	BF9343_RS16360	BF9343_RS16365	190	True	41.0	41.0	500	0	204	0	0	0	0	585	False	0		False
+Bfragilis	BF9343_RS16405	queD	116	True	41.0	41.0	740	0	0	0	0	0	0	740	False	0		False
+Bfragilis	BF9343_RS16410	BF9343_RS16415	152	True	41.0	41.0	539	0	0	0	0	0	0	540	False	0		False
+Bfragilis	BF9343_RS16440	BF9343_RS16445	339	True	41.0	41.0	361	0	0	0	0	0	0	361	False	0		False
+Bfragilis	BF9343_RS16510	BF9343_RS16515	199	True	41.0	41.0	501	0	0	0	0	0	0	501	False	0		False
+Bfragilis	BF9343_RS16575	gdhA	414	True	107.0	107.0	421	0	0	0	0	0	107	461	False	0		False
+Bfragilis	BF9343_RS16605	BF9343_RS16610	172	True	41.0	41.0	727	0	0	0	0	0	0	727	False	0		False
+Bfragilis	BF9343_RS16750	BF9343_RS16755	267	True	41.0	41.0	458	0	0	0	0	0	0	458	False	0		False
+Bfragilis	BF9343_RS16765	BF9343_RS16770	72	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS16795	ruvA	158	True	41.0	41.0	731	0	0	0	0	0	0	730	False	0		False
+Bfragilis	BF9343_RS16830	phnX	196	True	41.0	41.0	496	0	0	0	0	0	0	496	False	0		False
+Bfragilis	BF9343_RS16890	BF9343_RS16895	99	True	41.0	41.0	744	0	0	0	0	0	0	744	False	0		False
+Bfragilis	BF9343_RS16910	BF9343_RS16915	56	True	78.0	78.0	605	0	0	0	0	0	78	620	False	0		False
+Bfragilis	BF9343_RS16925	BF9343_RS16930	109	True	98.3	98.3	589	0	0	0	56	0	84	613	False	0		False
+Bfragilis	BF9343_RS17010	BF9343_RS17015	150	True	41.0	41.0	732	0	0	0	0	0	0	732	False	0		False
+Bfragilis	BF9343_RS17060	cmk	155	True	41.0	41.0	542	0	0	0	0	0	0	542	False	0		False
+Bfragilis	BF9343_RS17105	BF9343_RS17110	258	True	41.0	41.0	503	0	0	0	0	0	0	503	False	0		False
+Bfragilis	BF9343_RS17175	BF9343_RS17180	327	True	41.0	41.0	374	0	0	0	0	0	0	374	False	0		False
+Bfragilis	BF9343_RS17190	BF9343_RS17195	175	True	41.0	41.0	536	0	0	0	0	0	0	536	False	0		False
+Bfragilis	BF9343_RS17280	aroC	260	True	41.0	41.0	444	0	0	0	0	0	0	444	False	0		False
+Bfragilis	BF9343_RS17315	BF9343_RS17320	126	True	41.0	41.0	534	0	0	0	0	0	0	534	False	0		False
+Bfragilis	BF9343_RS17335	mutA	248	True	41.0	41.0	512	0	0	0	0	0	0	512	False	0		False
+Bfragilis	BF9343_RS17340	BF9343_RS17345	165	True	41.0	41.0	533	33	0	0	0	0	0	533	False	0		False
+Bfragilis	BF9343_RS17365	lysS	107	True	41.0	41.0	578	0	0	0	0	0	0	578	False	0		False
+Bfragilis	BF9343_RS17385	BF9343_RS17390	97	True	41.0	41.0	744	0	0	0	0	0	0	744	False	0		False
 Bfragilis	BF9343_RS17395	asnA	219	False											False	0		False
-Bfragilis	BF9343_RS17415	BF9343_RS17420	435	False											False	0		False
-Bfragilis	BF9343_RS17435	BF9343_RS17440	107	False											False	0		False
-Bfragilis	BF9343_RS17455	BF9343_RS17460	284	False											False	0		False
-Bfragilis	BF9343_RS17510	mtaB	428	False											False	0		False
-Bfragilis	BF9343_RS17535	rpsF	161	False											False	0		False
-Bfragilis	BF9343_RS17635	BF9343_RS17640	80	False											False	0		False
-Bfragilis	BF9343_RS17655	BF9343_RS17660	179	False											False	0		False
-Bfragilis	BF9343_RS17745	BF9343_RS17750	79	False											False	0		False
-Bfragilis	BF9343_RS17875	recJ	198	False											False	0		False
-Bfragilis	BF9343_RS17925	BF9343_RS17930	467	False											False	0		False
-Bfragilis	BF9343_RS18055	BF9343_RS18060	132	False											False	0		False
+Bfragilis	BF9343_RS17415	BF9343_RS17420	435	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS17435	BF9343_RS17440	107	True	41.0	41.0	719	0	0	0	0	0	0	718	False	0		False
+Bfragilis	BF9343_RS17455	BF9343_RS17460	284	True	70.0	70.0	413	0	0	0	0	0	70	430	False	0		False
+Bfragilis	BF9343_RS17510	mtaB	428	True	41.0	41.0	483	0	0	0	0	0	0	483	False	0		False
+Bfragilis	BF9343_RS17535	rpsF	161	True	41.0	68.0	730	0	0	68	0	0	0	737	False	0		False
+Bfragilis	BF9343_RS17635	BF9343_RS17640	80	True	41.0	41.0	747	0	0	0	0	0	0	747	False	0		False
+Bfragilis	BF9343_RS17655	BF9343_RS17660	179	True	41.0	41.0	507	0	0	0	0	0	0	507	False	0		False
+Bfragilis	BF9343_RS17745	BF9343_RS17750	79	True	41.0	41.0	748	0	0	0	0	0	0	747	False	0		False
+Bfragilis	BF9343_RS17875	recJ	198	True	160.0	160.0	562	0	0	0	0	0	160	616	False	0		False
+Bfragilis	BF9343_RS17925	BF9343_RS17930	467	True	41.0	41.0	350	0	0	0	0	0	0	350	False	0		False
+Bfragilis	BF9343_RS18055	BF9343_RS18060	132	True	41.0	41.0	737	0	0	0	0	0	0	737	False	0		False
 Bfragilis	BF9343_RS18095	BF9343_RS18100	307	False											False	0		False
-Bfragilis	BF9343_RS18150	mdh	186	False											False	0		False
-Bfragilis	BF9343_RS18285	BF9343_RS18290	176	False											False	0		False
-Bfragilis	BF9343_RS23200	rplM	18	False											False	0		False
-Bfragilis	BF9343_RS18365	yaaA	121	False											False	0		False
-Bfragilis	carB	trpS	323	False											False	0		False
+Bfragilis	BF9343_RS18150	mdh	186	True	41.0	85.0	722	0	0	85	0	0	0	735	False	0		False
+Bfragilis	BF9343_RS18285	BF9343_RS18290	176	True	41.0	41.0	723	0	0	0	0	0	0	723	False	0		False
+Bfragilis	BF9343_RS23200	rplM	18	True	41.0	41.0	590	0	0	0	0	0	0	590	False	0		False
+Bfragilis	BF9343_RS18365	yaaA	121	True	41.0	41.0	539	0	0	0	0	0	0	539	False	0		False
+Bfragilis	carB	trpS	323	True	125.2	125.2	141	0	0	0	94	0	74	216	False	0		False
 Bfragilis	BF9343_RS18765	BF9343_RS18770	187	False											False	0		False
-Bfragilis	BF9343_RS18845	lptB	75	False											False	0		False
-Bfragilis	BF9343_RS19005	BF9343_RS19010	93	False											False	0		False
+Bfragilis	BF9343_RS18845	lptB	75	True	360.0	360.0	748	0	559	0	0	360	0	922	False	0		False
+Bfragilis	BF9343_RS19005	BF9343_RS19010	93	True	41.0	41.0	592	0	0	0	0	0	0	592	False	0		False
 Bfragilis	BF9343_RS19030	BF9343_RS19035	238	False											False	0		False
-Bfragilis	BF9343_RS19450	BF9343_RS19455	191	False											False	0		False
-Bfragilis	BF9343_RS19550	rpsU	173	False											False	0		False
-Bfragilis	BF9343_RS19570	gltX	94	False											False	0		False
+Bfragilis	BF9343_RS19450	BF9343_RS19455	191	True	41.0	41.0	500	0	0	0	0	0	0	501	False	0		False
+Bfragilis	BF9343_RS19550	rpsU	173	True	41.0	81.0	727	0	0	81	0	0	0	738	False	0		False
+Bfragilis	BF9343_RS19570	gltX	94	True	41.0	41.0	745	0	0	0	0	0	0	745	False	0		False
 Bfragilis	BF9343_RS19590	BF9343_RS23820	385	False											False	0		False
-Bfragilis	BF9343_RS19605	aspA	319	False											False	0		False
+Bfragilis	BF9343_RS19605	aspA	319	True	177.0	471.4	447	0	199	384	0	0	177	745	False	0		False
 Bfragilis	BF9343_RS19625	BF9343_RS24275	270	False											False	0		False
-Bfragilis	BF9343_RS19685	istA	230	False											False	0		False
-Bfragilis	BF9343_RS19850	BF9343_RS19855	102	False											False	0		False
-Bfragilis	BF9343_RS19875	BF9343_RS19880	175	False											False	0		False
-Bfragilis	BF9343_RS19885	BF9343_RS19890	242	False											False	0		False
-Bfragilis	BF9343_RS19975	BF9343_RS19980	8	False											False	0		False
-Bfragilis	BF9343_RS19990	BF9343_RS19995	370	False											False	0		False
+Bfragilis	BF9343_RS19685	istA	230	True	41.0	41.0	470	0	0	0	0	0	0	470	False	0		False
+Bfragilis	BF9343_RS19850	BF9343_RS19855	102	True	41.0	41.0	592	0	0	0	0	0	0	591	False	0		False
+Bfragilis	BF9343_RS19875	BF9343_RS19880	175	True	41.0	41.0	509	0	0	0	0	0	0	509	False	0		False
+Bfragilis	BF9343_RS19885	BF9343_RS19890	242	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS19975	BF9343_RS19980	8	True	585.0	591.1	612	0	0	55	0	0	585	834	False	0		False
+Bfragilis	BF9343_RS19990	BF9343_RS19995	370	True	110.0	159.2	332	0	0	94	110	0	0	414	False	0		False
 Bfragilis	BF9343_RS20065	BF9343_RS20070	156	False											False	0		False
-Bfragilis	BF9343_RS20085	pnp	196	False											False	0		False
-Bfragilis	BF9343_RS20135	BF9343_RS20140	182	False											False	0		False
-Bfragilis	BF9343_RS20190	rd	134	False											False	0		False
-Bfragilis	BF9343_RS20200	BF9343_RS20205	83	False											False	0		False
-Bfragilis	BF9343_RS20235	rpoN	264	False											False	0		False
+Bfragilis	BF9343_RS20085	pnp	196	True	78.0	78.0	719	0	0	0	0	0	78	730	False	0		False
+Bfragilis	BF9343_RS20135	BF9343_RS20140	182	True	41.0	41.0	520	0	0	0	0	0	0	520	False	0		False
+Bfragilis	BF9343_RS20190	rd	134	True	93.0	121.4	588	0	0	71	0	0	93	622	False	0		False
+Bfragilis	BF9343_RS20200	BF9343_RS20205	83	True	41.0	41.0	747	0	0	0	0	0	0	747	False	0		False
+Bfragilis	BF9343_RS20235	rpoN	264	True	41.0	41.0	679	0	0	0	0	0	0	679	False	0		False
 Bfragilis	BF9343_RS20310	BF9343_RS20315	82	False											False	0		False
-Bfragilis	BF9343_RS20345	BF9343_RS20350	319	False											False	0		False
-Bfragilis	BF9343_RS20390	BF9343_RS20395	123	False											False	0		False
+Bfragilis	BF9343_RS20345	BF9343_RS20350	319	True	65.0	65.0	392	0	162	0	0	0	65	482	False	0		False
+Bfragilis	BF9343_RS20390	BF9343_RS20395	123	True	41.0	41.0	544	0	0	0	0	0	0	544	False	0		False
 Bfragilis	BF9343_RS20455	BF9343_RS20460	229	False											False	0		False
 Bfragilis	BF9343_RS20515	BF9343_RS24130	25	False											False	0		False
-Bfragilis	BF9343_RS20550	BF9343_RS20555	247	False											False	0		False
-Bfragilis	BF9343_RS20610	BF9343_RS20615	381	False											False	0		False
-Bfragilis	pckA	upp	264	False											False	0		False
-Bfragilis	BF9343_RS20695	BF9343_RS20700	37	False											False	0		False
-Bfragilis	rpsO	typA	155	False											False	0		False
-Bfragilis	BF9343_RS20740	ahcY	186	False											False	0		False
-Bfragilis	BF9343_RS20775	BF9343_RS20780	129	False											False	0		False
-Bfragilis	aroQ	xerD	73	False											False	0		False
-Bfragilis	BF9343_RS20865	BF9343_RS23475	472	False											False	0		False
-Bfragilis	BF9343_RS20880	BF9343_RS20885	75	False											False	0		False
-Bfragilis	BF9343_RS20935	wecC	104	False											False	0		False
-Bfragilis	BF9343_RS20945	BF9343_RS20950	466	False											False	0		False
-Bfragilis	BF9343_RS21075	BF9343_RS21080	229	False											False	0		False
-Bfragilis	BF9343_RS21090	BF9343_RS21095	126	False											False	0		False
-Bfragilis	BF9343_RS21120	BF9343_RS21125	115	False											False	0		False
-Bfragilis	BF9343_RS21195	dusB	94	False											False	0		False
-Bfragilis	BF9343_RS21215	rnr	103	False											False	0		False
-Bfragilis	BF9343_RS21250	BF9343_RS21255	172	False											False	0		False
+Bfragilis	BF9343_RS20550	BF9343_RS20555	247	True	41.0	67.0	698	0	0	67	0	0	0	706	False	0		False
+Bfragilis	BF9343_RS20610	BF9343_RS20615	381	True	41.0	41.0	504	0	284	0	0	0	0	630	False	0		False
+Bfragilis	pckA	upp	264	True	41.0	41.0	690	0	0	0	0	0	0	690	False	0		False
+Bfragilis	BF9343_RS20695	BF9343_RS20700	37	True	41.0	41.0	564	0	0	0	0	0	0	564	False	0		False
+Bfragilis	rpsO	typA	155	True	41.0	179.0	732	0	251	179	0	0	0	820	False	0		False
+Bfragilis	BF9343_RS20740	ahcY	186	True	113.9	113.9	580	0	0	0	95	0	61	612	False	0		False
+Bfragilis	BF9343_RS20775	BF9343_RS20780	129	True	111.0	198.1	523	0	339	135	111	0	0	725	False	0		False
+Bfragilis	aroQ	xerD	73	True	41.0	41.0	748	0	0	0	0	0	0	748	False	0		False
+Bfragilis	BF9343_RS20865	BF9343_RS23475	472	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Bfragilis	BF9343_RS20880	BF9343_RS20885	75	True	41.0	41.0	475	0	0	0	0	0	0	475	False	0		False
+Bfragilis	BF9343_RS20935	wecC	104	True	62.0	150.0	96	0	0	131	0	0	62	198	False	0		False
+Bfragilis	BF9343_RS20945	BF9343_RS20950	466	True	41.0	41.0	483	0	0	0	0	0	0	483	False	0		False
+Bfragilis	BF9343_RS21075	BF9343_RS21080	229	True	41.0	41.0	539	0	0	0	0	0	0	539	False	0		False
+Bfragilis	BF9343_RS21090	BF9343_RS21095	126	True	41.0	41.0	738	0	0	0	0	0	0	738	False	0		False
+Bfragilis	BF9343_RS21120	BF9343_RS21125	115	True	41.0	41.0	741	0	0	0	0	0	0	741	False	0		False
+Bfragilis	BF9343_RS21195	dusB	94	True	41.0	41.0	602	0	0	0	0	0	0	601	False	0		False
+Bfragilis	BF9343_RS21215	rnr	103	True	41.0	67.0	743	0	160	67	0	0	0	781	False	0		False
+Bfragilis	BF9343_RS21250	BF9343_RS21255	172	True	41.0	41.0	511	0	0	0	0	0	0	511	False	0		False
 Bfragilis	BF9343_RS21460	BF9343_RS21465	40	False											False	0		False
 Bsubtilis	guaB	yaaC	120	True	111.0	124.9	595	0	0	56	0	0	111	631	False	0		False
 Bsubtilis	tadA	yaaI	85	True	41.0	41.0	611	0	0	0	0	0	0	610	False	0		False
@@ -455,21 +455,21 @@ Bsubtilis	mdr	ycgE	112	True	41.0	96.0	565	0	0	96	0	0	0	590	False	0		False
 Bsubtilis	ycgH	ycgI	129	True	41.0	284.0	533	0	0	284	0	0	0	651	False	0		False
 Bsubtilis	aroK	tmrB	275	True	485.0	493.1	451	0	0	56	0	0	485	709	True	1	2498	False
 Bsubtilis	ycgJ	ycgK	117	True	41.0	176.0	538	0	0	176	0	0	0	603	False	0		False
-Bsubtilis	ffoR	ycgS	161	False											False	0		False
+Bsubtilis	ffoR	ycgS	161	True	41.0	47.0	517	0	0	47	0	0	0	520	False	0		False
 Bsubtilis	nasA	nasB	179	True	938.2	959.2	528	0	731	368	0	900	407	994	False	0		False
 Bsubtilis	BSU_03385	yckB	161	False											False	0		False
 Bsubtilis	hxlA	hxlR	233	True	701.0	702.2	540	0	0	45	0	0	701	857	False	0		False
 Bsubtilis	ycxC	ycxD	123	True	979.0	979.7	537	0	490	71	0	0	979	994	False	0		False
-Bsubtilis	bsdA	ubiX	89	False											False	0		False
+Bsubtilis	bsdA	ubiX	89	True	193.0	198.0	548	0	0	47	0	0	193	622	False	0		False
 Bsubtilis	dtpT	yclG	279	True	41.0	41.0	445	0	0	0	0	0	0	444	False	0		False
 Bsubtilis	gerKA	yczF	125	True	41.0	189.0	535	0	0	189	0	0	0	606	False	0		False
 Bsubtilis	yclI	yclJ	212	True	41.0	56.0	498	0	0	56	0	0	0	505	False	0		False
-Bsubtilis	pbtN	thrD	384	False											False	0		False
+Bsubtilis	pbtN	thrD	384	True	41.0	47.0	317	0	0	47	0	0	0	322	False	0		False
 Bsubtilis	ycnE	yczG	139	True	41.0	125.0	544	0	0	125	0	0	0	584	False	0		False
 Bsubtilis	gabR	gabT	106	True	981.0	982.2	558	0	180	100	0	0	981	993	False	0		False
-Bsubtilis	cutR	ycnL	164	False											False	0		False
+Bsubtilis	cutR	ycnL	164	True	912.0	912.6	516	0	0	47	0	0	912	955	False	0		False
 Bsubtilis	ycsD	yczH	85	True	41.0	175.0	550	0	0	175	0	0	0	613	False	0		False
-Bsubtilis	ribZ	yczO	132	False											False	0		False
+Bsubtilis	ribZ	yczO	132	True	41.0	41.0	532	0	0	0	0	0	0	532	False	0		False
 Bsubtilis	pbpC	yczJ	150	True	41.0	215.0	523	0	0	215	0	0	0	610	False	0		False
 Bsubtilis	ydaC	ydaD	206	True	249.3	341.7	489	0	0	159	99	0	201	649	False	0		False
 Bsubtilis	amj	bsrC	133	False											False	0		False
@@ -477,7 +477,7 @@ Bsubtilis	lrpC	ydzA	184	True	475.0	475.0	504	0	0	0	0	0	475	728	False	0		False
 Bsubtilis	ydaT	ydbA	117	True	41.0	41.0	538	0	0	0	0	0	0	538	False	0		False
 Bsubtilis	dctB	dctS	69	True	960.0	960.6	579	0	553	56	0	0	960	991	False	0		False
 Bsubtilis	fbpA	ydbO	246	True	41.0	41.0	457	0	0	0	0	0	0	457	False	0		False
-Bsubtilis	ddlA	ydbP	174	False											False	0		False
+Bsubtilis	ddlA	ydbP	174	True	183.0	183.0	549	0	0	0	0	0	183	616	False	0		False
 Bsubtilis	acpS	ydcA	94	True	41.0	41.0	608	0	0	0	0	0	0	608	False	0		False
 Bsubtilis	cmpA	ydcK	103	False											False	0		False
 Bsubtilis	immR	xis	273	True	944.0	959.4	438	0	0	304	0	0	944	976	False	0		False
@@ -506,39 +506,39 @@ Bsubtilis	aswA	gmuB	175	False											False	0		False
 Bsubtilis	moaC	ydiF	125	True	115.0	187.0	569	200	0	119	0	0	115	695	False	0		False
 Bsubtilis	groES	ydiL	238	True	170.0	183.8	536	0	0	57	0	0	170	605	False	0		False
 Bsubtilis	gutB	gutR	201	True	854.5	857.8	499	0	206	63	94	0	846	938	False	0		False
-Bsubtilis	bdhA	walM	438	False											False	0		False
+Bsubtilis	bdhA	walM	438	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	mneS	ydzX	72	True	41.0	41.0	554	0	0	0	0	0	0	554	False	0		False
 Bsubtilis	yecA	yezC	143	True	41.0	62.0	527	0	0	62	0	0	0	537	False	0		False
 Bsubtilis	yerA	yezF	128	True	41.0	41.0	567	0	0	0	0	0	0	567	False	0		False
 Bsubtilis	pcrB	yerD	264	True	41.0	68.0	440	0	0	68	0	0	0	455	False	0		False
 Bsubtilis	gatC	opuE	413	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
-Bsubtilis	srfP	yerO	131	False											False	0		False
+Bsubtilis	srfP	yerO	131	True	77.0	199.2	566	0	0	168	0	0	77	638	False	0		False
 Bsubtilis	yeeF	yeeG	211	True	41.0	45.0	485	0	0	45	0	0	0	488	False	0		False
-Bsubtilis	flvL	flvM	162	False											False	0		False
+Bsubtilis	flvL	flvM	162	True	920.0	924.3	517	0	0	93	0	0	920	961	False	0		False
 Bsubtilis	cypD	yetN	149	True	41.0	45.0	524	0	0	45	0	0	0	526	False	0		False
-Bsubtilis	mtrA	vdhT	249	False											False	0		False
-Bsubtilis	ettM	yfmL	172	False											False	0		False
+Bsubtilis	mtrA	vdhT	249	True	41.0	52.0	454	0	0	52	0	0	0	460	False	0		False
+Bsubtilis	ettM	yfmL	172	True	144.8	212.6	523	6	245	117	121	0	67	692	False	0		False
 Bsubtilis	yfmG	yfmI	335	True	41.0	290.0	367	0	0	290	0	0	0	531	False	0		False
 Bsubtilis	yflT	yfmB	243	True	41.0	47.0	498	0	0	47	0	0	0	502	False	0		False
 Bsubtilis	acyP	yflK	66	True	41.0	41.0	570	0	0	0	0	0	0	570	False	0		False
-Bsubtilis	mapB	nagP	171	True	483.0	483.0	42	0	0	0	0	0	483	483	False	0		False
+Bsubtilis	mapB	nagP	171	True	339.0	339.0	512	0	0	0	0	0	339	663	False	0		False
 Bsubtilis	ltaSB	yflD	100	True	41.0	41.0	545	0	0	0	0	0	0	545	False	0		False
 Bsubtilis	treP	yfkQ	192	True	41.0	47.0	499	0	0	47	0	0	0	502	False	0		False
-Bsubtilis	sufLB	yfkN	242	False											False	0		False
+Bsubtilis	sufLB	yfkN	242	True	41.0	41.0	474	0	0	0	0	0	0	474	False	0		False
 Bsubtilis	yfkJ	yfkK	202	True	41.0	41.0	560	0	0	0	0	0	0	560	False	0		False
 Bsubtilis	chaA	yfkF	167	True	41.0	43.0	579	0	0	43	0	0	0	580	False	0		False
 Bsubtilis	yfjT	yfkA	144	True	41.0	45.0	590	0	0	45	0	0	0	591	False	0		False
 Bsubtilis	yfjP	yfjQ	118	True	41.0	41.0	558	0	0	0	0	0	0	557	False	0		False
 Bsubtilis	malA	yfjA	335	True	41.0	41.0	365	0	0	0	0	0	0	365	False	0		False
 Bsubtilis	estB	padR	272	True	41.0	41.0	432	0	0	0	0	0	0	432	False	0		False
-Bsubtilis	bstA	yfiS	123	False											False	0		False
+Bsubtilis	bstA	yfiS	123	True	848.0	849.3	536	0	0	49	0	0	848	927	False	0		False
 Bsubtilis	mprF	yfiV	171	True	139.0	139.0	512	0	0	0	0	0	139	562	False	0		False
-Bsubtilis	sxzY	sxzZ	130	False											False	0		False
+Bsubtilis	sxzY	sxzZ	130	True	939.4	980.0	551	0	636	684	245	0	923	996	False	0		False
 Bsubtilis	recX	yfhF	88	True	65.0	65.0	610	0	0	0	0	0	65	619	False	0		False
 Bsubtilis	sspK	yfhJ	124	True	41.0	41.0	598	0	0	0	0	0	0	598	False	0		False
 Bsubtilis	mutY	yfhP	215	True	338.0	338.0	552	0	0	0	0	0	338	691	False	0		False
 Bsubtilis	fabL	yfhS	81	True	848.0	848.0	611	0	0	0	0	0	848	938	False	0		False
-Bsubtilis	bcp	gsaB	152	False											False	0		False
+Bsubtilis	bcp	gsaB	152	True	41.0	47.0	586	0	0	47	0	0	0	589	False	0		False
 Bsubtilis	ygxA	ygzB	207	True	41.0	51.0	557	0	172	51	0	0	0	622	False	0		False
 Bsubtilis	spo0M	ygzA	141	True	482.0	485.2	527	0	0	47	0	0	482	746	False	0		False
 Bsubtilis	ygaJ	ygzC	41	True	41.0	41.0	563	0	0	0	0	0	0	563	False	0		False
@@ -549,18 +549,18 @@ Bsubtilis	queG	yhzB	82	True	41.0	45.0	611	0	0	45	0	0	0	613	False	0		False
 Bsubtilis	cspB	yhcJ	435	True	426.0	455.3	52	0	0	90	0	0	426	461	False	0		False
 Bsubtilis	dgcK	tcyP	172	True	41.0	45.0	511	0	0	45	0	0	0	513	False	0		False
 Bsubtilis	yhcM	yhcN	149	True	41.0	120.0	524	0	0	120	0	0	0	563	False	0		False
-Bsubtilis	mncR	yhcQ	82	False											False	0		False
+Bsubtilis	mncR	yhcQ	82	True	41.0	41.0	551	0	206	0	0	0	0	628	False	0		False
 Bsubtilis	yhcT	yhcU	110	True	41.0	45.0	603	0	0	45	0	0	0	604	False	0		False
 Bsubtilis	yhdB	yhdC	200	True	41.0	47.0	517	0	0	47	0	0	0	520	False	0		False
 Bsubtilis	spoVR	ygxB	30	True	41.0	41.0	565	0	0	0	0	0	0	565	False	0		False
 Bsubtilis	citA	citR	108	True	422.0	425.6	574	0	0	47	0	0	422	745	False	0		False
 Bsubtilis	yhdI	yhdJ	109	True	41.0	41.0	563	0	0	0	0	0	0	563	False	0		False
-Bsubtilis	akrN	sigM	196	False											False	0		False
+Bsubtilis	akrN	sigM	196	True	41.0	41.0	496	0	0	0	0	0	0	496	False	0		False
 Bsubtilis	cueR	yhdR	156	True	41.0	45.0	520	0	0	45	0	0	0	522	False	0		False
 Bsubtilis	yhdW	yhdX	233	True	41.0	41.0	468	0	0	0	0	0	0	468	False	0		False
 Bsubtilis	dat	yheN	284	True	41.0	41.0	426	0	0	0	0	0	0	426	False	0		False
-Bsubtilis	bmrB	nhaX	163	False											False	0		False
-Bsubtilis	spaC	yheB	266	False											False	0		False
+Bsubtilis	bmrB	nhaX	163	True	41.0	41.0	516	0	0	0	0	0	0	516	False	0		False
+Bsubtilis	spaC	yheB	266	True	41.0	41.0	512	0	0	0	0	0	0	512	False	0		False
 Bsubtilis	yhaX	yhaZ	485	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	khtS	yhaR	164	True	41.0	41.0	516	0	0	0	0	0	0	516	False	0		False
 Bsubtilis	yhaQ	yhzD	126	True	41.0	41.0	597	0	0	0	0	0	0	597	False	0		False
@@ -580,17 +580,17 @@ Bsubtilis	yhjD	yhjE	151	True	41.0	41.0	584	0	0	0	0	0	0	584	False	0		False
 Bsubtilis	ntdA	ntdR	103	True	41.0	55.0	543	0	0	55	0	0	0	550	False	0		False
 Bsubtilis	yhjO	yhjP	113	True	41.0	45.0	540	0	0	45	0	0	0	541	False	0		False
 Bsubtilis	addB	yhjR	183	True	41.0	41.0	505	0	0	0	0	0	0	505	False	0		False
-Bsubtilis	mblK	yisJ	154	False											False	0		False
+Bsubtilis	mblK	yisJ	154	True	41.0	41.0	521	0	0	0	0	0	0	521	False	0		False
 Bsubtilis	asnO	yisN	145	True	41.0	56.0	553	0	0	56	0	0	0	559	False	0		False
-Bsubtilis	farP	yizA	231	False											False	0		False
+Bsubtilis	farP	yizA	231	True	173.0	173.0	470	0	0	0	0	0	173	543	False	0		False
 Bsubtilis	yisQ	yisR	123	True	848.0	848.0	594	0	248	0	0	0	848	949	False	0		False
 Bsubtilis	yisU	yisV	66	True	41.0	55.0	572	0	297	55	0	0	0	690	False	0		False
 Bsubtilis	yisX	yisY	205	True	41.0	41.0	491	0	0	0	0	0	0	490	False	0		False
 Bsubtilis	slpH	yitB	184	True	207.0	703.1	504	0	0	641	0	0	207	846	False	0		False
 Bsubtilis	yitK	yitL	98	True	41.0	51.0	606	0	0	51	0	0	0	610	False	0		False
 Bsubtilis	yitP	yizB	177	True	482.0	482.0	508	0	0	0	0	0	482	734	False	0		False
-Bsubtilis	fakBB	yitT	137	False											False	0		False
-Bsubtilis	ribZC	yitV	120	False											False	0		False
+Bsubtilis	fakBB	yitT	137	True	41.0	41.0	592	0	0	0	0	0	0	593	False	0		False
+Bsubtilis	ribZC	yitV	120	True	41.0	73.0	599	0	0	73	0	0	0	612	False	0		False
 Bsubtilis	yjaU	yjzD	248	True	41.0	41.0	528	0	0	0	0	0	0	528	False	0		False
 Bsubtilis	fabHA	yjzB	164	True	41.0	41.0	539	0	0	0	0	0	0	538	False	0		False
 Bsubtilis	oppA	tboWA	470	False											False	0		False
@@ -598,7 +598,7 @@ Bsubtilis	BSU_11515	yjbE	169	False											False	0		False
 Bsubtilis	BSU_11525	coiA	73	False											False	0		False
 Bsubtilis	roxS	yizD	104	False											False	0		False
 Bsubtilis	yjbK	yjbL	124	True	41.0	88.0	598	0	0	88	0	0	0	617	False	0		False
-Bsubtilis	kefQ	prpE	234	False											False	0		False
+Bsubtilis	kefQ	prpE	234	True	41.0	41.0	567	0	0	0	0	0	0	567	False	0		False
 Bsubtilis	cotV	yjcA	159	True	171.0	212.5	525	0	0	89	0	0	171	610	False	0		False
 Bsubtilis	yjcD	yjzE	116	True	41.0	41.0	538	0	0	0	0	0	0	538	False	0		False
 Bsubtilis	mswA	yjcH	167	False											False	0		False
@@ -608,16 +608,16 @@ Bsubtilis	trnE	yjdH	228	True	41.0	41.0	472	0	0	0	0	0	0	472	False	0		False
 Bsubtilis	cotT	pdaC	253	True	41.0	41.0	450	0	0	0	0	0	0	450	False	0		False
 Bsubtilis	yjfB	yjfC	126	True	41.0	41.0	534	0	0	0	0	0	0	534	False	0		False
 Bsubtilis	yjgB	yjgC	145	True	187.0	695.7	526	0	0	641	0	0	187	849	False	0		False
-Bsubtilis	cypE	yjiA	390	False											False	0		False
+Bsubtilis	cypE	yjiA	390	True	41.0	41.0	312	0	0	0	0	0	0	312	False	0		False
 Bsubtilis	yjjA	yjzI	173	True	41.0	41.0	511	0	0	0	0	0	0	511	False	0		False
 Bsubtilis	yjlA	yjlB	131	True	41.0	41.0	532	0	0	0	0	0	0	532	False	0		False
 Bsubtilis	yjoA	yjoB	148	True	41.0	41.0	524	0	0	0	0	0	0	524	False	0		False
 Bsubtilis	xlyB	yjpA	120	True	41.0	41.0	537	0	0	0	0	0	0	537	False	0		False
-Bsubtilis	pghB	yjqA	105	False											False	0		False
+Bsubtilis	pghB	yjqA	105	True	41.0	167.0	543	0	0	167	0	0	0	603	False	0		False
 Bsubtilis	xre	yjzJ	177	True	41.0	41.0	508	0	0	0	0	0	0	508	False	0		False
 Bsubtilis	mhqA	steT	388	True	41.0	41.0	340	0	0	0	0	0	0	340	False	0		False
-Bsubtilis	htrA	proCC	168	False											False	0		False
-Bsubtilis	ddaH	ykhA	159	False											False	0		False
+Bsubtilis	htrA	proCC	168	True	41.0	46.0	514	0	0	46	0	0	0	516	False	0		False
+Bsubtilis	ddaH	ykhA	159	True	41.0	41.0	518	0	0	0	0	0	0	518	False	0		False
 Bsubtilis	ykjA	ykzH	144	True	41.0	192.0	526	0	0	192	0	0	0	601	False	0		False
 Bsubtilis	ohrB	ohrR	142	True	757.0	902.2	562	617	638	614	0	0	757	993	False	0		False
 Bsubtilis	ispA	rsbRB	222	True	41.0	138.0	477	0	0	138	0	0	0	530	False	0		False
@@ -637,13 +637,13 @@ Bsubtilis	ykvS	ykzS	165	True	41.0	41.0	580	0	0	0	0	0	0	580	False	0		False
 Bsubtilis	mcpC	ykwB	134	True	41.0	70.0	531	0	0	70	0	0	0	545	False	0		False
 Bsubtilis	pbpH	ykwD	336	True	41.0	41.0	364	0	0	0	0	0	0	364	False	0		False
 Bsubtilis	cheV	ykzT	203	True	41.0	41.0	491	0	0	0	0	0	0	491	False	0		False
-Bsubtilis	fadH	ppeE	142	False											False	0		False
-Bsubtilis	ahpA	mscT	236	False											False	0		False
-Bsubtilis	mobA	sppO	136	False											False	0		False
+Bsubtilis	fadH	ppeE	142	True	41.0	41.0	580	0	0	0	0	0	0	580	False	0		False
+Bsubtilis	ahpA	mscT	236	True	41.0	55.0	478	0	0	55	0	0	0	486	False	0		False
+Bsubtilis	mobA	sppO	136	True	41.0	41.0	530	0	0	0	0	0	0	530	False	0		False
 Bsubtilis	ykoA	ykpA	180	True	41.0	53.0	544	0	0	53	0	0	0	550	False	0		False
-Bsubtilis	abhA	mreBH	283	False											False	0		False
+Bsubtilis	abhA	mreBH	283	True	41.0	45.0	442	0	0	45	0	0	0	445	False	0		False
 Bsubtilis	rnpZA	ykrA	385	True	41.0	66.0	402	0	0	66	0	0	0	417	False	0		False
-Bsubtilis	BSU_14568	ykyA	163	False											False	0		False
+Bsubtilis	BSU_14568	ykyA	163	True	41.0	41.0	516	0	0	0	0	0	0	516	False	0		False
 Bsubtilis	slp	srrA	368	False											False	0		False
 Bsubtilis	speA	yktA	184	True	41.0	43.0	571	0	0	43	0	0	0	572	False	0		False
 Bsubtilis	yktB	ykzI	239	True	41.0	47.0	535	0	0	47	0	0	0	538	False	0		False
@@ -653,10 +653,10 @@ Bsubtilis	ylaJ	ylaK	154	True	41.0	70.0	585	0	0	70	0	0	0	598	False	0		False
 Bsubtilis	glsB	ylaL	102	True	41.0	62.0	577	0	0	62	0	0	0	586	False	0		False
 Bsubtilis	ctaA	ctaB	354	True	998.6	999.6	394	304	506	723	224	900	983	999	False	0		False
 Bsubtilis	ylbA	ylbB	139	True	41.0	41.0	583	0	0	0	0	0	0	583	False	0		False
-Bsubtilis	spoVV	ylbK	180	False											False	0		False
+Bsubtilis	spoVV	ylbK	180	True	41.0	48.0	572	0	255	48	0	0	0	670	False	0		False
 Bsubtilis	ylbN	ylzH	27	True	41.0	41.0	566	0	0	0	0	0	0	566	False	0		False
 Bsubtilis	panE	ylbP	159	True	388.0	388.0	111	0	0	0	0	0	388	432	False	0		False
-Bsubtilis	fbnA	tcaB	115	False											False	0		False
+Bsubtilis	fbnA	tcaB	115	True	435.3	435.3	601	0	0	0	99	0	399	765	False	0		False
 Bsubtilis	rpmB	yloU	276	True	41.0	47.0	506	0	0	47	0	0	0	508	False	0		False
 Bsubtilis	ylqB	ylxM	176	True	41.0	41.0	509	0	0	0	0	0	0	509	False	0		False
 Bsubtilis	pksA	ymcC	120	True	41.0	146.0	599	0	763	146	0	0	0	911	False	0		False
@@ -666,10 +666,10 @@ Bsubtilis	yncB	yncC	410	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	alrB	yncE	463	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	BSU_17679	cotU	403	False											False	0		False
 Bsubtilis	BSU_17715	tatAC	78	False											False	0		False
-Bsubtilis	flvS	ynzB	306	False											False	0		False
+Bsubtilis	flvS	ynzB	306	True	41.0	53.0	396	0	0	53	0	0	0	404	False	0		False
 Bsubtilis	fosB	yndM	117	True	41.0	41.0	538	0	273	0	0	0	0	650	False	0		False
-Bsubtilis	dinK	lexA	149	False											False	0		False
-Bsubtilis	ccdA	spo0D	219	False											False	0		False
+Bsubtilis	dinK	lexA	149	True	757.0	880.4	588	0	0	528	0	0	757	948	False	0		False
+Bsubtilis	ccdA	spo0D	219	True	41.0	53.0	495	0	0	53	0	0	0	501	False	0		False
 Bsubtilis	citB	sspO	227	True	41.0	45.0	544	0	0	45	0	0	0	546	False	0		False
 Bsubtilis	plsY	yneT	169	True	426.0	428.4	579	0	0	45	0	0	426	748	False	0		False
 Bsubtilis	iseA	yoeA	285	True	41.0	41.0	419	0	0	0	0	0	0	419	False	0		False
@@ -699,10 +699,10 @@ Bsubtilis	yocL	yoyB	77	True	41.0	47.0	552	0	0	47	0	0	0	555	False	0		False
 Bsubtilis	yocM	yozN	66	True	41.0	77.0	588	0	0	77	0	0	0	603	False	0		False
 Bsubtilis	dhaS	yozC	229	True	41.0	41.0	471	0	0	0	0	0	0	471	False	0		False
 Bsubtilis	yocR	yocS	218	True	854.0	867.2	480	0	0	128	0	0	854	928	False	0		False
-Bsubtilis	cdaS	mdtK	265	False											False	0		False
+Bsubtilis	cdaS	mdtK	265	True	41.0	41.0	439	0	0	0	0	0	0	439	False	0		False
 Bsubtilis	gerT	yojE	98	True	41.0	41.0	589	0	0	0	0	0	0	589	False	0		False
 Bsubtilis	yodA	yojA	364	True	64.0	103.0	336	0	0	81	0	0	64	379	False	0		False
-Bsubtilis	arxR	noxC	129	False											False	0		False
+Bsubtilis	arxR	noxC	129	True	914.0	915.7	546	0	0	60	0	0	914	960	False	0		False
 Bsubtilis	yodE	yoyD	183	True	41.0	41.0	505	0	0	0	0	0	0	505	False	0		False
 Bsubtilis	ctpA	yodH	152	True	41.0	41.0	535	0	0	0	0	0	0	535	False	0		False
 Bsubtilis	deoD	yoyE	201	True	41.0	41.0	561	0	0	0	0	0	0	561	False	0		False
@@ -722,13 +722,13 @@ Bsubtilis	yonH	yonI	218	True	41.0	502.0	480	0	0	502	0	0	0	730	False	0		False
 Bsubtilis	yomK	youB	345	True	333.0	333.0	355	0	0	0	0	0	333	551	False	0		False
 Bsubtilis	yolC	yolD	173	True	751.0	751.0	511	0	0	0	0	0	751	873	False	0		False
 Bsubtilis	bsrG	yolA	230	True	41.0	41.0	470	0	0	0	0	0	0	470	False	0		False
-Bsubtilis	nukF	yokG	301	False											False	0		False
-Bsubtilis	sprA	yokB	202	False											False	0		False
+Bsubtilis	nukF	yokG	301	True	41.0	56.0	401	0	0	56	0	0	0	411	False	0		False
+Bsubtilis	sprA	yokB	202	True	41.0	501.0	492	0	0	501	0	0	0	735	False	0		False
 Bsubtilis	msrA	ypoP	131	True	116.0	116.0	532	0	0	0	0	0	116	569	False	0		False
-Bsubtilis	ilvA	silP	248	False											False	0		False
+Bsubtilis	ilvA	silP	248	True	260.0	264.6	504	0	0	47	0	0	260	620	False	0		False
 Bsubtilis	bsaA	metAA	342	True	145.0	165.5	445	0	0	64	0	0	145	517	False	0		False
 Bsubtilis	degR	ypzA	155	True	41.0	45.0	521	0	0	45	0	0	0	523	False	0		False
-Bsubtilis	queP	ypeP	82	False											False	0		False
+Bsubtilis	queP	ypeP	82	True	41.0	45.0	591	0	155	45	0	0	0	641	False	0		False
 Bsubtilis	kdgR	kduI	221	True	584.0	643.0	492	0	0	177	0	0	584	810	False	0		False
 Bsubtilis	yptA	ypzG	163	True	41.0	41.0	516	0	0	0	0	0	0	516	False	0		False
 Bsubtilis	ypqA	ypqE	137	True	41.0	41.0	558	0	0	0	0	0	0	558	False	0		False
@@ -737,7 +737,7 @@ Bsubtilis	sspM	yppD	198	True	41.0	41.0	495	0	0	0	0	0	0	495	False	0		False
 Bsubtilis	recU	yppC	40	True	41.0	41.0	622	0	0	0	0	0	0	622	False	0		False
 Bsubtilis	ypjC	ypjD	139	True	41.0	56.0	591	0	0	56	0	0	0	598	False	0		False
 Bsubtilis	yphA	ypzI	77	True	41.0	41.0	554	0	0	0	0	0	0	554	False	0		False
-Bsubtilis	fer	gmmB	265	False											False	0		False
+Bsubtilis	fer	gmmB	265	True	41.0	41.0	515	0	176	0	0	0	0	583	False	0		False
 Bsubtilis	fswB	serA	197	False											False	0		False
 Bsubtilis	scpA	ypuF	280	True	573.0	575.7	502	0	0	47	0	0	573	779	False	0		False
 Bsubtilis	sipS	ypzC	266	True	41.0	47.0	438	0	0	47	0	0	0	441	False	0		False
@@ -750,7 +750,7 @@ Bsubtilis	pswI	yqjP	133	False											False	0		False
 Bsubtilis	yqjM	yqjN	171	True	41.0	41.0	546	0	0	0	0	0	0	545	False	0		False
 Bsubtilis	rnz	zwf	226	True	41.0	51.0	545	0	0	51	0	0	0	549	False	0		False
 Bsubtilis	mifM	polYA	72	True	41.0	47.0	556	0	0	47	0	0	0	559	False	0		False
-Bsubtilis	bmrU	brxB	160	False											False	0		False
+Bsubtilis	bmrU	brxB	160	True	41.0	41.0	518	0	0	0	0	0	0	518	False	0		False
 Bsubtilis	bkdR	yqzF	152	True	41.0	41.0	586	0	0	0	0	0	0	586	False	0		False
 Bsubtilis	BSU_24205	yqiH	307	False											False	0		False
 Bsubtilis	yqhQ	yqhR	226	True	41.0	48.0	545	0	0	48	0	0	0	548	False	0		False
@@ -777,7 +777,7 @@ Bsubtilis	yqeB	yqeC	251	True	41.0	41.0	452	0	0	0	0	0	0	452	False	0		False
 Bsubtilis	rapE	yqcI	442	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	bsrH	ratA	233	False											False	0		False
 Bsubtilis	yqaP	yqaQ	197	True	41.0	41.0	495	0	0	0	0	0	0	495	False	0		False
-Bsubtilis	sknR	yqaF	176	False											False	0		False
+Bsubtilis	sknR	yqaF	176	True	41.0	41.0	532	0	279	0	0	0	0	648	False	0		False
 Bsubtilis	yqaB	yqaC	268	True	41.0	45.0	436	0	0	45	0	0	0	438	False	0		False
 Bsubtilis	yrkO	yrkP	267	True	919.0	969.8	437	0	0	642	0	0	919	982	False	0		False
 Bsubtilis	blt	bltR	116	True	41.0	45.0	569	0	0	45	0	0	0	571	False	0		False
@@ -785,7 +785,7 @@ Bsubtilis	czcR	yrdR	125	True	41.0	65.0	561	0	370	65	0	0	0	719	False	0		False
 Bsubtilis	gltR	yrdN	333	True	41.0	48.0	367	0	0	48	0	0	0	372	False	0		False
 Bsubtilis	aadK	yrpB	378	True	41.0	86.0	323	0	0	86	0	0	0	354	False	0		False
 Bsubtilis	sigZ	yrpG	134	True	489.0	492.2	531	0	0	47	0	0	489	751	False	0		False
-Bsubtilis	prpF	yraN	144	False											False	0		False
+Bsubtilis	prpF	yraN	144	True	41.0	54.0	528	0	162	54	0	0	0	593	False	0		False
 Bsubtilis	csn	yraL	442	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	yraG	yraH	248	True	41.0	41.0	455	0	0	0	0	0	0	455	False	0		False
 Bsubtilis	adhR	yrzP	182	True	41.0	45.0	540	0	363	45	0	0	0	696	False	0		False
@@ -798,7 +798,7 @@ Bsubtilis	yrvJ	yrzK	132	True	41.0	41.0	532	0	0	0	0	0	0	532	False	0		False
 Bsubtilis	comN	spoVB	115	True	41.0	41.0	601	0	161	0	0	0	0	651	False	0		False
 Bsubtilis	yrbG	yrzE	134	True	41.0	60.0	594	0	0	60	0	0	0	602	False	0		False
 Bsubtilis	yrbE	yrzF	237	True	41.0	41.0	465	0	0	0	0	0	0	465	False	0		False
-Bsubtilis	BSU_27786	yrzH	84	False											False	0		False
+Bsubtilis	BSU_27786	yrzH	84	True	41.0	41.0	459	0	0	0	0	0	0	459	False	0		False
 Bsubtilis	nadB	nifS	102	True	41.0	715.0	605	0	151	715	0	0	0	896	False	0		False
 Bsubtilis	BSU_27935	spo0B	77	False											False	0		False
 Bsubtilis	tboV	yszA	165	False											False	0		False
@@ -807,19 +807,19 @@ Bsubtilis	cotQ	tboILV	447	False											False	0		False
 Bsubtilis	sdhC	yslB	292	True	41.0	45.0	491	0	0	45	0	0	0	493	False	0		False
 Bsubtilis	rnhC	zapA	133	True	56.0	224.3	594	0	0	212	0	0	56	672	False	0		False
 Bsubtilis	BSU_28645	pheS	81	False											False	0		False
-Bsubtilis	rlmBB	sspI	118	False											False	0		False
-Bsubtilis	frvX	ysdB	183	False											False	0		False
+Bsubtilis	rlmBB	sspI	118	True	41.0	41.0	600	0	0	0	0	0	0	600	False	0		False
+Bsubtilis	frvX	ysdB	183	True	41.0	48.0	532	0	0	48	0	0	0	535	False	0		False
 Bsubtilis	BSU_misc_RNA_47	yscB	244	False											False	0		False
 Bsubtilis	lytS	ysaA	166	True	41.0	98.0	531	0	0	98	0	0	0	558	False	0		False
 Bsubtilis	ytbD	ytcD	183	True	41.0	49.0	527	0	277	49	0	0	0	646	False	0		False
 Bsubtilis	ytvI	ytwI	96	True	41.0	41.0	607	0	0	0	0	0	0	607	False	0		False
-Bsubtilis	dnaEC	ytrH	139	False											False	0		False
+Bsubtilis	dnaEC	ytrH	139	True	41.0	41.0	562	0	0	0	0	0	0	563	False	0		False
 Bsubtilis	nrnA	ytpI	130	True	147.0	147.0	595	0	220	0	0	0	147	707	False	0		False
-Bsubtilis	ascR	snaA	152	False											False	0		False
+Bsubtilis	ascR	snaA	152	True	685.0	775.7	522	0	0	317	0	0	685	888	False	0		False
 Bsubtilis	ppnKB	sppA	185	True	41.0	41.0	570	0	0	0	0	0	0	570	False	0		False
 Bsubtilis	braB	iscSB	194	True	359.0	368.4	534	0	0	55	0	0	359	693	False	0		False
 Bsubtilis	ezrA	hisK	196	True	41.0	63.0	564	0	0	63	0	0	0	574	False	0		False
-Bsubtilis	msrC	refZ	126	False											False	0		False
+Bsubtilis	msrC	refZ	126	True	41.0	41.0	597	0	0	0	0	0	0	597	False	0		False
 Bsubtilis	dgcP	ldsD	153	False											False	0		False
 Bsubtilis	acsA	acuA	160	True	911.0	955.3	583	0	444	518	0	0	911	988	False	0		False
 Bsubtilis	BSU_29845	ytoQ	79	False											False	0		False
@@ -829,9 +829,9 @@ Bsubtilis	ytkP	ytlP	148	True	41.0	41.0	588	0	0	0	0	0	0	588	False	0		False
 Bsubtilis	pbuO	ytjP	96	True	41.0	41.0	562	0	0	0	0	0	0	562	False	0		False
 Bsubtilis	ythP	ytzE	290	True	41.0	41.0	418	0	0	0	0	0	0	418	False	0		False
 Bsubtilis	murJ	ytfP	201	True	41.0	78.0	561	0	0	78	0	0	0	578	False	0		False
-Bsubtilis	rmgP	rmgR	215	False											False	0		False
+Bsubtilis	rmgP	rmgR	215	True	680.0	696.4	488	0	511	90	0	0	680	917	False	0		False
 Bsubtilis	msmR	ytaP	217	True	41.0	45.0	481	0	0	45	0	0	0	483	False	0		False
-Bsubtilis	blrA	ytvB	404	False											False	0		False
+Bsubtilis	blrA	ytvB	404	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	yttA	yttB	188	True	41.0	41.0	501	0	0	0	0	0	0	501	False	0		False
 Bsubtilis	ytqA	ytzC	161	True	41.0	41.0	582	0	0	0	0	0	0	582	False	0		False
 Bsubtilis	ytoA	ytpA	48	True	41.0	41.0	620	0	0	0	0	0	0	620	False	0		False
@@ -844,45 +844,45 @@ Bsubtilis	menF	yteA	289	True	41.0	41.0	462	0	0	0	0	0	0	462	False	0		False
 Bsubtilis	ytcA	ytdA	171	True	949.0	978.6	536	0	0	598	122	900	466	989	False	0		False
 Bsubtilis	cotI	cotSA	189	True	750.0	929.6	537	416	771	730	0	0	750	995	False	0		False
 Bsubtilis	rrnB-16S	tswC	464	False											False	0		False
-Bsubtilis	nfeDB	yuaE	167	False											False	0		False
+Bsubtilis	nfeDB	yuaE	167	True	41.0	48.0	514	0	0	48	0	0	0	518	False	0		False
 Bsubtilis	gbsA	gbsR	198	True	890.0	892.9	495	0	246	66	0	0	890	955	False	0		False
 Bsubtilis	cdoA	yubD	484	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	iolU	yubA	181	True	41.0	98.0	509	0	0	98	0	0	0	538	False	0		False
 Bsubtilis	mcpB	tgl	157	True	41.0	41.0	520	0	0	0	0	0	0	520	False	0		False
 Bsubtilis	mstX	yuzI	46	True	41.0	71.0	561	0	0	71	0	0	0	575	False	0		False
-Bsubtilis	bdhJ	yuzA	229	False											False	0		False
+Bsubtilis	bdhJ	yuzA	229	True	41.0	70.0	510	0	0	70	0	0	0	525	False	0		False
 Bsubtilis	yugF	yugG	147	True	41.0	45.0	525	0	0	45	0	0	0	527	False	0		False
 Bsubtilis	patB	yugE	86	True	41.0	41.0	610	0	0	0	0	0	0	610	False	0		False
 Bsubtilis	kapD	yuxJ	210	True	41.0	45.0	522	0	0	45	0	0	0	525	False	0		False
-Bsubtilis	maeL	yufK	177	False											False	0		False
+Bsubtilis	maeL	yufK	177	True	41.0	41.0	508	0	0	0	0	0	0	508	False	0		False
 Bsubtilis	mrpA	yufS	230	True	41.0	41.0	470	0	0	0	0	0	0	470	False	0		False
 Bsubtilis	BSU_31725	degQ	221	False											False	0		False
 Bsubtilis	yueF	yuzE	114	True	41.0	47.0	539	0	0	47	0	0	0	542	False	0		False
 Bsubtilis	bioYB	yuiH	100	True	41.0	47.0	578	0	0	47	0	0	0	580	False	0		False
 Bsubtilis	pepA	yuiD	157	True	41.0	45.0	585	0	0	45	0	0	0	586	False	0		False
-Bsubtilis	trxBB	yumB	331	False											False	0		False
+Bsubtilis	trxBB	yumB	331	True	79.0	79.0	415	0	0	0	0	0	79	438	False	0		False
 Bsubtilis	guaC	yuzG	278	True	41.0	45.0	426	0	0	45	0	0	0	428	False	0		False
 Bsubtilis	yutJ	yuzB	262	True	753.0	755.6	518	0	0	51	0	0	753	877	False	0		False
 Bsubtilis	yutI	yuzD	99	True	41.0	45.0	606	0	0	45	0	0	0	608	False	0		False
-Bsubtilis	cotNH	yutG	152	False											False	0		False
+Bsubtilis	cotNH	yutG	152	True	41.0	119.0	586	0	0	119	0	0	0	620	False	0		False
 Bsubtilis	yutC	yutD	114	True	41.0	47.0	601	0	0	47	0	0	0	604	False	0		False
 Bsubtilis	lipA	lytH	234	True	41.0	41.0	539	0	0	0	0	0	0	539	False	0		False
 Bsubtilis	pucH	pucR	174	True	918.0	918.3	572	0	516	45	0	0	918	981	False	0		False
 Bsubtilis	BSU_32539	pucF	222	False											False	0		False
-Bsubtilis	frlP	frlR	181	False											False	0		False
-Bsubtilis	dadA	sspG	158	False											False	0		False
+Bsubtilis	frlP	frlR	181	True	906.0	951.1	508	0	0	501	0	0	906	974	False	0		False
+Bsubtilis	dadA	sspG	158	True	41.0	41.0	519	0	0	0	0	0	0	519	False	0		False
 Bsubtilis	fadN	yuzL	174	True	41.0	41.0	539	0	0	0	0	0	0	539	False	0		False
 Bsubtilis	putM	yuzM	94	True	41.0	41.0	580	0	0	0	0	0	0	580	False	0		False
 Bsubtilis	yusS	yusT	133	True	41.0	48.0	531	0	0	48	0	0	0	535	False	0		False
 Bsubtilis	cssR	htrB	277	True	951.0	969.6	466	0	0	406	0	0	951	983	False	0		False
-Bsubtilis	spxO	yuxN	167	False											False	0		False
+Bsubtilis	spxO	yuxN	167	True	110.0	114.6	514	0	0	46	0	0	110	551	False	0		False
 Bsubtilis	gerAA	yvzF	117	True	41.0	41.0	538	0	0	0	0	0	0	538	False	0		False
 Bsubtilis	srbL	yvrD	158	False											False	0		False
 Bsubtilis	sigO	yvrJ	14	True	41.0	184.0	569	0	0	184	0	0	0	633	False	0		False
 Bsubtilis	fhuB	fhuD	97	True	929.9	980.4	552	0	494	732	245	0	911	995	False	0		False
 Bsubtilis	sspJ	yvsG	166	True	41.0	41.0	515	0	0	0	0	0	0	515	False	0		False
-Bsubtilis	modA	yvgK	110	False											False	0		False
-Bsubtilis	pgoN	yvgO	222	False											False	0		False
+Bsubtilis	modA	yvgK	110	True	874.0	876.0	603	0	335	56	0	0	874	964	False	0		False
+Bsubtilis	pgoN	yvgO	222	True	149.0	149.0	477	0	0	0	0	0	149	536	False	0		False
 Bsubtilis	csoR	iolW	127	True	91.0	102.4	534	0	0	53	0	0	91	564	False	0		False
 Bsubtilis	secG	yvaM	148	True	41.0	41.0	524	0	0	0	0	0	0	524	False	0		False
 Bsubtilis	rghRA	yvzC	151	True	46.0	47.0	528	0	0	42	0	0	46	531	False	0		False
@@ -896,26 +896,26 @@ Bsubtilis	rsbQ	yvfR	283	True	41.0	42.0	420	0	0	42	0	0	0	421	True	4	2596	False
 Bsubtilis	lutP	lutR	289	True	775.0	803.4	457	0	316	162	0	0	775	920	False	0		False
 Bsubtilis	sigL	yvfG	78	True	41.0	66.0	602	0	0	66	0	0	0	612	False	0		False
 Bsubtilis	epsA	slrR	245	True	919.0	959.4	476	0	0	519	0	0	919	977	False	0		False
-Bsubtilis	cotNP	cotR	355	False											True	1	2442	False
+Bsubtilis	cotNP	cotR	355	True	41.0	615.0	345	0	0	615	0	0	0	737	True	1	2442	False
 Bsubtilis	clpP	trnQ-Arg	269	False											False	0		False
 Bsubtilis	yvdC	yvdD	116	True	41.0	361.0	600	0	233	361	0	0	0	787	False	0		False
 Bsubtilis	yvcT	yvdA	382	True	860.0	860.0	319	0	0	0	0	0	860	901	False	0		False
-Bsubtilis	psdR	yvzJ	146	False											False	0		False
+Bsubtilis	psdR	yvzJ	146	True	41.0	41.0	525	0	0	0	0	0	0	525	False	0		False
 Bsubtilis	hisZ	yvpB	250	True	41.0	48.0	503	0	0	48	0	0	0	507	False	0		False
 Bsubtilis	hprK	nagA	181	True	402.0	418.2	541	0	0	67	0	0	402	721	False	0		False
 Bsubtilis	yvnA	yvnB	164	True	920.0	920.0	516	0	0	0	0	0	920	959	False	0		False
-Bsubtilis	pchC	pchR	425	False											False	0		False
+Bsubtilis	pchC	pchR	425	True	919.0	923.1	0	0	0	90	0	0	919	923	False	0		False
 Bsubtilis	yvkN	yvlA	217	True	41.0	45.0	481	0	0	45	0	0	0	483	False	0		False
 Bsubtilis	csbA	yvkC	446	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	degS	yvyE	216	True	41.0	45.0	552	0	0	45	0	0	0	553	False	0		False
 Bsubtilis	lytA	tagU	183	True	185.0	190.1	505	0	0	47	0	0	185	582	False	0		False
 Bsubtilis	gtaB	mnaA	245	True	237.0	382.6	489	0	0	224	0	0	237	670	False	0		False
 Bsubtilis	tagA	tagD	399	True	933.0	946.4	399	0	170	233	0	0	933	970	False	0		False
-Bsubtilis	gerBA	pmiA	264	False											False	0		False
+Bsubtilis	gerBA	pmiA	264	True	41.0	41.0	440	0	0	0	0	0	0	440	False	0		False
 Bsubtilis	tagT	ywtG	332	True	41.0	41.0	368	0	0	0	0	0	0	368	False	0		False
 Bsubtilis	alsR	alsS	157	True	889.0	889.0	521	0	0	0	0	0	889	944	False	0		False
 Bsubtilis	cotG	cotH	140	True	920.0	923.9	528	0	0	88	0	0	920	962	False	0		False
-Bsubtilis	chrS	hpxW	213	False											False	0		False
+Bsubtilis	chrS	hpxW	213	True	41.0	45.0	497	0	0	45	0	0	0	499	False	0		False
 Bsubtilis	ywqM	ywqN	122	True	41.0	62.0	545	0	267	62	0	0	0	660	False	0		False
 Bsubtilis	ywqB	ywzD	203	True	41.0	41.0	505	0	0	0	0	0	0	506	False	0		False
 Bsubtilis	ywpF	ywpG	174	True	41.0	41.0	535	0	0	0	0	0	0	535	False	0		False
@@ -935,19 +935,19 @@ Bsubtilis	arfM	ywiC	143	True	41.0	626.0	527	0	0	626	0	0	0	815	False	0		False
 Bsubtilis	sboA	ywiB	312	True	424.0	424.0	390	0	0	0	0	0	424	633	False	0		False
 Bsubtilis	rapF	ywhK	229	True	41.0	41.0	471	0	0	0	0	0	0	471	False	0		False
 Bsubtilis	pbpG	speE	201	True	41.0	41.0	521	0	0	0	0	0	0	521	False	0		False
-Bsubtilis	hmtB	ywhC	108	False											False	0		False
-Bsubtilis	psrF	ywzC	214	False											False	0		False
+Bsubtilis	hmtB	ywhC	108	True	41.0	41.0	604	0	0	0	0	0	0	603	False	0		False
+Bsubtilis	psrF	ywzC	214	True	396.0	396.0	547	0	0	0	0	0	396	715	False	0		False
 Bsubtilis	hemQ	pta	269	True	150.0	173.9	512	0	0	68	0	0	150	579	False	0		False
 Bsubtilis	gerQ	spsA	319	True	41.0	119.0	382	0	0	119	0	0	0	432	False	0		False
 Bsubtilis	ywdH	ywdI	167	True	41.0	45.0	514	0	0	45	0	0	0	516	False	0		False
 Bsubtilis	pdxK	ywzG	143	True	41.0	45.0	528	0	0	45	0	0	0	530	False	0		False
-Bsubtilis	nirC	sacP	301	False											False	0		False
+Bsubtilis	nirC	sacP	301	True	41.0	60.0	401	0	0	60	0	0	0	413	False	0		False
 Bsubtilis	rodA	ywcE	495	True	205.0	205.0	0	0	0	0	0	0	205	205	False	0		False
-Bsubtilis	slrA	slrC	355	False											False	0		False
-Bsubtilis	cidA	cidR	105	False											False	0		False
-Bsubtilis	glxA	rlmI	120	False											False	0		False
+Bsubtilis	slrA	slrC	355	True	919.0	919.0	345	0	0	0	0	0	919	944	False	0		False
+Bsubtilis	cidA	cidR	105	True	561.0	562.8	543	0	226	45	0	0	561	832	False	0		False
+Bsubtilis	glxA	rlmI	120	True	41.0	79.0	551	0	0	79	0	0	0	569	False	0		False
 Bsubtilis	epr	ywbA	227	True	41.0	64.0	473	0	0	64	0	0	0	486	False	0		False
-Bsubtilis	tyrZR	ywaF	150	False											False	0		False
+Bsubtilis	tyrZR	ywaF	150	True	41.0	47.0	523	0	0	47	0	0	0	526	False	0		False
 Bsubtilis	BSU_38495	ywzH	149	False											False	0		False
 Bsubtilis	aag	katX	128	True	41.0	97.0	548	0	0	97	0	0	0	574	False	0		False
 Bsubtilis	sigY	yxlA	211	True	41.0	45.0	485	0	0	45	0	0	0	488	False	0		False
@@ -958,8 +958,8 @@ Bsubtilis	gswB	rlmA	386	False											False	0		False
 Bsubtilis	citH	katE	200	True	41.0	58.0	493	0	0	58	0	0	0	502	False	0		False
 Bsubtilis	yxiO	yxiP	206	True	41.0	41.0	489	0	0	0	0	0	0	489	False	0		False
 Bsubtilis	hutP	yxzL	318	True	41.0	41.0	383	0	0	0	0	0	0	383	False	0		False
-Bsubtilis	cotNE	yxeF	88	False											False	0		False
-Bsubtilis	frxB	yxeC	177	False											False	0		False
+Bsubtilis	cotNE	yxeF	88	True	41.0	41.0	549	0	0	0	0	0	0	549	False	0		False
+Bsubtilis	frxB	yxeC	177	True	41.0	91.0	510	0	0	91	0	0	0	535	False	0		False
 Bsubtilis	iolA	iolR	415	True	918.0	970.0	0	0	153	649	0	0	918	973	False	0		False
 Bsubtilis	yxbG	yxcA	116	True	41.0	41.0	538	0	0	0	0	0	0	538	False	0		False
 Bsubtilis	aldX	yxbF	142	True	41.0	41.0	527	0	0	0	0	0	0	527	False	0		False
@@ -968,15 +968,15 @@ Bsubtilis	yxaI	yxaJ	256	True	753.0	754.8	447	0	0	48	0	0	753	858	False	0		False
 Bsubtilis	qdoR	yxnA	130	True	41.0	41.0	532	0	0	0	0	0	0	532	False	0		False
 Bsubtilis	yxaD	yxzK	226	True	41.0	120.0	528	0	0	120	0	0	0	567	False	0		False
 Bsubtilis	glxK	gntR	195	True	41.0	45.0	500	0	0	45	0	0	0	502	False	0		False
-Bsubtilis	ptsJ	yydK	343	False											False	0		False
-Bsubtilis	fbp	liaD	471	False											False	0		False
+Bsubtilis	ptsJ	yydK	343	True	65.0	112.8	365	0	0	90	0	0	65	412	False	0		False
+Bsubtilis	fbp	liaD	471	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	yycS	yyzF	184	True	484.0	484.0	504	0	0	0	0	0	484	733	False	0		False
 Bsubtilis	rapG	yycN	110	True	41.0	45.0	541	0	0	45	0	0	0	543	False	0		False
 Bsubtilis	rocD	rocR	240	True	767.0	767.0	527	0	0	0	0	0	767	885	True	6	3821	False
 Bsubtilis	dnaC	yycD	169	True	41.0	41.0	513	0	0	0	0	0	0	513	False	0		False
 Bsubtilis	yycC	yyzB	120	True	41.0	41.0	537	0	0	0	0	0	0	537	False	0		False
 Bsubtilis	cotF	yyzH	145	True	41.0	41.0	526	0	0	0	0	0	0	526	False	0		False
-Bsubtilis	hypR	ppaC	204	False											False	0		False
+Bsubtilis	hypR	ppaC	204	True	41.0	41.0	492	0	0	0	0	0	0	491	False	0		False
 Bsubtilis	mswM	yybO	125	False											False	0		False
 Bsubtilis	yybG	yybH	145	True	41.0	41.0	526	0	0	0	0	0	0	526	False	0		False
 Bsubtilis	yybE	yybF	186	True	41.0	51.0	539	0	0	51	0	0	0	544	False	0		False
@@ -984,7 +984,7 @@ Bsubtilis	yyaT	yybA	119	True	41.0	48.0	562	0	0	48	0	0	0	565	True	1	1534	True
 Bsubtilis	yyaQ	yyaR	410	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Bsubtilis	tetL	yyaO	252	True	41.0	41.0	451	0	0	0	0	0	0	451	False	0		False
 Bsubtilis	yyaJ	yyaK	225	True	41.0	41.0	475	0	0	0	0	0	0	475	False	0		False
-Bsubtilis	sprC	yyaD	459	False											False	0		False
+Bsubtilis	sprC	yyaD	459	True	383.0	412.0	111	0	201	86	0	0	383	545	False	0		False
 Bsubtilis	parA	yyaB	247	True	41.0	62.0	456	0	0	62	0	0	0	468	False	0		False
 Cjejuni	Cj0005c	Cj0006	204	True	510.0	510.5	491	0	0	42	0	0	510	740	False	0		False
 Cjejuni	ilvD	rrc	159	True	41.0	62.0	518	0	0	62	0	0	0	529	False	0		False
@@ -1185,7 +1185,7 @@ Ecoli	dinJ	yafL	209	True	41.0	41.0	487	0	0	0	0	0	0	487	False	0		False
 Ecoli	gpt	pepD	260	True	41.0	41.0	459	0	0	0	0	0	0	459	False	0		False
 Ecoli	phoE	proB	287	True	265.0	265.0	416	0	0	0	0	0	265	553	False	0		False
 Ecoli	insI1	perR	420	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
-Ecoli	insH1	mmuP	243	True	399.0	399.0	0	0	0	0	0	0	399	398	False	0		False
+Ecoli	insH1	mmuP	243	True	390.0	390.0	0	0	0	0	0	0	390	390	False	0		False
 Ecoli	yagA	yagE	294	True	41.0	55.0	409	0	0	55	0	0	0	418	False	0		False
 Ecoli	argL	ykgS	139	False											False	0		False
 Ecoli	insA3	yagJ	153	False											False	0		False
@@ -1292,7 +1292,7 @@ Ecoli	cbpA	yccE	260	True	112.0	112.0	444	0	0	0	0	0	112	485	False	0		False
 Ecoli	wrbA	ymdF	372	True	141.0	166.1	328	0	0	69	0	0	141	416	True	5	61274	True
 Ecoli	rutA	rutR	230	True	46.0	52.0	470	0	350	47	0	0	46	645	False	0		False
 Ecoli	putA	ymdG	237	False											False	0		False
-Ecoli	insE4	ycdU	405	True	326.0	326.0	0	0	0	0	0	0	326	325	False	0		False
+Ecoli	insE4	ycdU	405	True	385.0	385.0	0	0	0	0	0	0	385	384	False	0		False
 Ecoli	ghrA	serX	233	False											False	0		False
 Ecoli	opgC	opgG	393	True	822.0	822.9	325	0	0	46	0	0	822	875	False	0		False
 Ecoli	lpxL	trhO	224	True	117.0	117.0	475	0	0	0	0	0	117	517	False	0		False
@@ -1339,7 +1339,7 @@ Ecoli	pspA	pspF	166	True	996.8	996.8	527	0	541	66	949	0	939	999	False	0		False
 Ecoli	ycjW	ycjX	155	True	41.0	50.0	521	0	0	50	0	0	0	525	False	0		False
 Ecoli	tpx	ycjG	118	True	41.0	45.0	538	0	0	45	0	0	0	540	False	0		False
 Ecoli	pgrR	ycjY	137	True	807.0	929.4	529	0	458	649	0	0	807	980	False	0		False
-Ecoli	insH4	ynaI	189	True	458.0	458.0	522	0	0	0	0	0	458	729	False	0		False
+Ecoli	insH4	ynaI	189	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Ecoli	abgA	abgR	175	True	807.0	827.9	509	0	184	145	0	0	807	925	False	0		False
 Ecoli	mcaS	smrA	227	False											False	0		False
 Ecoli	dgcM	ynaN	193	False											False	0		False
@@ -1351,7 +1351,7 @@ Ecoli	ydbJ	ydbK	273	True	41.0	41.0	443	0	0	0	0	0	0	443	False	0		False
 Ecoli	ldhA	ydbH	207	True	41.0	46.0	505	0	0	46	0	0	0	508	False	0		False
 Ecoli	feaB	feaR	235	True	919.0	926.7	466	0	0	132	0	0	919	959	False	0		False
 Ecoli	paaA	paaZ	284	True	904.0	974.7	489	0	774	747	0	0	904	996	False	0		False
-Ecoli	insC2	insI2	208	True	621.0	625.3	489	0	0	52	0	0	621	800	False	0		False
+Ecoli	insC2	insI2	208	True	786.0	786.0	42	0	0	0	0	0	786	786	False	0		False
 Ecoli	azoR	hrpA	200	True	41.0	41.0	493	0	0	0	0	0	0	493	False	0		False
 Ecoli	rydC	ydcA	170	False											False	0		False
 Ecoli	ydcI	ydcJ	216	True	387.0	413.2	482	0	0	82	0	0	387	683	False	0		False
@@ -1372,7 +1372,7 @@ Ecoli	marC	marR	211	True	106.0	107.9	485	0	0	43	0	0	106	521	False	0		False
 Ecoli	eamA	ydeE	194	True	289.0	447.7	532	0	0	255	0	0	289	731	False	0		False
 Ecoli	ydeI	ydeJ	275	True	496.0	842.9	429	0	0	701	0	0	496	906	False	0		False
 Ecoli	dcp	ydfG	136	True	41.0	153.0	530	0	0	153	0	0	0	584	False	0		False
-Ecoli	nohA	ynfO	388	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Ecoli	nohA	ynfO	388	True	750.4	753.5	0	0	0	53	110	0	731	753	False	0		False
 Ecoli	essQ	ynfU	219	False											False	0		False
 Ecoli	cspB	cspF	300	True	117.0	684.2	403	0	0	657	0	0	117	803	False	0		False
 Ecoli	relB	ydfV	24	True	386.0	402.0	567	0	0	66	0	0	386	730	False	0		False
@@ -1966,7 +1966,7 @@ Mtuberculosis	Rv1176c	fdxC	212	True	41.0	44.0	731	0	0	44	0	0	0	731	False	0		Fals
 Mtuberculosis	Rv1179c	pks3	425	True	550.0	564.1	0	0	0	71	0	0	550	564	False	0		False
 Mtuberculosis	Rv1186c	rocA	84	True	290.0	293.0	783	0	195	45	0	0	290	865	False	0		False
 Mtuberculosis	PE13	Rv1194c	489	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
-Mtuberculosis	Rv1199c	Rv1200	336	True	41.0	50.0	364	0	0	50	0	0	0	370	False	0		False
+Mtuberculosis	Rv1199c	Rv1200	336	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Mtuberculosis	dapD	dapE	90	True	965.0	965.5	782	0	509	54	0	0	965	996	False	0		False
 Mtuberculosis	Rv1204c	Rv1205	94	True	41.0	45.0	547	0	0	45	0	0	0	549	False	0		False
 Mtuberculosis	glgA	glgC	174	True	996.4	996.4	765	0	465	53	0	900	965	999	False	0		False
@@ -2810,7 +2810,7 @@ Paeruginosa	PA3135	PA3136	69	True	41.0	47.0	585	0	0	47	0	0	0	587	False	0		False
 Paeruginosa	PA3139	uvrB	187	True	41.0	45.0	577	0	0	45	0	0	0	579	False	0		False
 Paeruginosa	PA3169	PA3170	109	True	100.0	282.1	580	0	434	235	0	0	100	814	False	0		False
 Paeruginosa	PA3179	PA3180	147	True	45.0	45.0	547	0	0	0	0	0	45	549	False	0		False
-Paeruginosa	PA3184	zwf	186	True	792.0	792.0	123	0	0	0	0	0	792	810	False	0		False
+Paeruginosa	PA3184	zwf	186	True	791.0	793.4	545	0	0	52	0	0	791	902	False	0		False
 Paeruginosa	edd	gapA	129	True	654.6	960.0	603	0	0	889	90	0	636	983	False	0		False
 Paeruginosa	PA3200	PA3201	215	True	41.0	48.0	560	0	0	48	0	0	0	563	False	0		False
 Paeruginosa	PA3209	trkH	157	True	41.0	53.0	592	0	0	53	0	0	0	596	False	0		False
@@ -2874,7 +2874,7 @@ Paeruginosa	PA3606	potA	258	True	41.0	45.0	445	0	0	45	0	0	0	448	False	0		False
 Paeruginosa	PA3613	PA3614	179	True	41.0	486.0	581	0	165	486	0	0	0	804	False	0		False
 Paeruginosa	PA3618	PA3619	147	True	41.0	41.0	525	0	0	0	0	0	0	525	False	0		False
 Paeruginosa	adhC	gfnR	131	True	48.0	48.0	545	0	187	0	0	0	48	617	False	0		False
-Paeruginosa	map	rpsB	264	True	695.0	876.6	123	0	396	612	581	0	302	928	False	0		False
+Paeruginosa	map	rpsB	264	True	694.6	882.8	488	0	309	632	581	0	301	954	False	0		False
 Paeruginosa	PA3660	PA3661	237	True	41.0	41.0	465	0	0	0	0	0	0	465	False	0		False
 Paeruginosa	PA3663	PA3664	302	True	41.0	41.0	408	0	0	0	0	0	0	409	False	0		False
 Paeruginosa	PA3672	plsB	283	True	41.0	41.0	470	0	0	0	0	0	0	470	False	0		False
@@ -3292,7 +3292,7 @@ Saureus	SAOUHSC_01497	cmk	76	True	41.0	58.0	736	0	0	58	0	0	0	741	False	0		False
 Saureus	SAOUHSC_01503	SAOUHSC_01504	131	True	41.0	41.0	749	0	0	0	0	0	0	748	False	0		False
 Saureus	SAOUHSC_01543	SAOUHSC_01544	133	True	41.0	41.0	531	0	0	0	0	0	0	531	False	0		False
 Saureus	SAOUHSC_01571	SAOUHSC_01572	54	True	41.0	41.0	559	0	0	0	0	0	0	559	False	0		False
-Saureus	SAOUHSC_01580	SAOUHSC_01582	125	True	674.0	674.0	535	0	0	0	0	0	674	841	False	0		False
+Saureus	SAOUHSC_01580	SAOUHSC_01582	125	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Saureus	SAOUHSC_01589	SAOUHSC_01590	91	True	41.0	41.0	756	0	0	0	0	0	0	755	False	0		False
 Saureus	SAOUHSC_01593	SAOUHSC_01594	81	True	41.0	41.0	576	0	0	0	0	0	0	576	False	0		False
 Saureus	SAOUHSC_01596	SAOUHSC_01597	171	True	41.0	41.0	740	0	0	0	0	0	0	740	False	0		False
@@ -3453,376 +3453,376 @@ Saureus	SAOUHSC_03027	SAOUHSC_03028	166	True	41.0	41.0	515	0	0	0	0	0	0	515	False
 Saureus	SAOUHSC_03031	SAOUHSC_03032	224	True	41.0	41.0	475	0	0	0	0	0	0	475	False	0		False
 Saureus	SAOUHSC_03035	SAOUHSC_03036	282	True	41.0	41.0	422	0	0	0	0	0	0	422	False	0		False
 Saureus	SAOUHSC_03041	SAOUHSC_03042	78	True	613.0	613.0	552	0	0	0	0	0	613	819	False	0		False
-Spyogenes	purD	scrM	252	False											False	0		False
+Spyogenes	purD	scrM	252	True	41.0	72.0	461	0	0	72	0	0	0	479	False	0		False
 Spyogenes	pbp1b	tyrS	103	True	41.0	54.0	598	0	0	54	0	0	0	604	False	0		False
-Spyogenes	B6D67_RS00710	pepA	464	False											False	0		False
+Spyogenes	B6D67_RS00710	pepA	464	True	41.0	41.0	157	0	0	0	0	0	0	156	False	0		False
 Spyogenes	cpa	rofA	262	False											False	0		False
-Spyogenes	B6D67_RS00805	B6D67_RS00810	348	False											False	0		False
-Spyogenes	B6D67_RS00835	B6D67_RS00840	173	False											False	0		False
-Spyogenes	B6D67_RS00900	B6D67_RS00905	437	False											False	0		False
+Spyogenes	B6D67_RS00805	B6D67_RS00810	348	True	41.0	41.0	347	0	0	0	0	0	0	347	False	0		False
+Spyogenes	B6D67_RS00835	B6D67_RS00840	173	True	43.0	174.7	570	0	273	173	0	0	43	719	False	0		False
+Spyogenes	B6D67_RS00900	B6D67_RS00905	437	True	41.0	41.0	157	0	0	0	0	0	0	156	False	0		False
 Spyogenes	B6D67_RS00950	B6D67_RS00955	483	False											False	0		False
-Spyogenes	B6D67_RS01070	nadC	223	False											False	0		False
-Spyogenes	B6D67_RS01085	tgt	218	False											False	0		False
+Spyogenes	B6D67_RS01070	nadC	223	True	57.0	57.0	480	0	0	0	0	0	57	489	False	0		False
+Spyogenes	B6D67_RS01085	tgt	218	True	41.0	41.0	542	0	0	0	0	0	0	542	False	0		False
 Spyogenes	B6D67_RS01115	ffs	199	False											False	0		False
-Spyogenes	B6D67_RS01160	B6D67_RS01165	297	False											False	0		False
-Spyogenes	B6D67_RS01280	B6D67_RS01285	284	False											False	0		False
-Spyogenes	B6D67_RS01365	B6D67_RS01370	197	False											False	0		False
-Spyogenes	B6D67_RS01425	pbp3	330	False											False	0		False
+Spyogenes	B6D67_RS01160	B6D67_RS01165	297	True	41.0	41.0	477	0	0	0	0	0	0	477	False	0		False
+Spyogenes	B6D67_RS01280	B6D67_RS01285	284	True	41.0	41.0	460	0	0	0	0	0	0	460	False	0		False
+Spyogenes	B6D67_RS01365	B6D67_RS01370	197	True	41.0	41.0	556	0	0	0	0	0	0	556	False	0		False
+Spyogenes	B6D67_RS01425	pbp3	330	True	45.0	45.0	371	0	0	0	0	0	45	374	False	0		False
 Spyogenes	brnQ	sstT	233	True	297.0	311.7	479	0	184	61	0	0	297	682	False	0		False
-Spyogenes	B6D67_RS01600	rsmG	149	False											False	0		False
-Spyogenes	B6D67_RS01825	B6D67_RS01830	87	False											False	0		False
-Spyogenes	B6D67_RS01885	B6D67_RS01890	298	False											False	0		False
-Spyogenes	B6D67_RS01895	lctO	233	False											False	0		False
+Spyogenes	B6D67_RS01600	rsmG	149	True	41.0	41.0	581	0	0	0	0	0	0	581	False	0		False
+Spyogenes	B6D67_RS01825	B6D67_RS01830	87	True	41.0	64.0	603	0	201	64	0	0	0	677	False	0		False
+Spyogenes	B6D67_RS01885	B6D67_RS01890	298	True	61.0	96.2	445	0	0	77	0	0	61	477	False	0		False
+Spyogenes	B6D67_RS01895	lctO	233	True	187.0	187.0	415	0	0	0	0	0	187	504	False	0		False
 Spyogenes	B6D67_RS01955	B6D67_RS01960	458	False											False	0		False
 Spyogenes	B6D67_RS01990	B6D67_RS01995	360	False											False	0		False
-Spyogenes	B6D67_RS02040	B6D67_RS02045	145	False											False	0		False
-Spyogenes	B6D67_RS02060	B6D67_RS02065	216	False											False	0		False
-Spyogenes	B6D67_RS02070	rplK	243	False											False	0		False
+Spyogenes	B6D67_RS02040	B6D67_RS02045	145	True	218.0	328.9	583	0	0	177	0	0	218	708	False	0		False
+Spyogenes	B6D67_RS02060	B6D67_RS02065	216	True	41.0	119.0	544	0	0	119	0	0	0	582	False	0		False
+Spyogenes	B6D67_RS02070	rplK	243	True	41.0	41.0	524	0	0	0	0	0	0	524	False	0		False
 Spyogenes	B6D67_RS02155	B6D67_RS10355	397	False											False	0		False
 Spyogenes	rgg2	shp2	88	False											False	0		False
-Spyogenes	B6D67_RS02290	ccpA	173	False											False	0		False
+Spyogenes	B6D67_RS02290	ccpA	173	True	503.8	520.9	570	0	0	74	235	0	378	784	False	0		False
 Spyogenes	rgg3	shp3	79	False											False	0		False
 Spyogenes	B6D67_RS02445	B6D67_RS10185	33	False											False	0		False
-Spyogenes	B6D67_RS02525	licT	327	False											False	0		False
-Spyogenes	B6D67_RS02555	B6D67_RS02560	233	False											False	0		False
-Spyogenes	B6D67_RS02595	B6D67_RS02600	198	False											False	0		False
-Spyogenes	B6D67_RS02620	lysS	173	False											False	0		False
-Spyogenes	B6D67_RS02640	B6D67_RS02645	324	False											False	0		False
-Spyogenes	pepF	ppc	194	True	123.0	132.1	96	0	0	51	0	0	123	181	False	0		False
-Spyogenes	B6D67_RS02705	B6D67_RS02710	81	False											False	0		False
-Spyogenes	B6D67_RS02750	B6D67_RS02755	336	False											False	0		False
+Spyogenes	B6D67_RS02525	licT	327	True	41.0	41.0	374	0	0	0	0	0	0	374	False	0		False
+Spyogenes	B6D67_RS02555	B6D67_RS02560	233	True	41.0	41.0	468	0	0	0	0	0	0	468	False	0		False
+Spyogenes	B6D67_RS02595	B6D67_RS02600	198	True	41.0	41.0	556	0	0	0	0	0	0	555	False	0		False
+Spyogenes	B6D67_RS02620	lysS	173	True	41.0	41.0	570	0	0	0	0	0	0	569	False	0		False
+Spyogenes	B6D67_RS02640	B6D67_RS02645	324	True	41.0	41.0	391	0	0	0	0	0	0	391	False	0		False
+Spyogenes	pepF	ppc	194	True	70.0	70.0	557	0	0	0	0	0	70	571	False	0		False
+Spyogenes	B6D67_RS02705	B6D67_RS02710	81	True	65.0	65.0	604	0	0	0	0	0	65	614	False	0		False
+Spyogenes	B6D67_RS02750	B6D67_RS02755	336	True	49.0	78.7	376	0	0	71	0	0	49	401	False	0		False
 Spyogenes	B6D67_RS02855	B6D67_RS02860	359	False											False	0		False
-Spyogenes	B6D67_RS02865	B6D67_RS02870	51	False											False	0		False
+Spyogenes	B6D67_RS02865	B6D67_RS02870	51	True	41.0	41.0	560	0	0	0	0	0	0	560	False	0		False
 Spyogenes	B6D67_RS02880	B6D67_RS02885	86	False											False	0		False
-Spyogenes	B6D67_RS02995	B6D67_RS03000	235	False											False	0		False
+Spyogenes	B6D67_RS02995	B6D67_RS03000	235	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Spyogenes	B6D67_RS03140	B6D67_RS03145	277	False											False	0		False
-Spyogenes	B6D67_RS03170	B6D67_RS03175	393	False											False	0		False
-Spyogenes	B6D67_RS03220	eno	226	False											False	0		False
+Spyogenes	B6D67_RS03170	B6D67_RS03175	393	True	41.0	41.0	393	0	0	0	0	0	0	393	False	0		False
+Spyogenes	B6D67_RS03220	eno	226	True	41.0	41.0	533	0	0	0	0	0	0	532	False	0		False
 Spyogenes	B6D67_RS03240	B6D67_RS10400	471	False											False	0		False
-Spyogenes	rexB	ypfJ	150	False											False	0		False
+Spyogenes	rexB	ypfJ	150	True	41.0	41.0	550	0	0	0	0	0	0	550	False	0		False
 Spyogenes	dnaG	mscL	130	True	41.0	55.0	578	0	0	55	0	0	0	584	False	0		False
 Spyogenes	B6D67_RS03520	B6D67_RS03525	48	False											False	0		False
-Spyogenes	B6D67_RS03550	B6D67_RS03555	146	False											False	0		False
-Spyogenes	B6D67_RS03585	B6D67_RS03590	234	False											False	0		False
-Spyogenes	B6D67_RS03705	B6D67_RS03710	135	False											False	0		False
-Spyogenes	B6D67_RS03815	B6D67_RS03820	219	False											False	0		False
-Spyogenes	B6D67_RS03860	B6D67_RS03865	208	False											False	0		False
-Spyogenes	B6D67_RS03895	rpiA	378	False											False	0		False
-Spyogenes	B6D67_RS03930	B6D67_RS03935	221	False											False	0		False
+Spyogenes	B6D67_RS03550	B6D67_RS03555	146	True	41.0	41.0	599	0	0	0	0	0	0	599	False	0		False
+Spyogenes	B6D67_RS03585	B6D67_RS03590	234	True	41.0	41.0	531	0	0	0	0	0	0	531	False	0		False
+Spyogenes	B6D67_RS03705	B6D67_RS03710	135	True	43.0	43.0	534	0	0	0	0	0	43	536	False	0		False
+Spyogenes	B6D67_RS03815	B6D67_RS03820	219	True	41.0	41.0	479	0	0	0	0	0	0	479	False	0		False
+Spyogenes	B6D67_RS03860	B6D67_RS03865	208	True	41.0	41.0	549	0	0	0	0	0	0	549	False	0		False
+Spyogenes	B6D67_RS03895	rpiA	378	True	112.0	118.5	287	0	0	48	0	0	112	345	False	0		False
+Spyogenes	B6D67_RS03930	B6D67_RS03935	221	True	41.0	41.0	487	0	0	0	0	0	0	487	False	0		False
 Spyogenes	parE	plsY	134	True	70.0	70.0	587	0	0	0	0	0	70	599	False	0		False
-Spyogenes	B6D67_RS04020	trhO	198	False											False	0		False
+Spyogenes	B6D67_RS04020	trhO	198	True	41.0	41.0	550	0	0	0	0	0	0	550	False	0		False
 Spyogenes	B6D67_RS04045	miaA	133	False											False	0		False
-Spyogenes	fbp54	trpX	353	False											False	0		False
-Spyogenes	B6D67_RS04220	hylA	232	False											False	0		False
-Spyogenes	cdaA	murT	106	False											False	0		False
+Spyogenes	fbp54	trpX	353	True	41.0	41.0	425	0	0	0	0	0	0	425	False	0		False
+Spyogenes	B6D67_RS04220	hylA	232	True	41.0	41.0	467	0	0	0	0	0	0	467	False	0		False
+Spyogenes	cdaA	murT	106	True	41.0	41.0	597	0	0	0	0	0	0	597	False	0		False
 Spyogenes	B6D67_RS04305	B6D67_RS10215	158	False											False	0		False
 Spyogenes	B6D67_RS04330	B6D67_RS04335	256	False											False	0		False
 Spyogenes	B6D67_RS04565	B6D67_RS10230	153	False											False	0		False
 Spyogenes	mnmE	rplJ	332	True	41.0	41.0	373	0	0	0	0	0	0	373	False	0		False
-Spyogenes	B6D67_RS04795	B6D67_RS04800	331	False											False	0		False
-Spyogenes	B6D67_RS04855	B6D67_RS04860	160	False											False	0		False
-Spyogenes	B6D67_RS04870	aphA	235	False											False	0		False
-Spyogenes	B6D67_RS04925	B6D67_RS04930	87	False											False	0		False
-Spyogenes	B6D67_RS04955	B6D67_RS04960	419	False											False	0		False
-Spyogenes	B6D67_RS04990	B6D67_RS04995	137	False											False	0		False
-Spyogenes	B6D67_RS05050	gyrA	190	False											False	0		False
-Spyogenes	B6D67_RS05090	ylqF	218	False											False	0		False
-Spyogenes	B6D67_RS05185	B6D67_RS05190	379	False											False	0		False
+Spyogenes	B6D67_RS04795	B6D67_RS04800	331	True	41.0	69.0	406	0	0	69	0	0	0	423	False	0		False
+Spyogenes	B6D67_RS04855	B6D67_RS04860	160	True	158.0	183.5	576	0	729	70	0	0	158	898	False	0		False
+Spyogenes	B6D67_RS04870	aphA	235	True	41.0	41.0	466	0	0	0	0	0	0	466	False	0		False
+Spyogenes	B6D67_RS04925	B6D67_RS04930	87	True	41.0	41.0	603	0	171	0	0	0	0	657	False	0		False
+Spyogenes	B6D67_RS04955	B6D67_RS04960	419	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Spyogenes	B6D67_RS04990	B6D67_RS04995	137	True	45.0	57.9	585	0	0	54	0	0	45	593	False	0		False
+Spyogenes	B6D67_RS05050	gyrA	190	True	461.0	461.0	560	0	0	0	0	0	461	752	False	0		False
+Spyogenes	B6D67_RS05090	ylqF	218	True	41.0	41.0	495	0	0	0	0	0	0	495	False	0		False
+Spyogenes	B6D67_RS05185	B6D67_RS05190	379	True	41.0	41.0	401	0	0	0	0	0	0	401	False	0		False
 Spyogenes	B6D67_RS05245	xerS	468	False											False	0		False
-Spyogenes	B6D67_RS05265	guaA	166	False											False	0		False
-Spyogenes	B6D67_RS05290	B6D67_RS05295	89	False											False	0		False
-Spyogenes	B6D67_RS05350	coaB	201	False											False	0		False
-Spyogenes	B6D67_RS05400	coaA	267	False											False	0		False
-Spyogenes	B6D67_RS05515	B6D67_RS05520	117	False											False	0		False
-Spyogenes	B6D67_RS05620	B6D67_RS05625	184	False											False	0		False
+Spyogenes	B6D67_RS05265	guaA	166	True	41.0	64.0	578	0	0	64	0	0	0	588	False	0		False
+Spyogenes	B6D67_RS05290	B6D67_RS05295	89	True	173.0	230.8	602	0	0	108	0	0	173	681	False	0		False
+Spyogenes	B6D67_RS05350	coaB	201	True	41.0	72.0	554	0	0	72	0	0	0	568	False	0		False
+Spyogenes	B6D67_RS05400	coaA	267	True	41.0	41.0	505	0	0	0	0	0	0	504	False	0		False
+Spyogenes	B6D67_RS05515	B6D67_RS05520	117	True	111.7	111.7	564	0	0	0	108	0	45	596	False	0		False
+Spyogenes	B6D67_RS05620	B6D67_RS05625	184	True	41.0	41.0	563	0	0	0	0	0	0	563	False	0		False
 Spyogenes	B6D67_RS05640	ssrA	91	False											False	0		False
 Spyogenes	B6D67_RS05650	speA	220	False											False	0		False
-Spyogenes	B6D67_RS05890	B6D67_RS05895	54	False											False	0		False
+Spyogenes	B6D67_RS05890	B6D67_RS05895	54	True	41.0	41.0	559	0	0	0	0	0	0	559	False	0		False
 Spyogenes	B6D67_RS05905	B6D67_RS05910	73	False											False	0		False
 Spyogenes	B6D67_RS05915	B6D67_RS05920	53	False											False	0		False
 Spyogenes	B6D67_RS05925	B6D67_RS05930	356	False											False	0		False
-Spyogenes	B6D67_RS05960	B6D67_RS05965	245	False											False	0		False
-Spyogenes	B6D67_RS06055	uvrB	192	False											False	0		False
-Spyogenes	B6D67_RS06095	pnuC	224	False											False	0		False
+Spyogenes	B6D67_RS05960	B6D67_RS05965	245	True	261.0	282.6	491	0	0	69	0	0	261	619	False	0		False
+Spyogenes	B6D67_RS06055	uvrB	192	True	41.0	41.0	559	0	0	0	0	0	0	559	False	0		False
+Spyogenes	B6D67_RS06095	pnuC	224	True	41.0	41.0	294	0	0	0	0	0	0	294	False	0		False
 Spyogenes	B6D67_RS06115	B6D67_RS06120	241	False											False	0		False
-Spyogenes	B6D67_RS06125	B6D67_RS06130	114	False											False	0		False
-Spyogenes	B6D67_RS06135	B6D67_RS06140	373	False											False	0		False
-Spyogenes	B6D67_RS06210	birA	203	False											False	0		False
-Spyogenes	B6D67_RS06230	B6D67_RS06235	144	False											False	0		False
-Spyogenes	B6D67_RS06250	udk	97	False											False	0		False
-Spyogenes	B6D67_RS06270	B6D67_RS06275	392	False											False	0		False
+Spyogenes	B6D67_RS06125	B6D67_RS06130	114	True	41.0	41.0	579	0	0	0	0	0	0	579	False	0		False
+Spyogenes	B6D67_RS06135	B6D67_RS06140	373	True	41.0	41.0	354	0	0	0	0	0	0	355	False	0		False
+Spyogenes	B6D67_RS06210	birA	203	True	206.0	217.6	556	0	0	55	0	0	206	638	False	0		False
+Spyogenes	B6D67_RS06230	B6D67_RS06235	144	True	41.0	41.0	526	0	0	0	0	0	0	526	False	0		False
+Spyogenes	B6D67_RS06250	udk	97	True	146.4	178.4	600	0	0	77	115	75	0	657	False	0		False
+Spyogenes	B6D67_RS06270	B6D67_RS06275	392	True	130.0	154.5	394	0	0	68	0	0	130	466	False	0		False
 Spyogenes	nagB	queA	201	True	41.0	47.0	554	0	0	47	0	0	0	556	False	0		False
-Spyogenes	B6D67_RS06410	B6D67_RS06415	117	False											False	0		False
-Spyogenes	B6D67_RS06485	B6D67_RS06490	238	False											False	0		False
+Spyogenes	B6D67_RS06410	B6D67_RS06415	117	True	41.0	41.0	615	0	0	0	0	0	0	615	False	0		False
+Spyogenes	B6D67_RS06485	B6D67_RS06490	238	True	147.0	204.8	528	0	0	106	0	0	147	608	False	0		False
 Spyogenes	B6D67_RS06500	sda3	228	False											False	0		False
-Spyogenes	B6D67_RS06725	B6D67_RS06730	200	False											False	0		False
-Spyogenes	B6D67_RS06825	B6D67_RS06830	297	False											False	0		False
+Spyogenes	B6D67_RS06725	B6D67_RS06730	200	True	72.0	72.0	512	0	433	0	0	0	72	720	False	0		False
+Spyogenes	B6D67_RS06825	B6D67_RS06830	297	True	41.0	41.0	477	0	0	0	0	0	0	477	False	0		False
 Spyogenes	B6D67_RS06925	B6D67_RS06930	227	False											False	0		False
-Spyogenes	B6D67_RS07000	B6D67_RS07005	141	False											False	0		False
+Spyogenes	B6D67_RS07000	B6D67_RS07005	141	True	107.0	107.9	584	0	0	42	0	0	107	613	False	0		False
 Spyogenes	B6D67_RS07105	B6D67_RS07110	166	False											False	0		False
-Spyogenes	B6D67_RS07175	B6D67_RS07180	195	False											False	0		False
-Spyogenes	B6D67_RS07195	B6D67_RS07200	132	False											False	0		False
+Spyogenes	B6D67_RS07175	B6D67_RS07180	195	True	41.0	41.0	504	0	0	0	0	0	0	504	False	0		False
+Spyogenes	B6D67_RS07195	B6D67_RS07200	132	True	41.0	41.0	545	0	437	0	0	0	0	732	False	0		False
 Spyogenes	B6D67_RS07220	sda3	237	False											False	0		False
-Spyogenes	B6D67_RS07470	B6D67_RS07475	166	False											False	0		False
+Spyogenes	B6D67_RS07470	B6D67_RS07475	166	True	41.0	41.0	515	0	0	0	0	0	0	515	False	0		False
 Spyogenes	B6D67_RS07485	B6D67_RS07490	197	False											False	0		False
-Spyogenes	B6D67_RS07600	B6D67_RS07605	55	False											False	0		False
-Spyogenes	B6D67_RS07680	B6D67_RS07685	201	False											False	0		False
-Spyogenes	B6D67_RS07735	recU	80	False											False	0		False
-Spyogenes	B6D67_RS07925	B6D67_RS07930	201	False											False	0		False
-Spyogenes	B6D67_RS07935	B6D67_RS07940	292	False											False	0		False
-Spyogenes	B6D67_RS07985	B6D67_RS07990	236	False											False	0		False
-Spyogenes	B6D67_RS08070	B6D67_RS08075	71	False											False	0		False
-Spyogenes	B6D67_RS08100	B6D67_RS08105	263	False											False	0		False
-Spyogenes	B6D67_RS08285	B6D67_RS08290	230	False											False	0		False
-Spyogenes	B6D67_RS08295	B6D67_RS08300	71	False											False	0		False
-Spyogenes	B6D67_RS08420	B6D67_RS08425	241	False											False	0		False
-Spyogenes	B6D67_RS08465	uvrA	202	False											False	0		False
-Spyogenes	B6D67_RS08490	mutY	167	False											False	0		False
-Spyogenes	B6D67_RS08525	rnhC	156	False											False	0		False
-Spyogenes	dinB	pflB	208	False											False	0		False
-Spyogenes	B6D67_RS08565	B6D67_RS08570	297	False											False	0		False
-Spyogenes	B6D67_RS08585	B6D67_RS08590	165	False											False	0		False
-Spyogenes	B6D67_RS08625	B6D67_RS08630	205	False											False	0		False
-Spyogenes	B6D67_RS08650	udp	239	False											False	0		False
-Spyogenes	B6D67_RS08675	tsaB	284	False											False	0		False
-Spyogenes	B6D67_RS08760	tig	320	False											False	0		False
-Spyogenes	B6D67_RS08820	B6D67_RS08825	350	False											False	0		False
-Spyogenes	B6D67_RS08915	lacA	446	False											False	0		False
-Spyogenes	B6D67_RS09040	B6D67_RS09045	125	False											False	0		False
-Spyogenes	B6D67_RS09120	ska	359	False											False	0		False
+Spyogenes	B6D67_RS07600	B6D67_RS07605	55	True	67.0	67.0	611	0	0	0	0	0	67	622	False	0		False
+Spyogenes	B6D67_RS07680	B6D67_RS07685	201	True	47.0	63.9	510	0	0	58	0	0	47	521	False	0		False
+Spyogenes	B6D67_RS07735	recU	80	True	378.0	396.8	604	0	298	70	0	0	378	818	False	0		False
+Spyogenes	B6D67_RS07925	B6D67_RS07930	201	True	41.0	41.0	523	0	0	0	0	0	0	522	False	0		False
+Spyogenes	B6D67_RS07935	B6D67_RS07940	292	True	41.0	41.0	482	0	0	0	0	0	0	482	False	0		False
+Spyogenes	B6D67_RS07985	B6D67_RS07990	236	True	54.0	113.2	496	0	0	101	0	0	54	534	False	0		False
+Spyogenes	B6D67_RS08070	B6D67_RS08075	71	True	41.0	41.0	580	0	0	0	0	0	0	580	False	0		False
+Spyogenes	B6D67_RS08100	B6D67_RS08105	263	True	41.0	41.0	508	0	0	0	0	0	0	508	False	0		False
+Spyogenes	B6D67_RS08285	B6D67_RS08290	230	True	50.0	77.7	534	0	0	69	0	0	50	552	False	0		False
+Spyogenes	B6D67_RS08295	B6D67_RS08300	71	True	41.0	54.0	633	0	0	54	0	0	0	638	False	0		False
+Spyogenes	B6D67_RS08420	B6D67_RS08425	241	True	930.4	961.2	618	394	768	465	0	900	333	997	False	0		False
+Spyogenes	B6D67_RS08465	uvrA	202	True	371.0	371.0	546	0	0	0	0	0	371	702	False	0		False
+Spyogenes	B6D67_RS08490	mutY	167	True	41.0	41.0	495	0	0	0	0	0	0	495	False	0		False
+Spyogenes	B6D67_RS08525	rnhC	156	True	41.0	41.0	578	0	0	0	0	0	0	578	False	0		False
+Spyogenes	dinB	pflB	208	True	41.0	41.0	548	0	0	0	0	0	0	548	False	0		False
+Spyogenes	B6D67_RS08565	B6D67_RS08570	297	True	41.0	41.0	511	0	0	0	0	0	0	510	False	0		False
+Spyogenes	B6D67_RS08585	B6D67_RS08590	165	True	69.0	69.0	543	0	371	0	0	0	69	709	False	0		False
+Spyogenes	B6D67_RS08625	B6D67_RS08630	205	True	41.0	41.0	329	0	0	0	0	0	0	329	False	0		False
+Spyogenes	B6D67_RS08650	udp	239	True	41.0	41.0	489	0	151	0	0	0	0	547	False	0		False
+Spyogenes	B6D67_RS08675	tsaB	284	True	41.0	41.0	490	0	0	0	0	0	0	490	False	0		False
+Spyogenes	B6D67_RS08760	tig	320	True	41.0	41.0	455	0	0	0	0	0	0	455	False	0		False
+Spyogenes	B6D67_RS08820	B6D67_RS08825	350	True	41.0	69.0	350	0	0	69	0	0	0	369	False	0		False
+Spyogenes	B6D67_RS08915	lacA	446	True	232.0	509.9	97	0	0	388	0	0	232	538	False	0		False
+Spyogenes	B6D67_RS09040	B6D67_RS09045	125	True	41.0	41.0	535	0	0	0	0	0	0	535	False	0		False
+Spyogenes	B6D67_RS09120	ska	359	True	95.0	95.0	361	0	0	0	0	0	95	397	False	0		False
 Spyogenes	nrdI	slc1	381	False											False	0		False
-Spyogenes	B6D67_RS09170	pabB	199	False											False	0		False
+Spyogenes	B6D67_RS09170	pabB	199	True	41.0	41.0	499	0	0	0	0	0	0	499	False	0		False
 Spyogenes	B6D67_RS09215	B6D67_RS09220	178	False											False	0		False
 Spyogenes	B6D67_RS10580	mga	384	False											False	0		False
-Spyogenes	B6D67_RS09340	B6D67_RS09345	243	False											False	0		False
+Spyogenes	B6D67_RS09340	B6D67_RS09345	243	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Spyogenes	B6D67_RS09370	ropB	498	False											False	0		False
-Spyogenes	B6D67_RS09390	sdaB	363	False											False	0		False
-Spyogenes	B6D67_RS09430	B6D67_RS09435	125	False											False	0		False
-Spyogenes	B6D67_RS09460	B6D67_RS10460	490	False											False	0		False
-Spyogenes	B6D67_RS09475	B6D67_RS09480	246	False											False	0		False
+Spyogenes	B6D67_RS09390	sdaB	363	True	41.0	41.0	338	0	0	0	0	0	0	338	False	0		False
+Spyogenes	B6D67_RS09430	B6D67_RS09435	125	True	43.0	102.9	591	0	208	101	0	0	43	683	False	0		False
+Spyogenes	B6D67_RS09460	B6D67_RS10460	490	True	41.0	41.0	157	0	0	0	0	0	0	156	False	0		False
+Spyogenes	B6D67_RS09475	B6D67_RS09480	246	True	41.0	41.0	466	0	0	0	0	0	0	466	False	0		False
 Spyogenes	B6D67_RS09520	ahpC	405	False											False	0		False
-Spyogenes	B6D67_RS09540	hutI	291	False											False	0		False
-Spyogenes	B6D67_RS09580	rpsB	303	False											False	0		False
-Spyogenes	treP	treR	210	False											False	0		False
+Spyogenes	B6D67_RS09540	hutI	291	True	989.5	997.3	483	91	774	758	0	900	899	999	False	0		False
+Spyogenes	B6D67_RS09580	rpsB	303	True	41.0	41.0	399	0	0	0	0	0	0	399	False	0		False
+Spyogenes	treP	treR	210	True	307.0	328.0	609	0	619	70	0	0	307	891	False	0		False
 Spyogenes	argR	argS	290	True	293.0	325.4	483	0	0	85	0	0	293	637	False	0		False
 Spyogenes	hisS	rpmF	219	True	639.0	639.0	509	0	0	0	0	0	639	815	False	0		False
 Spyogenes	B6D67_RS09805	B6D67_RS10170	453	False											False	0		False
-Spyogenes	B6D67_RS09810	B6D67_RS09815	206	False											False	0		False
-Spyogenes	B6D67_RS09830	B6D67_RS09835	134	False											False	0		False
-Spyogenes	mnmA	sdaAB	297	False											False	0		False
-Spyogenes	hasA	yfmF	430	False											False	0		False
-Spyogenes	B6D67_RS09985	trpS	418	False											False	0		False
-Spyogenes	B6D67_RS10030	rlmH	211	False											False	0		False
+Spyogenes	B6D67_RS09810	B6D67_RS09815	206	True	41.0	41.0	550	0	0	0	0	0	0	550	False	0		False
+Spyogenes	B6D67_RS09830	B6D67_RS09835	134	True	95.0	159.2	581	0	210	109	0	0	95	697	False	0		False
+Spyogenes	mnmA	sdaAB	297	True	41.0	50.0	557	0	0	50	0	0	0	561	False	0		False
+Spyogenes	hasA	yfmF	430	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Spyogenes	B6D67_RS09985	trpS	418	True	41.0	41.0	157	0	0	0	0	0	0	156	False	0		False
+Spyogenes	B6D67_RS10030	rlmH	211	True	41.0	41.0	547	0	0	0	0	0	0	547	False	0		False
 Vcholerae	ACZ5HH_RS00035	ACZ5HH_RS00040	487	False											False	0		False
 Vcholerae	purE	tsaC	166	True	41.0	41.0	589	0	0	0	0	0	0	589	False	0		False
-Vcholerae	ACZ5HH_RS00090	def	139	False											False	0		False
+Vcholerae	ACZ5HH_RS00090	def	139	True	41.0	41.0	601	0	0	0	0	0	0	601	False	0		False
 Vcholerae	ACZ5HH_RS00145	ACZ5HH_RS00150	188	False											False	0		False
-Vcholerae	ACZ5HH_RS00215	tusA	135	False											False	0		False
-Vcholerae	ACZ5HH_RS00230	glyQ	415	False											False	0		False
-Vcholerae	ACZ5HH_RS00280	dnaA	310	False											False	0		False
-Vcholerae	punC	punR	157	False											False	0		False
-Vcholerae	ACZ5HH_RS00420	fadB	210	False											False	0		False
-Vcholerae	ilvC	ilvY	137	False											False	0		False
-Vcholerae	rep	vexR	160	False											False	0		False
+Vcholerae	ACZ5HH_RS00215	tusA	135	True	41.0	41.0	578	0	0	0	0	0	0	577	False	0		False
+Vcholerae	ACZ5HH_RS00230	glyQ	415	True	41.0	41.0	458	0	0	0	0	0	0	458	False	0		False
+Vcholerae	ACZ5HH_RS00280	dnaA	310	True	68.0	68.0	510	0	0	0	0	0	68	524	False	0		False
+Vcholerae	punC	punR	157	True	41.0	41.0	588	0	287	0	0	0	0	694	False	0		False
+Vcholerae	ACZ5HH_RS00420	fadB	210	True	41.0	41.0	582	0	0	0	0	0	0	582	False	0		False
+Vcholerae	ilvC	ilvY	137	True	68.0	68.0	584	0	368	0	0	0	68	734	False	0		False
+Vcholerae	rep	vexR	160	True	41.0	41.0	526	0	0	0	0	0	0	526	False	0		False
 Vcholerae	ACZ5HH_RS00530	ACZ5HH_RS00535	289	False											False	0		False
-Vcholerae	ACZ5HH_RS00595	prlC	279	False											False	0		False
-Vcholerae	rarD	recQ	226	False											False	0		False
-Vcholerae	ACZ5HH_RS00645	fhuA	134	False											False	0		False
-Vcholerae	ACZ5HH_RS00670	murQ	230	False											False	0		False
-Vcholerae	ACZ5HH_RS00690	rph	163	False											False	0		False
-Vcholerae	ACZ5HH_RS00730	coaBC	182	False											False	0		False
-Vcholerae	ACZ5HH_RS00765	coaD	110	False											False	0		False
-Vcholerae	ACZ5HH_RS00775	ACZ5HH_RS00780	133	False											False	0		False
+Vcholerae	ACZ5HH_RS00595	prlC	279	True	41.0	41.0	493	0	0	0	0	0	0	493	False	0		False
+Vcholerae	rarD	recQ	226	True	41.0	41.0	586	0	0	0	0	0	0	586	False	0		False
+Vcholerae	ACZ5HH_RS00645	fhuA	134	True	68.0	74.8	562	0	0	48	0	0	68	577	False	0		False
+Vcholerae	ACZ5HH_RS00670	murQ	230	True	79.0	259.6	587	0	338	229	0	0	79	780	False	0		False
+Vcholerae	ACZ5HH_RS00690	rph	163	True	41.0	41.0	596	0	0	0	0	0	0	596	False	0		False
+Vcholerae	ACZ5HH_RS00730	coaBC	182	True	41.0	41.0	529	0	0	0	0	0	0	529	False	0		False
+Vcholerae	ACZ5HH_RS00765	coaD	110	True	124.0	124.0	595	0	0	0	0	0	124	630	False	0		False
+Vcholerae	ACZ5HH_RS00775	ACZ5HH_RS00780	133	True	419.7	419.7	605	0	743	0	0	401	71	935	False	0		False
 Vcholerae	ACZ5HH_RS00830	waaF	180	False											False	0		False
-Vcholerae	ACZ5HH_RS01035	ACZ5HH_RS01040	73	False											False	0		False
-Vcholerae	ACZ5HH_RS01050	hupA	371	False											False	0		False
+Vcholerae	ACZ5HH_RS01035	ACZ5HH_RS01040	73	True	546.0	546.0	621	0	0	0	0	0	546	820	False	0		False
+Vcholerae	ACZ5HH_RS01050	hupA	371	True	70.0	70.0	384	0	0	0	0	0	70	403	False	0		False
 Vcholerae	ACZ5HH_RS01080	zntR	33	False											False	0		False
-Vcholerae	ACZ5HH_RS01135	ACZ5HH_RS01140	153	False											False	0		False
+Vcholerae	ACZ5HH_RS01135	ACZ5HH_RS01140	153	True	165.0	466.3	550	0	413	387	0	0	165	846	False	0		False
 Vcholerae	ACZ5HH_RS01150	ACZ5HH_RS01155	227	False											False	0		False
-Vcholerae	ACZ5HH_RS01200	ACZ5HH_RS01205	259	False											False	0		False
-Vcholerae	rhlB	trxA	111	False											False	0		False
-Vcholerae	ACZ5HH_RS01285	murB	36	False											False	0		False
+Vcholerae	ACZ5HH_RS01200	ACZ5HH_RS01205	259	True	41.0	41.0	599	0	0	0	0	0	0	599	False	0		False
+Vcholerae	rhlB	trxA	111	True	251.0	251.0	594	0	0	0	0	0	251	683	False	0		False
+Vcholerae	ACZ5HH_RS01285	murB	36	True	41.0	41.0	620	0	0	0	0	0	0	620	False	0		False
 Vcholerae	ACZ5HH_RS01305	coaA	208	False											False	0		False
-Vcholerae	ACZ5HH_RS01370	nudC	183	False											False	0		False
+Vcholerae	ACZ5HH_RS01370	nudC	183	True	67.0	67.0	582	0	0	0	0	0	67	593	False	0		False
 Vcholerae	orn	rsgA	122	True	193.0	193.0	591	0	0	0	0	0	193	655	False	0		False
-Vcholerae	queG	tsaE	204	False											False	0		False
-Vcholerae	ACZ5HH_RS01535	fkpA	184	False											False	0		False
-Vcholerae	ACZ5HH_RS01615	ACZ5HH_RS01620	170	False											False	0		False
-Vcholerae	ACZ5HH_RS01630	pgi	284	False											False	0		False
-Vcholerae	dusA	zur	390	False											False	0		False
-Vcholerae	ACZ5HH_RS01750	metH	196	False											False	0		False
-Vcholerae	ACZ5HH_RS01765	lysC	463	False											False	0		False
-Vcholerae	ACZ5HH_RS01785	ACZ5HH_RS01790	291	False											False	0		False
+Vcholerae	queG	tsaE	204	True	41.0	41.0	598	0	0	0	0	0	0	597	False	0		False
+Vcholerae	ACZ5HH_RS01535	fkpA	184	True	238.5	245.6	560	0	0	50	184	105	0	654	False	0		False
+Vcholerae	ACZ5HH_RS01615	ACZ5HH_RS01620	170	True	41.0	41.0	590	0	0	0	0	0	0	589	False	0		False
+Vcholerae	ACZ5HH_RS01630	pgi	284	True	41.0	41.0	488	0	0	0	0	0	0	488	False	0		False
+Vcholerae	dusA	zur	390	True	41.0	41.0	413	0	0	0	0	0	0	412	False	0		False
+Vcholerae	ACZ5HH_RS01750	metH	196	True	165.0	165.0	593	0	0	0	0	0	165	645	False	0		False
+Vcholerae	ACZ5HH_RS01765	lysC	463	True	348.2	348.2	360	0	0	0	0	330	67	565	False	0		False
+Vcholerae	ACZ5HH_RS01785	ACZ5HH_RS01790	291	True	41.0	41.0	482	0	0	0	0	0	0	482	False	0		False
 Vcholerae	argR	mdh	327	True	346.0	351.5	584	0	282	49	0	0	346	789	False	0		False
-Vcholerae	ispB	rplU	270	False											False	0		False
+Vcholerae	ispB	rplU	270	True	41.0	41.0	556	0	0	0	0	0	0	556	False	0		False
 Vcholerae	djlA	lptD	158	True	152.0	152.0	581	0	162	0	0	0	152	676	False	0		False
-Vcholerae	mutY	trmB	239	False											False	0		False
-Vcholerae	ACZ5HH_RS02145	ACZ5HH_RS02150	25	False											False	0		False
-Vcholerae	metK	tkt	364	False											False	0		False
-Vcholerae	ACZ5HH_RS02210	ACZ5HH_RS02215	144	False											False	0		False
-Vcholerae	ACZ5HH_RS02240	ACZ5HH_RS02245	164	False											False	0		False
-Vcholerae	ACZ5HH_RS02265	pykF	427	False											False	0		False
+Vcholerae	mutY	trmB	239	True	72.0	84.6	526	0	0	54	0	0	72	548	False	0		False
+Vcholerae	ACZ5HH_RS02145	ACZ5HH_RS02150	25	True	57.0	57.0	617	0	0	0	0	0	57	624	False	0		False
+Vcholerae	metK	tkt	364	True	174.2	217.2	460	0	0	91	98	0	122	559	False	0		False
+Vcholerae	ACZ5HH_RS02210	ACZ5HH_RS02215	144	True	568.0	568.0	554	0	160	0	0	0	568	824	False	0		False
+Vcholerae	ACZ5HH_RS02240	ACZ5HH_RS02245	164	True	187.0	187.0	573	0	768	0	0	0	187	912	False	0		False
+Vcholerae	ACZ5HH_RS02265	pykF	427	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Vcholerae	rpsU	tsaD	240	False											False	0		False
-Vcholerae	folB	plsY	188	False											False	0		False
-Vcholerae	cysM	cysP	257	False											False	0		False
-Vcholerae	zapE	zapG	152	False											False	0		False
-Vcholerae	ACZ5HH_RS02625	rsmI	69	False											False	0		False
-Vcholerae	ACZ5HH_RS02650	can	147	False											False	0		False
-Vcholerae	ACZ5HH_RS02700	sfsA	246	False											False	0		False
+Vcholerae	folB	plsY	188	True	41.0	72.0	578	0	0	72	0	0	0	592	False	0		False
+Vcholerae	cysM	cysP	257	True	111.0	508.7	393	0	0	470	0	0	111	689	False	0		False
+Vcholerae	zapE	zapG	152	True	41.0	41.0	578	0	0	0	0	0	0	578	False	0		False
+Vcholerae	ACZ5HH_RS02625	rsmI	69	True	41.0	41.0	622	0	0	0	0	0	0	622	False	0		False
+Vcholerae	ACZ5HH_RS02650	can	147	True	485.1	577.4	553	69	0	213	0	435	126	808	False	0		False
+Vcholerae	ACZ5HH_RS02700	sfsA	246	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Vcholerae	ACZ5HH_RS02825	hemL	14	False											False	0		False
-Vcholerae	ACZ5HH_RS02845	tyrS	130	False											False	0		False
-Vcholerae	rlmE	yhbY	119	False											False	0		False
-Vcholerae	ACZ5HH_RS02980	ubiT	232	False											False	0		False
-Vcholerae	ACZ5HH_RS03005	prfC	208	False											False	0		False
-Vcholerae	ACZ5HH_RS03020	brnQ	308	False											False	0		False
-Vcholerae	ACZ5HH_RS03090	nhaR	394	False											False	0		False
+Vcholerae	ACZ5HH_RS02845	tyrS	130	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	rlmE	yhbY	119	True	67.0	82.6	592	0	0	57	0	0	67	609	False	0		False
+Vcholerae	ACZ5HH_RS02980	ubiT	232	True	41.0	41.0	532	0	0	0	0	0	0	531	False	0		False
+Vcholerae	ACZ5HH_RS03005	prfC	208	True	165.0	165.0	537	0	0	0	0	0	165	597	False	0		False
+Vcholerae	ACZ5HH_RS03020	brnQ	308	True	143.0	143.0	466	0	0	0	0	0	143	523	False	0		False
+Vcholerae	ACZ5HH_RS03090	nhaR	394	True	41.0	41.0	348	0	0	0	0	0	0	348	False	0		False
 Vcholerae	murJ	rpsT	257	True	97.0	97.0	524	0	0	0	0	0	97	552	False	0		False
-Vcholerae	ACZ5HH_RS03140	ACZ5HH_RS03145	252	False											False	0		False
-Vcholerae	ACZ5HH_RS03160	nagZ	105	False											False	0		False
-Vcholerae	ACZ5HH_RS03175	ACZ5HH_RS03180	241	False											False	0		False
-Vcholerae	ettA	sltY	360	False											False	0		False
-Vcholerae	ACZ5HH_RS03235	rluD	154	False											False	0		False
+Vcholerae	ACZ5HH_RS03140	ACZ5HH_RS03145	252	True	41.0	41.0	516	0	0	0	0	0	0	516	False	0		False
+Vcholerae	ACZ5HH_RS03160	nagZ	105	True	346.0	346.0	597	0	478	0	0	0	346	850	False	0		False
+Vcholerae	ACZ5HH_RS03175	ACZ5HH_RS03180	241	True	41.0	41.0	525	0	0	0	0	0	0	525	False	0		False
+Vcholerae	ettA	sltY	360	True	68.0	68.0	449	0	0	0	0	0	68	465	False	0		False
+Vcholerae	ACZ5HH_RS03235	rluD	154	True	67.0	124.4	592	0	0	100	0	0	67	627	False	0		False
 Vcholerae	ACZ5HH_RS03300	ACZ5HH_RS03305	248	False											False	0		False
-Vcholerae	phoB	rdgC	235	False											False	0		False
-Vcholerae	ACZ5HH_RS03350	ppk1	198	False											False	0		False
-Vcholerae	ACZ5HH_RS03380	ACZ5HH_RS03385	221	False											False	0		False
-Vcholerae	ACZ5HH_RS03400	queA	289	False											False	0		False
-Vcholerae	suhB	trmJ	181	False											False	0		False
+Vcholerae	phoB	rdgC	235	True	41.0	41.0	496	0	0	0	0	0	0	497	False	0		False
+Vcholerae	ACZ5HH_RS03350	ppk1	198	True	66.0	66.0	555	0	0	0	0	0	66	566	False	0		False
+Vcholerae	ACZ5HH_RS03380	ACZ5HH_RS03385	221	True	406.0	406.0	551	0	0	0	0	0	406	722	False	0		False
+Vcholerae	ACZ5HH_RS03400	queA	289	True	41.0	41.0	501	0	0	0	0	0	0	501	False	0		False
+Vcholerae	suhB	trmJ	181	True	41.0	41.0	593	0	158	0	0	0	0	643	False	0		False
 Vcholerae	guaB	xseA	207	True	41.0	41.0	593	0	0	0	0	0	0	593	False	0		False
-Vcholerae	ACZ5HH_RS03570	ACZ5HH_RS03575	176	False											False	0		False
-Vcholerae	fepB	vibH	195	False											False	0		False
-Vcholerae	ACZ5HH_RS03625	ACZ5HH_RS03630	103	False											False	0		False
-Vcholerae	citC	citS	277	False											False	0		False
-Vcholerae	ACZ5HH_RS03720	fdxA	246	False											False	0		False
-Vcholerae	ACZ5HH_RS03725	ACZ5HH_RS03730	223	False											False	0		False
-Vcholerae	ACZ5HH_RS03795	radC	143	False											False	0		False
+Vcholerae	ACZ5HH_RS03570	ACZ5HH_RS03575	176	True	564.0	583.5	571	0	706	84	0	0	564	943	False	0		False
+Vcholerae	fepB	vibH	195	True	364.0	830.9	600	0	371	745	0	0	364	953	False	0		False
+Vcholerae	ACZ5HH_RS03625	ACZ5HH_RS03630	103	True	67.0	67.0	599	0	0	0	0	0	67	609	False	0		False
+Vcholerae	citC	citS	277	True	139.0	139.0	509	0	540	0	0	0	139	788	False	0		False
+Vcholerae	ACZ5HH_RS03720	fdxA	246	True	41.0	41.0	461	0	187	0	0	0	0	543	False	0		False
+Vcholerae	ACZ5HH_RS03725	ACZ5HH_RS03730	223	True	41.0	41.0	532	0	0	0	0	0	0	532	False	0		False
+Vcholerae	ACZ5HH_RS03795	radC	143	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Vcholerae	tcpI	tcpP	443	True	250.0	250.0	0	0	0	0	0	0	250	250	False	0		False
-Vcholerae	acfA	acfD	176	False											False	0		False
-Vcholerae	ACZ5HH_RS03965	smpB	183	False											False	0		False
+Vcholerae	acfA	acfD	176	True	179.0	179.0	511	0	0	0	0	0	179	581	False	0		False
+Vcholerae	ACZ5HH_RS03965	smpB	183	True	41.0	49.0	566	0	0	49	0	0	0	570	False	0		False
 Vcholerae	grpE	nadK	145	True	41.0	41.0	582	0	0	0	0	0	0	581	False	0		False
 Vcholerae	ACZ5HH_RS03995	dnaK	157	False											False	0		False
-Vcholerae	ACZ5HH_RS04010	ACZ5HH_RS04015	96	False											False	0		False
-Vcholerae	ACZ5HH_RS04055	mltF	106	False											False	0		False
-Vcholerae	ACZ5HH_RS04090	tsaA	133	False											False	0		False
-Vcholerae	ACZ5HH_RS04130	ACZ5HH_RS04135	88	False											False	0		False
+Vcholerae	ACZ5HH_RS04010	ACZ5HH_RS04015	96	True	492.0	795.5	611	0	571	614	0	0	492	962	False	0		False
+Vcholerae	ACZ5HH_RS04055	mltF	106	True	41.0	41.0	572	0	0	0	0	0	0	572	False	0		False
+Vcholerae	ACZ5HH_RS04090	tsaA	133	True	41.0	74.0	586	0	0	74	0	0	0	600	False	0		False
+Vcholerae	ACZ5HH_RS04130	ACZ5HH_RS04135	88	True	41.0	41.0	602	0	0	0	0	0	0	602	False	0		False
 Vcholerae	queF	syd	96	True	41.0	41.0	653	0	0	0	0	0	0	653	False	0		False
 Vcholerae	gmhB	metN	256	True	41.0	41.0	529	0	0	0	0	0	0	529	False	0		False
 Vcholerae	ACZ5HH_RS04275	vexG	285	False											False	0		False
-Vcholerae	ACZ5HH_RS04355	ACZ5HH_RS04360	263	False											False	0		False
+Vcholerae	ACZ5HH_RS04355	ACZ5HH_RS04360	263	True	41.0	41.0	441	0	0	0	0	0	0	441	False	0		False
 Vcholerae	ACZ5HH_RS04370	vpsL	489	False											False	0		False
 Vcholerae	ACZ5HH_RS04650	ACZ5HH_RS04655	152	False											False	0		False
 Vcholerae	ACZ5HH_RS04660	vpsQ	251	False											False	0		False
-Vcholerae	ACZ5HH_RS04675	glyA	340	False											False	0		False
-Vcholerae	ACZ5HH_RS04750	leuS	129	False											False	0		False
-Vcholerae	ACZ5HH_RS04780	miaB	253	False											False	0		False
+Vcholerae	ACZ5HH_RS04675	glyA	340	True	41.0	41.0	489	0	0	0	0	0	0	489	False	0		False
+Vcholerae	ACZ5HH_RS04750	leuS	129	True	41.0	41.0	618	0	0	0	0	0	0	618	False	0		False
+Vcholerae	ACZ5HH_RS04780	miaB	253	True	70.0	70.0	538	0	0	0	0	0	70	552	False	0		False
 Vcholerae	cysZ	zipA	229	True	41.0	41.0	533	0	162	0	0	0	0	592	False	0		False
 Vcholerae	ACZ5HH_RS04855	yfcE	413	False											False	0		False
-Vcholerae	ACZ5HH_RS04875	htpG	263	False											False	0		False
-Vcholerae	nagA	nagE	468	False											False	0		False
-Vcholerae	ACZ5HH_RS04985	motY	72	False											False	0		False
+Vcholerae	ACZ5HH_RS04875	htpG	263	True	68.0	68.0	535	0	0	0	0	0	68	548	False	0		False
+Vcholerae	nagA	nagE	468	True	856.3	856.3	196	0	151	0	0	748	453	893	False	0		False
+Vcholerae	ACZ5HH_RS04985	motY	72	True	41.0	41.0	557	0	0	0	0	0	0	557	False	0		False
 Vcholerae	ACZ5HH_RS05040	rsxA	236	False											False	0		False
-Vcholerae	ACZ5HH_RS05065	moaA	306	False											False	0		False
-Vcholerae	ACZ5HH_RS05095	ACZ5HH_RS05100	228	False											False	0		False
-Vcholerae	apbC	metG	157	False											False	0		False
-Vcholerae	ACZ5HH_RS05185	ACZ5HH_RS05190	247	False											False	0		False
-Vcholerae	ACZ5HH_RS05225	ACZ5HH_RS05230	137	False											False	0		False
-Vcholerae	ACZ5HH_RS05235	sohB	158	False											False	0		False
-Vcholerae	ACZ5HH_RS05245	ACZ5HH_RS05250	121	False											False	0		False
-Vcholerae	ACZ5HH_RS05260	tesB	150	False											False	0		False
-Vcholerae	ACZ5HH_RS05265	ACZ5HH_RS05270	50	False											False	0		False
-Vcholerae	ACZ5HH_RS05310	ACZ5HH_RS05315	283	False											False	0		False
-Vcholerae	ACZ5HH_RS05330	ACZ5HH_RS05335	245	False											False	0		False
-Vcholerae	ACZ5HH_RS05420	yfbV	352	False											False	0		False
-Vcholerae	ACZ5HH_RS05430	ACZ5HH_RS05435	440	False											False	0		False
-Vcholerae	ACZ5HH_RS05460	dusC	165	False											False	0		False
+Vcholerae	ACZ5HH_RS05065	moaA	306	True	41.0	41.0	483	0	0	0	0	0	0	483	False	0		False
+Vcholerae	ACZ5HH_RS05095	ACZ5HH_RS05100	228	True	41.0	41.0	480	0	0	0	0	0	0	481	False	0		False
+Vcholerae	apbC	metG	157	True	218.1	350.2	651	0	179	203	124	0	144	797	False	0		False
+Vcholerae	ACZ5HH_RS05185	ACZ5HH_RS05190	247	True	41.0	41.0	548	0	0	0	0	0	0	548	False	0		False
+Vcholerae	ACZ5HH_RS05225	ACZ5HH_RS05230	137	True	41.0	41.0	586	0	0	0	0	0	0	586	False	0		False
+Vcholerae	ACZ5HH_RS05235	sohB	158	True	41.0	41.0	580	0	0	0	0	0	0	580	False	0		False
+Vcholerae	ACZ5HH_RS05245	ACZ5HH_RS05250	121	True	69.0	69.0	614	0	0	0	0	0	69	625	False	0		False
+Vcholerae	ACZ5HH_RS05260	tesB	150	True	41.0	41.0	579	0	0	0	0	0	0	579	False	0		False
+Vcholerae	ACZ5HH_RS05265	ACZ5HH_RS05270	50	True	41.0	41.0	612	0	0	0	0	0	0	612	False	0		False
+Vcholerae	ACZ5HH_RS05310	ACZ5HH_RS05315	283	True	41.0	41.0	420	0	188	0	0	0	0	509	False	0		False
+Vcholerae	ACZ5HH_RS05330	ACZ5HH_RS05335	245	True	41.0	41.0	458	0	0	0	0	0	0	458	False	0		False
+Vcholerae	ACZ5HH_RS05420	yfbV	352	True	67.0	67.0	392	0	0	0	0	0	67	408	False	0		False
+Vcholerae	ACZ5HH_RS05430	ACZ5HH_RS05435	440	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	ACZ5HH_RS05460	dusC	165	True	41.0	41.0	577	0	0	0	0	0	0	577	False	0		False
 Vcholerae	bioA	bioB	132	True	346.0	860.9	589	564	741	796	0	0	346	992	False	0		False
-Vcholerae	ACZ5HH_RS05510	htpX	265	False											False	0		False
-Vcholerae	ACZ5HH_RS05575	mnmA	264	False											False	0		False
+Vcholerae	ACZ5HH_RS05510	htpX	265	True	41.0	41.0	536	0	0	0	0	0	0	536	False	0		False
+Vcholerae	ACZ5HH_RS05575	mnmA	264	True	41.0	41.0	509	0	0	0	0	0	0	509	False	0		False
 Vcholerae	clpS	cspD	472	True	87.0	126.0	93	0	0	82	0	0	87	173	False	0		False
-Vcholerae	ACZ5HH_RS05665	ACZ5HH_RS05670	308	False											False	0		False
-Vcholerae	ACZ5HH_RS05695	ACZ5HH_RS05700	377	False											False	0		False
+Vcholerae	ACZ5HH_RS05665	ACZ5HH_RS05670	308	True	41.0	41.0	500	0	0	0	0	0	0	499	False	0		False
+Vcholerae	ACZ5HH_RS05695	ACZ5HH_RS05700	377	True	41.0	41.0	396	0	550	0	0	0	0	716	False	0		False
 Vcholerae	ACZ5HH_RS05715	ACZ5HH_RS05720	222	False											False	0		False
-Vcholerae	ACZ5HH_RS05755	aspS	291	False											False	0		False
-Vcholerae	rnm	trpL2	64	False											False	0		False
-Vcholerae	ACZ5HH_RS05875	ACZ5HH_RS05880	465	False											False	0		False
-Vcholerae	ACZ5HH_RS05915	ydiJ	212	False											False	0		False
-Vcholerae	ACZ5HH_RS05980	yeiP	218	False											False	0		False
-Vcholerae	ACZ5HH_RS05990	uvrY	375	False											False	0		False
+Vcholerae	ACZ5HH_RS05755	aspS	291	True	41.0	41.0	482	0	0	0	0	0	0	482	False	0		False
+Vcholerae	rnm	trpL2	64	True	41.0	41.0	556	0	0	0	0	0	0	556	False	0		False
+Vcholerae	ACZ5HH_RS05875	ACZ5HH_RS05880	465	True	41.0	41.0	459	0	0	0	0	0	0	459	False	0		False
+Vcholerae	ACZ5HH_RS05915	ydiJ	212	True	41.0	41.0	604	0	0	0	0	0	0	604	False	0		False
+Vcholerae	ACZ5HH_RS05980	yeiP	218	True	41.0	41.0	576	0	0	0	0	0	0	576	False	0		False
+Vcholerae	ACZ5HH_RS05990	uvrY	375	True	41.0	41.0	405	0	0	0	0	0	0	406	False	0		False
 Vcholerae	ACZ5HH_RS06040	pheS	165	False											False	0		False
-Vcholerae	ACZ5HH_RS06065	relV	468	False											False	0		False
-Vcholerae	ACZ5HH_RS06100	msrB	345	False											False	0		False
-Vcholerae	ACZ5HH_RS06165	ACZ5HH_RS06170	172	False											False	0		False
+Vcholerae	ACZ5HH_RS06065	relV	468	True	41.0	41.0	434	0	0	0	0	0	0	433	False	0		False
+Vcholerae	ACZ5HH_RS06100	msrB	345	True	41.0	41.0	399	0	0	0	0	0	0	399	False	0		False
+Vcholerae	ACZ5HH_RS06165	ACZ5HH_RS06170	172	True	443.0	443.0	602	0	0	0	0	443	0	768	False	0		False
 Vcholerae	gyrA	ubiG	351	True	191.0	191.0	426	0	0	0	0	0	191	516	False	0		False
-Vcholerae	ACZ5HH_RS06210	ACZ5HH_RS06215	249	False											False	0		False
-Vcholerae	ACZ5HH_RS06265	ACZ5HH_RS06270	171	False											False	0		False
-Vcholerae	ACZ5HH_RS06300	ACZ5HH_RS06305	373	False											False	0		False
-Vcholerae	ACZ5HH_RS06315	cod	242	False											False	0		False
-Vcholerae	ACZ5HH_RS06350	ACZ5HH_RS06355	404	False											False	0		False
-Vcholerae	ACZ5HH_RS06395	queD	440	False											False	0		False
-Vcholerae	ACZ5HH_RS06425	pabB	175	False											False	0		False
+Vcholerae	ACZ5HH_RS06210	ACZ5HH_RS06215	249	True	67.0	67.0	518	0	0	0	0	0	67	531	False	0		False
+Vcholerae	ACZ5HH_RS06265	ACZ5HH_RS06270	171	True	41.0	41.0	597	0	0	0	0	0	0	597	False	0		False
+Vcholerae	ACZ5HH_RS06300	ACZ5HH_RS06305	373	True	41.0	41.0	421	0	197	0	0	0	0	515	False	0		False
+Vcholerae	ACZ5HH_RS06315	cod	242	True	72.0	72.0	481	0	0	0	0	0	72	498	False	0		False
+Vcholerae	ACZ5HH_RS06350	ACZ5HH_RS06355	404	True	41.0	41.0	311	0	0	0	0	0	0	311	False	0		False
+Vcholerae	ACZ5HH_RS06395	queD	440	True	41.0	41.0	388	0	0	0	0	0	0	389	False	0		False
+Vcholerae	ACZ5HH_RS06425	pabB	175	True	580.0	580.0	603	0	0	0	0	0	580	826	False	0		False
 Vcholerae	ACZ5HH_RS06460	ACZ5HH_RS06465	252	False											False	0		False
-Vcholerae	ACZ5HH_RS06475	ACZ5HH_RS06480	384	False											False	0		False
-Vcholerae	ACZ5HH_RS06515	carR	375	False											False	0		False
-Vcholerae	ACZ5HH_RS06525	mglB	498	False											False	0		False
-Vcholerae	ACZ5HH_RS06610	hppD	458	False											False	0		False
-Vcholerae	ACZ5HH_RS06635	ACZ5HH_RS06640	121	False											False	0		False
-Vcholerae	ACZ5HH_RS06655	yccX	245	False											False	0		False
-Vcholerae	ACZ5HH_RS06690	ACZ5HH_RS06695	455	False											False	0		False
-Vcholerae	ACZ5HH_RS06700	queE	362	False											False	0		False
-Vcholerae	ACZ5HH_RS06715	ACZ5HH_RS06720	251	False											False	0		False
-Vcholerae	ACZ5HH_RS06780	hrpA	201	False											False	0		False
-Vcholerae	ACZ5HH_RS06820	ACZ5HH_RS06825	86	False											False	0		False
-Vcholerae	ACZ5HH_RS06915	ACZ5HH_RS06920	105	False											False	0		False
-Vcholerae	ACZ5HH_RS06925	ACZ5HH_RS06930	172	False											False	0		False
-Vcholerae	ACZ5HH_RS06955	metA	139	False											False	0		False
+Vcholerae	ACZ5HH_RS06475	ACZ5HH_RS06480	384	True	41.0	41.0	367	0	0	0	0	0	0	367	False	0		False
+Vcholerae	ACZ5HH_RS06515	carR	375	True	68.0	68.0	325	0	0	0	0	0	68	344	False	0		False
+Vcholerae	ACZ5HH_RS06525	mglB	498	True	41.0	41.0	310	0	0	0	0	0	0	310	False	0		False
+Vcholerae	ACZ5HH_RS06610	hppD	458	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	ACZ5HH_RS06635	ACZ5HH_RS06640	121	True	888.9	923.8	654	33	307	342	266	755	432	980	False	0		False
+Vcholerae	ACZ5HH_RS06655	yccX	245	True	72.0	72.0	569	0	0	0	0	0	72	582	False	0		False
+Vcholerae	ACZ5HH_RS06690	ACZ5HH_RS06695	455	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	ACZ5HH_RS06700	queE	362	True	41.0	41.0	497	0	0	0	0	0	0	497	False	0		False
+Vcholerae	ACZ5HH_RS06715	ACZ5HH_RS06720	251	True	41.0	41.0	514	0	0	0	0	0	0	514	False	0		False
+Vcholerae	ACZ5HH_RS06780	hrpA	201	True	41.0	41.0	556	0	0	0	0	0	0	557	False	0		False
+Vcholerae	ACZ5HH_RS06820	ACZ5HH_RS06825	86	True	41.0	41.0	574	0	0	0	0	0	0	574	False	0		False
+Vcholerae	ACZ5HH_RS06915	ACZ5HH_RS06920	105	True	67.0	67.0	603	0	190	0	0	0	67	674	False	0		False
+Vcholerae	ACZ5HH_RS06925	ACZ5HH_RS06930	172	True	68.0	68.0	571	0	0	0	0	0	68	583	False	0		False
+Vcholerae	ACZ5HH_RS06955	metA	139	True	41.0	41.0	613	0	0	0	0	0	0	613	False	0		False
 Vcholerae	ACZ5HH_RS06980	ACZ5HH_RS06985	327	False											False	0		False
 Vcholerae	ACZ5HH_RS07020	ACZ5HH_RS07025	271	False											False	0		False
-Vcholerae	ACZ5HH_RS07035	ACZ5HH_RS07040	211	False											False	0		False
-Vcholerae	ACZ5HH_RS07085	budA	108	False											False	0		False
-Vcholerae	ACZ5HH_RS07095	ACZ5HH_RS07100	118	False											False	0		False
-Vcholerae	ACZ5HH_RS07180	ACZ5HH_RS07185	111	False											False	0		False
-Vcholerae	ACZ5HH_RS07195	katG	412	False											False	0		False
-Vcholerae	ACZ5HH_RS07240	ACZ5HH_RS07245	318	False											False	0		False
-Vcholerae	ACZ5HH_RS07305	ACZ5HH_RS07310	88	False											False	0		False
-Vcholerae	ACZ5HH_RS07315	ACZ5HH_RS07320	99	False											False	0		False
-Vcholerae	ACZ5HH_RS07355	ACZ5HH_RS07360	303	False											False	0		False
-Vcholerae	ACZ5HH_RS07380	fdhD	222	False											False	0		False
-Vcholerae	ACZ5HH_RS07435	ACZ5HH_RS07440	275	False											False	0		False
+Vcholerae	ACZ5HH_RS07035	ACZ5HH_RS07040	211	True	41.0	41.0	524	0	0	0	0	0	0	524	False	0		False
+Vcholerae	ACZ5HH_RS07085	budA	108	True	449.0	449.0	581	0	0	0	0	0	449	759	False	0		False
+Vcholerae	ACZ5HH_RS07095	ACZ5HH_RS07100	118	True	67.0	67.0	578	0	535	0	0	0	67	801	False	0		False
+Vcholerae	ACZ5HH_RS07180	ACZ5HH_RS07185	111	True	492.0	501.0	557	0	0	58	0	0	492	769	False	0		False
+Vcholerae	ACZ5HH_RS07195	katG	412	True	41.0	41.0	402	0	0	0	0	0	0	402	False	0		False
+Vcholerae	ACZ5HH_RS07240	ACZ5HH_RS07245	318	True	50.0	50.0	394	0	0	0	0	0	50	400	False	0		False
+Vcholerae	ACZ5HH_RS07305	ACZ5HH_RS07310	88	True	41.0	41.0	602	0	0	0	0	0	0	602	False	0		False
+Vcholerae	ACZ5HH_RS07315	ACZ5HH_RS07320	99	True	41.0	41.0	622	0	0	0	0	0	0	622	False	0		False
+Vcholerae	ACZ5HH_RS07355	ACZ5HH_RS07360	303	True	41.0	41.0	482	0	235	0	0	0	0	587	False	0		False
+Vcholerae	ACZ5HH_RS07380	fdhD	222	True	777.3	777.3	614	0	0	0	510	500	164	910	False	0		False
+Vcholerae	ACZ5HH_RS07435	ACZ5HH_RS07440	275	True	41.0	41.0	566	0	0	0	0	0	0	566	False	0		False
 Vcholerae	ACZ5HH_RS07445	ACZ5HH_RS07450	101	False											False	0		False
-Vcholerae	ACZ5HH_RS07470	ACZ5HH_RS07475	85	False											False	0		False
-Vcholerae	ACZ5HH_RS07550	matP	163	False											False	0		False
+Vcholerae	ACZ5HH_RS07470	ACZ5HH_RS07475	85	True	41.0	41.0	622	0	0	0	0	0	0	622	False	0		False
+Vcholerae	ACZ5HH_RS07550	matP	163	True	41.0	41.0	622	0	0	0	0	0	0	622	False	0		False
 Vcholerae	ACZ5HH_RS07570	ACZ5HH_RS07575	131	False											False	0		False
 Vcholerae	ACZ5HH_RS07615	ACZ5HH_RS07620	131	False											False	0		False
 Vcholerae	ACZ5HH_RS07660	ACZ5HH_RS07665	120	False											False	0		False
 Vcholerae	ACZ5HH_RS07685	ACZ5HH_RS07690	120	False											False	0		False
 Vcholerae	ACZ5HH_RS07710	ACZ5HH_RS07715	130	False											False	0		False
-Vcholerae	rtxB	rtxH	425	False											False	0		False
-Vcholerae	ACZ5HH_RS07775	ccoN	258	False											False	0		False
-Vcholerae	ACZ5HH_RS07845	potA	324	False											False	0		False
-Vcholerae	ACZ5HH_RS07915	hcp-2	287	False											False	0		False
-Vcholerae	vceC	vceR	116	False											False	0		False
+Vcholerae	rtxB	rtxH	425	True	76.0	76.0	343	0	0	0	0	0	76	367	False	0		False
+Vcholerae	ACZ5HH_RS07775	ccoN	258	True	841.6	905.4	534	0	0	427	819	0	161	954	False	0		False
+Vcholerae	ACZ5HH_RS07845	potA	324	True	41.0	41.0	437	0	0	0	0	0	0	438	False	0		False
+Vcholerae	ACZ5HH_RS07915	hcp-2	287	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	vceC	vceR	116	True	70.0	70.0	580	0	228	0	0	0	70	672	False	0		False
 Vcholerae	ACZ5HH_RS07950	ACZ5HH_RS07955	420	False											False	0		False
-Vcholerae	ACZ5HH_RS08000	ACZ5HH_RS08005	127	False											False	0		False
-Vcholerae	ACZ5HH_RS08025	rsuA	133	False											False	0		False
-Vcholerae	ACZ5HH_RS08085	ACZ5HH_RS08090	229	False											False	0		False
+Vcholerae	ACZ5HH_RS08000	ACZ5HH_RS08005	127	True	41.0	41.0	589	0	0	0	0	0	0	589	False	0		False
+Vcholerae	ACZ5HH_RS08025	rsuA	133	True	101.0	101.0	596	0	161	0	0	0	101	668	False	0		False
+Vcholerae	ACZ5HH_RS08085	ACZ5HH_RS08090	229	True	41.0	41.0	575	0	0	0	0	0	0	575	False	0		False
 Vcholerae	ACZ5HH_RS08095	ACZ5HH_RS08100	327	False											False	0		False
-Vcholerae	ACZ5HH_RS08125	ACZ5HH_RS08130	335	False											False	0		False
-Vcholerae	ACZ5HH_RS08155	ACZ5HH_RS08160	146	False											False	0		False
-Vcholerae	ACZ5HH_RS08190	cls	421	False											False	0		False
-Vcholerae	pspA	pspF	209	False											False	0		False
-Vcholerae	ACZ5HH_RS08280	ACZ5HH_RS08285	185	False											False	0		False
-Vcholerae	ACZ5HH_RS08315	focA	351	False											False	0		False
-Vcholerae	metE	metR	395	False											True	1	14662	True
-Vcholerae	ACZ5HH_RS08370	ACZ5HH_RS08375	223	False											False	0		False
-Vcholerae	ACZ5HH_RS08380	ACZ5HH_RS08385	279	False											False	0		False
-Vcholerae	ACZ5HH_RS08390	ACZ5HH_RS08395	107	False											False	0		False
+Vcholerae	ACZ5HH_RS08125	ACZ5HH_RS08130	335	True	68.0	68.0	376	0	0	0	0	0	68	394	False	0		False
+Vcholerae	ACZ5HH_RS08155	ACZ5HH_RS08160	146	True	41.0	41.0	581	0	0	0	0	0	0	581	False	0		False
+Vcholerae	ACZ5HH_RS08190	cls	421	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	pspA	pspF	209	True	865.4	865.4	512	0	413	0	840	0	193	958	False	0		False
+Vcholerae	ACZ5HH_RS08280	ACZ5HH_RS08285	185	True	41.0	41.0	581	0	0	0	0	0	0	581	False	0		False
+Vcholerae	ACZ5HH_RS08315	focA	351	True	41.0	41.0	520	0	0	0	0	0	0	519	False	0		False
+Vcholerae	metE	metR	395	True	69.0	69.0	450	0	438	0	0	0	69	687	True	1	14662	True
+Vcholerae	ACZ5HH_RS08370	ACZ5HH_RS08375	223	True	41.0	41.0	507	0	0	0	0	0	0	507	False	0		False
+Vcholerae	ACZ5HH_RS08380	ACZ5HH_RS08385	279	True	368.0	368.0	533	0	0	0	0	0	368	692	False	0		False
+Vcholerae	ACZ5HH_RS08390	ACZ5HH_RS08395	107	True	41.0	41.0	605	0	229	0	0	0	0	682	False	0		False
 Vcholerae	ACZ5HH_RS08400	ACZ5HH_RS08405	318	False											False	0		False
-Vcholerae	cmoM	elyC	116	False											False	0		False
-Vcholerae	torD	torR	224	False											False	0		False
-Vcholerae	ACZ5HH_RS08490	topA	336	False											False	0		False
+Vcholerae	cmoM	elyC	116	True	41.0	41.0	601	0	0	0	0	0	0	602	False	0		False
+Vcholerae	torD	torR	224	True	432.0	432.0	537	0	0	0	0	0	432	725	False	0		False
+Vcholerae	ACZ5HH_RS08490	topA	336	True	41.0	41.0	479	0	0	0	0	0	0	479	False	0		False
 Vcholerae	aat	aroA	266	True	41.0	41.0	622	0	0	0	0	0	0	622	False	0		False
 Vcholerae	ACZ5HH_RS08530	ACZ5HH_RS08535	94	False											False	0		False
-Vcholerae	ACZ5HH_RS08555	breR	226	False											False	0		False
+Vcholerae	ACZ5HH_RS08555	breR	226	True	41.0	41.0	442	0	252	0	0	0	0	564	False	0		False
 Vcholerae	ACZ5HH_RS08570	ACZ5HH_RS08575	257	False											False	0		False
 Vcholerae	ACZ5HH_RS08750	ACZ5HH_RS08755	294	False											False	0		False
 Vcholerae	ACZ5HH_RS08955	ACZ5HH_RS08960	418	False											False	0		False
@@ -3830,134 +3830,134 @@ Vcholerae	ACZ5HH_RS09030	ACZ5HH_RS09035	238	False											False	0		False
 Vcholerae	ACZ5HH_RS09200	ACZ5HH_RS09205	298	False											False	0		False
 Vcholerae	ACZ5HH_RS09215	ACZ5HH_RS09220	239	False											False	0		False
 Vcholerae	ACZ5HH_RS09235	ACZ5HH_RS09240	389	False											False	0		False
-Vcholerae	ACZ5HH_RS09315	siaP	214	False											False	0		False
-Vcholerae	ACZ5HH_RS09350	ACZ5HH_RS09355	140	False											False	0		False
-Vcholerae	ACZ5HH_RS09370	exaC	283	False											False	0		False
-Vcholerae	ACZ5HH_RS09390	ACZ5HH_RS09395	229	False											False	0		False
-Vcholerae	ACZ5HH_RS09405	ACZ5HH_RS09410	371	False											False	0		False
-Vcholerae	ACZ5HH_RS09430	cqsR	213	False											False	0		False
-Vcholerae	ACZ5HH_RS09515	cysS	145	False											False	0		False
-Vcholerae	ACZ5HH_RS09605	pflA	332	False											False	0		False
-Vcholerae	ACZ5HH_RS09665	ACZ5HH_RS09670	122	False											False	0		False
-Vcholerae	ACZ5HH_RS09690	lolC	175	False											False	0		False
-Vcholerae	ACZ5HH_RS09750	hinT	259	False											False	0		False
-Vcholerae	ald	lrp	156	False											False	0		False
-Vcholerae	ACZ5HH_RS09800	cysB	288	False											False	0		False
+Vcholerae	ACZ5HH_RS09315	siaP	214	True	335.0	335.0	594	0	0	0	0	0	335	719	False	0		False
+Vcholerae	ACZ5HH_RS09350	ACZ5HH_RS09355	140	True	41.0	41.0	564	0	344	0	0	0	0	702	False	0		False
+Vcholerae	ACZ5HH_RS09370	exaC	283	True	228.6	228.6	382	0	0	0	202	0	73	503	False	0		False
+Vcholerae	ACZ5HH_RS09390	ACZ5HH_RS09395	229	True	763.6	803.8	543	0	128	204	0	732	154	915	False	0		False
+Vcholerae	ACZ5HH_RS09405	ACZ5HH_RS09410	371	True	290.0	290.0	402	0	0	0	151	0	198	557	False	0		False
+Vcholerae	ACZ5HH_RS09430	cqsR	213	True	41.0	41.0	548	0	0	0	0	0	0	549	False	0		False
+Vcholerae	ACZ5HH_RS09515	cysS	145	True	73.0	73.0	582	0	0	0	0	0	73	595	False	0		False
+Vcholerae	ACZ5HH_RS09605	pflA	332	True	41.0	41.0	443	0	0	0	0	0	0	443	False	0		False
+Vcholerae	ACZ5HH_RS09665	ACZ5HH_RS09670	122	True	41.0	41.0	659	0	0	0	0	0	0	659	False	0		False
+Vcholerae	ACZ5HH_RS09690	lolC	175	True	41.0	41.0	573	0	0	0	0	0	0	573	False	0		False
+Vcholerae	ACZ5HH_RS09750	hinT	259	True	133.0	133.0	499	0	0	0	133	0	0	547	False	0		False
+Vcholerae	ald	lrp	156	True	87.0	87.0	577	0	0	0	0	0	87	597	False	0		False
+Vcholerae	ACZ5HH_RS09800	cysB	288	True	41.0	41.0	483	0	0	0	0	0	0	483	False	0		False
 Vcholerae	ACZ5HH_RS09955	folD	201	False											False	0		False
-Vcholerae	ACZ5HH_RS09975	ACZ5HH_RS09980	358	False											False	0		False
-Vcholerae	ACZ5HH_RS10015	minC	199	False											False	0		False
-Vcholerae	ACZ5HH_RS10045	ACZ5HH_RS10050	193	False											False	0		False
-Vcholerae	ACZ5HH_RS10090	ACZ5HH_RS10095	214	False											False	0		False
-Vcholerae	ACZ5HH_RS10110	rrtA	3	False											False	0		False
+Vcholerae	ACZ5HH_RS09975	ACZ5HH_RS09980	358	True	41.0	41.0	519	0	0	0	0	0	0	519	False	0		False
+Vcholerae	ACZ5HH_RS10015	minC	199	True	124.0	139.5	598	0	0	58	0	0	124	639	False	0		False
+Vcholerae	ACZ5HH_RS10045	ACZ5HH_RS10050	193	True	41.0	41.0	557	0	187	0	0	0	0	625	False	0		False
+Vcholerae	ACZ5HH_RS10090	ACZ5HH_RS10095	214	True	500.0	500.0	537	0	0	0	0	500	0	759	False	0		False
+Vcholerae	ACZ5HH_RS10110	rrtA	3	True	41.0	41.0	622	0	0	0	0	0	0	622	False	0		False
 Vcholerae	ACZ5HH_RS10155	purU	269	False											False	0		False
-Vcholerae	ACZ5HH_RS10165	sppA	229	False											False	0		False
-Vcholerae	ACZ5HH_RS10180	ACZ5HH_RS10185	103	False											False	0		False
-Vcholerae	gap	msrB	392	False											False	0		False
-Vcholerae	mlc	pyk	444	False											False	0		False
+Vcholerae	ACZ5HH_RS10165	sppA	229	True	41.0	41.0	533	0	0	0	0	0	0	534	False	0		False
+Vcholerae	ACZ5HH_RS10180	ACZ5HH_RS10185	103	True	41.0	41.0	566	0	190	0	0	0	0	634	False	0		False
+Vcholerae	gap	msrB	392	True	144.8	144.8	72	0	0	0	120	0	68	172	False	0		False
+Vcholerae	mlc	pyk	444	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Vcholerae	ACZ5HH_RS10250	cydH	135	False											False	0		False
-Vcholerae	ACZ5HH_RS10335	yceD	147	False											False	0		False
-Vcholerae	asd	nhaC	424	False											False	0		False
-Vcholerae	ACZ5HH_RS10390	yejK	84	False											False	0		False
-Vcholerae	ACZ5HH_RS10420	sodB	251	False											False	0		False
-Vcholerae	ACZ5HH_RS10555	sixA	197	False											False	0		False
-Vcholerae	ACZ5HH_RS10560	argS	199	False											False	0		False
-Vcholerae	znuA	znuC	83	False											False	0		False
-Vcholerae	ACZ5HH_RS10650	sdhC	395	False											False	0		False
-Vcholerae	ACZ5HH_RS10655	ACZ5HH_RS10660	64	False											False	0		False
-Vcholerae	ACZ5HH_RS10675	seqA	92	False											False	0		False
-Vcholerae	ACZ5HH_RS10695	ACZ5HH_RS10700	115	False											False	0		False
-Vcholerae	ACZ5HH_RS10705	fcrX	365	False											False	0		False
+Vcholerae	ACZ5HH_RS10335	yceD	147	True	41.0	41.0	581	0	0	0	0	0	0	581	False	0		False
+Vcholerae	asd	nhaC	424	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	ACZ5HH_RS10390	yejK	84	True	137.0	137.0	603	0	574	0	0	0	137	841	False	0		False
+Vcholerae	ACZ5HH_RS10420	sodB	251	True	166.0	198.2	517	0	0	78	0	0	166	596	False	0		False
+Vcholerae	ACZ5HH_RS10555	sixA	197	True	41.0	41.0	583	0	0	0	0	0	0	582	False	0		False
+Vcholerae	ACZ5HH_RS10560	argS	199	True	71.0	71.0	586	0	0	0	0	0	71	599	False	0		False
+Vcholerae	znuA	znuC	83	True	728.6	926.4	606	0	765	740	0	602	346	992	False	0		False
+Vcholerae	ACZ5HH_RS10650	sdhC	395	True	168.0	659.0	395	0	150	607	0	0	168	809	False	0		False
+Vcholerae	ACZ5HH_RS10655	ACZ5HH_RS10660	64	True	41.0	41.0	612	0	0	0	0	0	0	611	False	0		False
+Vcholerae	ACZ5HH_RS10675	seqA	92	True	41.0	41.0	600	0	0	0	0	0	0	601	False	0		False
+Vcholerae	ACZ5HH_RS10695	ACZ5HH_RS10700	115	True	41.0	41.0	540	0	688	0	0	0	0	850	False	0		False
+Vcholerae	ACZ5HH_RS10705	fcrX	365	True	68.0	68.0	414	0	0	0	0	0	68	430	False	0		False
 Vcholerae	fabB	mnmC	126	False											False	0		False
-Vcholerae	ACZ5HH_RS10750	ACZ5HH_RS10755	363	False											False	0		False
-Vcholerae	prmB	smrB	66	False											False	0		False
+Vcholerae	ACZ5HH_RS10750	ACZ5HH_RS10755	363	True	41.0	41.0	422	0	0	0	0	0	0	422	False	0		False
+Vcholerae	prmB	smrB	66	True	41.0	41.0	611	0	0	0	0	0	0	611	False	0		False
 Vcholerae	ACZ5HH_RS10815	ACZ5HH_RS10820	35	False											False	0		False
-Vcholerae	ACZ5HH_RS10930	ACZ5HH_RS10935	250	False											False	0		False
-Vcholerae	ACZ5HH_RS10940	ACZ5HH_RS10945	143	False											False	0		False
-Vcholerae	ACZ5HH_RS10975	dapA	277	False											False	0		False
-Vcholerae	ACZ5HH_RS10995	bepA	183	False											False	0		False
-Vcholerae	ACZ5HH_RS11025	ACZ5HH_RS11030	220	False											False	0		False
+Vcholerae	ACZ5HH_RS10930	ACZ5HH_RS10935	250	True	41.0	41.0	552	0	0	0	0	0	0	552	False	0		False
+Vcholerae	ACZ5HH_RS10940	ACZ5HH_RS10945	143	True	137.0	137.0	583	0	0	0	0	0	137	624	False	0		False
+Vcholerae	ACZ5HH_RS10975	dapA	277	True	401.0	517.2	568	0	0	227	0	401	0	782	False	0		False
+Vcholerae	ACZ5HH_RS10995	bepA	183	True	41.0	41.0	563	0	0	0	0	0	0	563	False	0		False
+Vcholerae	ACZ5HH_RS11025	ACZ5HH_RS11030	220	True	41.0	41.0	524	0	0	0	0	0	0	524	False	0		False
 Vcholerae	hemA	lolB	158	True	68.0	79.7	584	0	0	53	0	0	68	600	False	0		False
-Vcholerae	ACZ5HH_RS11250	flgA	56	False											False	0		False
-Vcholerae	ACZ5HH_RS11275	ACZ5HH_RS11280	160	False											False	0		False
+Vcholerae	ACZ5HH_RS11250	flgA	56	True	181.0	430.4	621	0	624	333	0	0	181	911	False	0		False
+Vcholerae	ACZ5HH_RS11275	ACZ5HH_RS11280	160	True	496.0	496.0	589	0	748	0	0	0	496	943	False	0		False
 Vcholerae	copA	gltX	200	True	41.0	41.0	569	0	0	0	0	0	0	569	False	0		False
-Vcholerae	ACZ5HH_RS11325	ACZ5HH_RS11330	446	False											False	0		False
+Vcholerae	ACZ5HH_RS11325	ACZ5HH_RS11330	446	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Vcholerae	ACZ5HH_RS11335	ACZ5HH_RS11340	229	False											False	0		False
 Vcholerae	purM	upp	166	True	69.0	78.7	572	0	0	51	0	0	69	589	False	0		False
-Vcholerae	fadE	lpcA	317	False											False	0		False
+Vcholerae	fadE	lpcA	317	True	41.0	41.0	420	0	0	0	0	0	0	420	False	0		False
 Vcholerae	dnaQ	rnhA	56	True	511.7	524.4	611	852	0	66	0	284	346	970	False	0		False
-Vcholerae	ACZ5HH_RS11405	gloB	37	False											False	0		False
+Vcholerae	ACZ5HH_RS11405	gloB	37	True	439.0	439.0	615	0	0	0	0	0	439	775	False	0		False
 Vcholerae	ACZ5HH_RS11445	ACZ5HH_RS11450	88	False											False	0		False
 Vcholerae	ACZ5HH_RS11455	ACZ5HH_RS11460	174	False											False	0		False
-Vcholerae	ACZ5HH_RS11505	ACZ5HH_RS11510	391	False											False	0		False
-Vcholerae	ACZ5HH_RS11530	pdxH	223	False											False	0		False
-Vcholerae	ACZ5HH_RS11610	ACZ5HH_RS11615	269	False											False	0		False
-Vcholerae	ACZ5HH_RS11675	ACZ5HH_RS11680	220	False											False	0		False
-Vcholerae	ACZ5HH_RS11700	ACZ5HH_RS11705	362	False											False	0		False
-Vcholerae	ACZ5HH_RS11725	ACZ5HH_RS11730	278	False											False	0		False
-Vcholerae	ACZ5HH_RS11800	ACZ5HH_RS11805	431	False											False	0		False
-Vcholerae	ACZ5HH_RS11825	ACZ5HH_RS11830	403	False											False	0		False
-Vcholerae	ACZ5HH_RS11835	ACZ5HH_RS11840	229	False											False	0		False
-Vcholerae	ACZ5HH_RS11875	ACZ5HH_RS11880	131	False											False	0		False
-Vcholerae	ACZ5HH_RS11910	deoD	321	False											False	0		False
-Vcholerae	ACZ5HH_RS11965	ACZ5HH_RS11970	370	False											False	0		False
-Vcholerae	ACZ5HH_RS12010	ACZ5HH_RS12015	337	False											False	0		False
-Vcholerae	ACZ5HH_RS12030	ACZ5HH_RS12035	89	False											False	0		False
-Vcholerae	ACZ5HH_RS12045	soxR	178	False											False	0		False
-Vcholerae	ACZ5HH_RS12065	ACZ5HH_RS12070	229	False											False	0		False
-Vcholerae	ACZ5HH_RS12075	ACZ5HH_RS12080	377	False											False	0		False
-Vcholerae	ACZ5HH_RS12095	pncB	283	False											False	0		False
-Vcholerae	ACZ5HH_RS12120	ACZ5HH_RS12125	189	False											False	0		False
-Vcholerae	ACZ5HH_RS12230	rbsD	283	False											False	0		False
-Vcholerae	ACZ5HH_RS12290	ACZ5HH_RS12295	446	False											False	0		False
-Vcholerae	ACZ5HH_RS12300	ACZ5HH_RS12305	163	False											False	0		False
+Vcholerae	ACZ5HH_RS11505	ACZ5HH_RS11510	391	True	41.0	41.0	342	0	0	0	0	0	0	342	False	0		False
+Vcholerae	ACZ5HH_RS11530	pdxH	223	True	41.0	49.0	570	0	0	49	0	0	0	574	False	0		False
+Vcholerae	ACZ5HH_RS11610	ACZ5HH_RS11615	269	True	301.0	301.0	495	0	0	0	0	0	301	632	False	0		False
+Vcholerae	ACZ5HH_RS11675	ACZ5HH_RS11680	220	True	41.0	41.0	548	0	0	0	0	0	0	548	False	0		False
+Vcholerae	ACZ5HH_RS11700	ACZ5HH_RS11705	362	True	41.0	41.0	534	0	0	0	0	0	0	534	False	0		False
+Vcholerae	ACZ5HH_RS11725	ACZ5HH_RS11730	278	True	41.0	41.0	582	0	0	0	0	0	0	582	False	0		False
+Vcholerae	ACZ5HH_RS11800	ACZ5HH_RS11805	431	True	159.0	159.0	69	0	187	0	0	0	159	307	False	0		False
+Vcholerae	ACZ5HH_RS11825	ACZ5HH_RS11830	403	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	ACZ5HH_RS11835	ACZ5HH_RS11840	229	True	41.0	41.0	539	0	0	0	0	0	0	539	False	0		False
+Vcholerae	ACZ5HH_RS11875	ACZ5HH_RS11880	131	True	41.0	41.0	584	0	0	0	0	0	0	584	False	0		False
+Vcholerae	ACZ5HH_RS11910	deoD	321	True	469.0	469.0	549	0	0	0	0	469	0	750	False	0		False
+Vcholerae	ACZ5HH_RS11965	ACZ5HH_RS11970	370	True	41.0	41.0	431	0	0	0	0	0	0	431	False	0		False
+Vcholerae	ACZ5HH_RS12010	ACZ5HH_RS12015	337	True	41.0	41.0	407	0	0	0	0	0	0	407	False	0		False
+Vcholerae	ACZ5HH_RS12030	ACZ5HH_RS12035	89	True	41.0	41.0	601	0	157	0	0	0	0	650	False	0		False
+Vcholerae	ACZ5HH_RS12045	soxR	178	True	68.0	68.0	566	0	0	0	0	0	68	578	False	0		False
+Vcholerae	ACZ5HH_RS12065	ACZ5HH_RS12070	229	True	41.0	41.0	471	0	0	0	0	0	0	471	False	0		False
+Vcholerae	ACZ5HH_RS12075	ACZ5HH_RS12080	377	True	41.0	41.0	325	0	0	0	0	0	0	325	False	0		False
+Vcholerae	ACZ5HH_RS12095	pncB	283	True	540.1	540.1	388	0	0	0	0	377	292	706	False	0		False
+Vcholerae	ACZ5HH_RS12120	ACZ5HH_RS12125	189	True	41.0	72.0	513	0	0	72	0	0	0	529	False	0		False
+Vcholerae	ACZ5HH_RS12230	rbsD	283	True	304.0	304.0	528	0	0	0	0	0	304	657	False	0		False
+Vcholerae	ACZ5HH_RS12290	ACZ5HH_RS12295	446	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	ACZ5HH_RS12300	ACZ5HH_RS12305	163	True	497.4	497.4	432	5	494	0	187	390	68	843	False	0		False
 Vcholerae	ACZ5HH_RS12335	ACZ5HH_RS12340	71	False											False	0		False
 Vcholerae	ACZ5HH_RS12480	tnaC	237	False											False	0		False
-Vcholerae	ACZ5HH_RS12530	ACZ5HH_RS12535	427	False											False	0		False
-Vcholerae	hmpA	norR	190	False											False	0		False
-Vcholerae	ACZ5HH_RS12575	ACZ5HH_RS12580	358	False											False	0		False
-Vcholerae	ACZ5HH_RS12610	ACZ5HH_RS12615	242	False											False	0		False
-Vcholerae	ACZ5HH_RS12670	nadE	102	False											False	0		False
-Vcholerae	ACZ5HH_RS12680	ACZ5HH_RS12685	249	False											False	0		False
-Vcholerae	ACZ5HH_RS12700	emrD	252	False											False	0		False
-Vcholerae	ACZ5HH_RS12785	ACZ5HH_RS12790	307	False											False	0		False
-Vcholerae	helD	yccS	198	False											False	0		False
-Vcholerae	ACZ5HH_RS12810	pncA	304	False											False	0		False
-Vcholerae	torS	torT	87	False											False	0		False
-Vcholerae	ACZ5HH_RS12840	ACZ5HH_RS12845	275	False											False	0		False
-Vcholerae	ACZ5HH_RS12880	ACZ5HH_RS12885	417	False											False	0		False
-Vcholerae	ACZ5HH_RS12950	ACZ5HH_RS12955	185	False											False	0		False
-Vcholerae	napF	narQ	232	False											False	0		False
-Vcholerae	ACZ5HH_RS13010	ACZ5HH_RS13015	146	False											False	0		False
-Vcholerae	ACZ5HH_RS13020	ACZ5HH_RS13025	221	False											False	0		False
-Vcholerae	ACZ5HH_RS13040	glpD	392	False											False	0		False
-Vcholerae	ACZ5HH_RS13050	ACZ5HH_RS13055	301	False											False	0		False
-Vcholerae	ACZ5HH_RS13060	ACZ5HH_RS13065	250	False											False	0		False
-Vcholerae	ACZ5HH_RS13105	ACZ5HH_RS13110	154	False											False	0		False
-Vcholerae	ACZ5HH_RS13150	ACZ5HH_RS13155	191	False											False	0		False
-Vcholerae	ACZ5HH_RS13185	ACZ5HH_RS13190	213	False											False	0		False
-Vcholerae	folE	moeA	151	False											False	0		False
-Vcholerae	ACZ5HH_RS13255	yjjG	200	False											False	0		False
-Vcholerae	ACZ5HH_RS13285	phnW	242	False											False	0		False
+Vcholerae	ACZ5HH_RS12530	ACZ5HH_RS12535	427	True	399.0	399.0	452	0	0	0	0	0	399	657	False	0		False
+Vcholerae	hmpA	norR	190	True	575.0	575.0	599	0	0	0	0	0	575	822	False	0		False
+Vcholerae	ACZ5HH_RS12575	ACZ5HH_RS12580	358	True	41.0	41.0	380	0	0	0	0	0	0	380	False	0		False
+Vcholerae	ACZ5HH_RS12610	ACZ5HH_RS12615	242	True	41.0	42.0	505	0	0	42	0	0	0	506	False	0		False
+Vcholerae	ACZ5HH_RS12670	nadE	102	True	858.2	862.6	598	0	0	71	0	792	346	942	False	0		False
+Vcholerae	ACZ5HH_RS12680	ACZ5HH_RS12685	249	True	306.0	306.0	539	0	436	0	0	306	0	804	False	0		False
+Vcholerae	ACZ5HH_RS12700	emrD	252	True	41.0	41.0	559	0	0	0	0	0	0	559	False	0		False
+Vcholerae	ACZ5HH_RS12785	ACZ5HH_RS12790	307	True	41.0	41.0	534	0	0	0	0	0	0	534	False	0		False
+Vcholerae	helD	yccS	198	True	41.0	41.0	579	0	0	0	0	0	0	579	False	0		False
+Vcholerae	ACZ5HH_RS12810	pncA	304	True	41.0	41.0	377	0	0	0	0	0	0	377	False	0		False
+Vcholerae	torS	torT	87	True	964.4	964.4	622	0	156	0	839	750	186	987	False	0		False
+Vcholerae	ACZ5HH_RS12840	ACZ5HH_RS12845	275	True	67.0	443.5	475	0	210	428	0	0	67	749	False	0		False
+Vcholerae	ACZ5HH_RS12880	ACZ5HH_RS12885	417	True	350.0	350.0	425	0	0	0	0	0	350	610	False	0		False
+Vcholerae	ACZ5HH_RS12950	ACZ5HH_RS12955	185	True	41.0	41.0	519	0	0	0	0	0	0	519	False	0		False
+Vcholerae	napF	narQ	232	True	71.0	71.0	602	0	168	0	0	0	71	665	False	0		False
+Vcholerae	ACZ5HH_RS13010	ACZ5HH_RS13015	146	True	41.0	41.0	581	0	0	0	0	0	0	581	False	0		False
+Vcholerae	ACZ5HH_RS13020	ACZ5HH_RS13025	221	True	69.0	69.0	601	0	0	0	0	0	69	613	False	0		False
+Vcholerae	ACZ5HH_RS13040	glpD	392	True	357.9	363.3	354	0	0	49	0	340	67	571	False	0		False
+Vcholerae	ACZ5HH_RS13050	ACZ5HH_RS13055	301	True	566.0	566.0	438	0	0	0	0	526	122	745	False	0		False
+Vcholerae	ACZ5HH_RS13060	ACZ5HH_RS13065	250	True	41.0	41.0	433	0	0	0	0	0	0	433	False	0		False
+Vcholerae	ACZ5HH_RS13105	ACZ5HH_RS13110	154	True	68.0	77.7	607	0	242	51	0	0	68	700	False	0		False
+Vcholerae	ACZ5HH_RS13150	ACZ5HH_RS13155	191	True	41.0	41.0	517	0	0	0	0	0	0	518	False	0		False
+Vcholerae	ACZ5HH_RS13185	ACZ5HH_RS13190	213	True	41.0	41.0	374	0	0	0	0	0	0	374	False	0		False
+Vcholerae	folE	moeA	151	True	41.0	41.0	614	0	0	0	0	0	0	614	False	0		False
+Vcholerae	ACZ5HH_RS13255	yjjG	200	True	41.0	41.0	497	0	0	0	0	0	0	497	False	0		False
+Vcholerae	ACZ5HH_RS13285	phnW	242	True	71.0	128.2	500	0	702	100	0	0	71	858	False	0		False
 Vcholerae	ACZ5HH_RS13310	ACZ5HH_RS13315	218	False											False	0		False
-Vcholerae	ACZ5HH_RS13320	ACZ5HH_RS13325	240	False											False	0		False
-Vcholerae	ACZ5HH_RS13360	ACZ5HH_RS13365	101	False											False	0		False
-Vcholerae	ACZ5HH_RS13375	ACZ5HH_RS13380	151	False											False	0		False
-Vcholerae	ACZ5HH_RS13385	ACZ5HH_RS13390	167	False											False	0		False
-Vcholerae	ACZ5HH_RS13405	ACZ5HH_RS13410	233	False											False	0		False
-Vcholerae	ACZ5HH_RS13415	ACZ5HH_RS13420	218	False											False	0		False
+Vcholerae	ACZ5HH_RS13320	ACZ5HH_RS13325	240	True	41.0	41.0	547	0	0	0	0	0	0	547	False	0		False
+Vcholerae	ACZ5HH_RS13360	ACZ5HH_RS13365	101	True	68.0	68.0	598	0	170	0	0	0	68	662	False	0		False
+Vcholerae	ACZ5HH_RS13375	ACZ5HH_RS13380	151	True	41.0	41.0	593	0	0	0	0	0	0	593	False	0		False
+Vcholerae	ACZ5HH_RS13385	ACZ5HH_RS13390	167	True	41.0	41.0	616	0	0	0	0	0	0	616	False	0		False
+Vcholerae	ACZ5HH_RS13405	ACZ5HH_RS13410	233	True	43.0	43.0	542	0	0	0	0	0	43	543	False	0		False
+Vcholerae	ACZ5HH_RS13415	ACZ5HH_RS13420	218	True	41.0	41.0	565	0	0	0	0	0	0	565	False	0		False
 Vcholerae	ACZ5HH_RS13465	ACZ5HH_RS13470	131	False											False	0		False
 Vcholerae	ACZ5HH_RS13505	ACZ5HH_RS13510	131	False											False	0		False
 Vcholerae	ACZ5HH_RS13630	ACZ5HH_RS13635	70	False											False	0		False
-Vcholerae	ACZ5HH_RS13685	ACZ5HH_RS13690	472	False											False	0		False
-Vcholerae	ACZ5HH_RS13715	ACZ5HH_RS13720	422	False											False	0		False
-Vcholerae	ACZ5HH_RS13735	ACZ5HH_RS13740	192	False											False	0		False
-Vcholerae	ACZ5HH_RS13755	ACZ5HH_RS13760	262	False											False	0		False
-Vcholerae	ACZ5HH_RS13770	focA	216	False											False	0		False
-Vcholerae	ACZ5HH_RS13785	ACZ5HH_RS13790	386	False											False	0		False
-Vcholerae	ACZ5HH_RS13820	nifJ	102	False											False	0		False
-Vcholerae	ACZ5HH_RS13830	ylqF	321	False											False	0		False
-Vcholerae	ACZ5HH_RS13840	clcA	466	False											False	0		False
-Vcholerae	cra	fruB	337	False											False	0		False
+Vcholerae	ACZ5HH_RS13685	ACZ5HH_RS13690	472	True	41.0	41.0	423	0	0	0	0	0	0	422	False	0		False
+Vcholerae	ACZ5HH_RS13715	ACZ5HH_RS13720	422	True	41.0	41.0	452	0	209	0	0	0	0	548	False	0		False
+Vcholerae	ACZ5HH_RS13735	ACZ5HH_RS13740	192	True	41.0	41.0	563	0	0	0	0	0	0	563	False	0		False
+Vcholerae	ACZ5HH_RS13755	ACZ5HH_RS13760	262	True	41.0	41.0	533	0	0	0	0	0	0	534	False	0		False
+Vcholerae	ACZ5HH_RS13770	focA	216	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	ACZ5HH_RS13785	ACZ5HH_RS13790	386	True	41.0	41.0	397	0	0	0	0	0	0	397	False	0		False
+Vcholerae	ACZ5HH_RS13820	nifJ	102	True	624.0	624.0	591	0	154	0	0	0	624	858	False	0		False
+Vcholerae	ACZ5HH_RS13830	ylqF	321	True	41.0	41.0	379	0	0	0	0	0	0	379	False	0		False
+Vcholerae	ACZ5HH_RS13840	clcA	466	True	367.0	367.0	0	0	0	0	0	0	367	367	False	0		False
+Vcholerae	cra	fruB	337	True	815.0	815.0	438	0	485	0	669	0	464	941	False	0		False
 Vcholerae	ACZ5HH_RS13990	ACZ5HH_RS13995	103	False											False	0		False
 Vcholerae	ACZ5HH_RS14015	ACZ5HH_RS14020	210	False											False	0		False
 Vcholerae	ACZ5HH_RS14180	ACZ5HH_RS14185	242	False											False	0		False
@@ -3967,134 +3967,134 @@ Vcholerae	ACZ5HH_RS14470	ACZ5HH_RS14475	206	False											False	0		False
 Vcholerae	ACZ5HH_RS14500	ACZ5HH_RS14505	433	False											False	0		False
 Vcholerae	ACZ5HH_RS14555	ACZ5HH_RS14560	216	False											False	0		False
 Vcholerae	ACZ5HH_RS14635	intIA	245	False											False	0		False
-Vcholerae	ACZ5HH_RS14670	ACZ5HH_RS14675	387	False											False	0		False
+Vcholerae	ACZ5HH_RS14670	ACZ5HH_RS14675	387	True	68.0	68.0	396	0	0	0	0	0	68	413	False	0		False
 Vcholerae	ACZ5HH_RS14695	ACZ5HH_RS14700	216	False											False	0		False
-Vcholerae	ACZ5HH_RS14730	emrD3	101	False											False	0		False
-Vcholerae	ACZ5HH_RS14785	ACZ5HH_RS14790	380	False											False	0		False
-Vcholerae	ACZ5HH_RS14810	ulaR	364	False											False	0		False
-Vcholerae	ACZ5HH_RS14850	ACZ5HH_RS14855	283	False											False	0		False
+Vcholerae	ACZ5HH_RS14730	emrD3	101	True	56.0	56.0	598	0	288	0	0	0	56	706	False	0		False
+Vcholerae	ACZ5HH_RS14785	ACZ5HH_RS14790	380	True	69.0	85.5	536	0	0	58	0	0	69	558	False	0		False
+Vcholerae	ACZ5HH_RS14810	ulaR	364	True	355.0	355.0	449	0	423	0	0	0	355	777	False	0		False
+Vcholerae	ACZ5HH_RS14850	ACZ5HH_RS14855	283	True	41.0	41.0	458	0	404	0	0	0	0	663	False	0		False
 Vcholerae	ACZ5HH_RS14860	ACZ5HH_RS14865	202	False											False	0		False
 Vcholerae	ACZ5HH_RS14940	vctA	86	False											False	0		False
-Vcholerae	ACZ5HH_RS14975	ACZ5HH_RS14980	202	False											False	0		False
+Vcholerae	ACZ5HH_RS14975	ACZ5HH_RS14980	202	True	541.0	541.0	492	0	0	0	0	0	541	757	False	0		False
 Vcholerae	ACZ5HH_RS15020	ACZ5HH_RS15025	187	False											False	0		False
-Vcholerae	ACZ5HH_RS15060	trxC	168	False											False	0		False
+Vcholerae	ACZ5HH_RS15060	trxC	168	True	85.0	85.0	613	0	0	0	0	0	85	631	False	0		False
 Vcholerae	ACZ5HH_RS15090	ACZ5HH_RS15095	174	False											False	0		False
-Vcholerae	ACZ5HH_RS15130	ACZ5HH_RS15135	351	False											False	0		False
-Vcholerae	ACZ5HH_RS15180	galE	319	False											False	0		False
-Vcholerae	ACZ5HH_RS15235	ACZ5HH_RS15240	235	False											False	0		False
-Vcholerae	ACZ5HH_RS15255	ACZ5HH_RS15260	321	False											False	0		False
-Vcholerae	ACZ5HH_RS15280	rnb	373	False											False	0		False
-Vcholerae	ACZ5HH_RS15290	ACZ5HH_RS15295	209	False											False	0		False
-Vcholerae	ACZ5HH_RS15305	gbpA	493	False											False	0		False
-Vcholerae	ACZ5HH_RS15335	speA	446	False											False	0		False
-Vcholerae	ACZ5HH_RS15390	phhA	233	False											False	0		False
-Vcholerae	ACZ5HH_RS15405	ACZ5HH_RS15410	195	False											False	0		False
+Vcholerae	ACZ5HH_RS15130	ACZ5HH_RS15135	351	True	41.0	41.0	465	0	0	0	0	0	0	465	False	0		False
+Vcholerae	ACZ5HH_RS15180	galE	319	True	41.0	41.0	592	0	0	0	0	0	0	592	False	0		False
+Vcholerae	ACZ5HH_RS15235	ACZ5HH_RS15240	235	True	41.0	41.0	529	0	0	0	0	0	0	529	False	0		False
+Vcholerae	ACZ5HH_RS15255	ACZ5HH_RS15260	321	True	41.0	41.0	454	0	0	0	0	0	0	454	False	0		False
+Vcholerae	ACZ5HH_RS15280	rnb	373	True	69.0	69.0	462	0	0	0	0	0	69	477	False	0		False
+Vcholerae	ACZ5HH_RS15290	ACZ5HH_RS15295	209	True	41.0	41.0	602	0	0	0	0	0	0	602	False	0		False
+Vcholerae	ACZ5HH_RS15305	gbpA	493	True	41.0	41.0	313	0	0	0	0	0	0	313	False	0		False
+Vcholerae	ACZ5HH_RS15335	speA	446	True	41.0	41.0	419	0	0	0	0	0	0	419	False	0		False
+Vcholerae	ACZ5HH_RS15390	phhA	233	True	41.0	42.0	576	0	0	42	0	0	0	576	False	0		False
+Vcholerae	ACZ5HH_RS15405	ACZ5HH_RS15410	195	True	41.0	41.0	527	0	0	0	0	0	0	527	False	0		False
 Vcholerae	ACZ5HH_RS15465	yjeH	221	False											False	0		False
-Vcholerae	ACZ5HH_RS15490	ACZ5HH_RS15495	291	False											False	0		False
-Vcholerae	ACZ5HH_RS15525	hapA	15	False											False	0		False
-Vcholerae	ACZ5HH_RS15535	ompW	240	False											False	0		False
-Vcholerae	ACZ5HH_RS15560	dsdC	207	False											False	0		False
+Vcholerae	ACZ5HH_RS15490	ACZ5HH_RS15495	291	True	41.0	41.0	446	0	387	0	0	0	0	646	False	0		False
+Vcholerae	ACZ5HH_RS15525	hapA	15	True	41.0	41.0	572	0	0	0	0	0	0	572	False	0		False
+Vcholerae	ACZ5HH_RS15535	ompW	240	True	41.0	41.0	501	0	0	0	0	0	0	501	False	0		False
+Vcholerae	ACZ5HH_RS15560	dsdC	207	True	41.0	41.0	510	0	232	0	0	0	0	608	False	0		False
 Vcholerae	ACZ5HH_RS15590	ACZ5HH_RS15595	309	False											False	0		False
-Vcholerae	ACZ5HH_RS15625	ACZ5HH_RS15630	225	False											False	0		False
-Vcholerae	ACZ5HH_RS15695	hutW	277	False											False	0		False
-Vcholerae	ACZ5HH_RS15740	ACZ5HH_RS15745	177	False											False	0		False
-Vcholerae	ACZ5HH_RS15775	cspE	348	False											False	0		False
+Vcholerae	ACZ5HH_RS15625	ACZ5HH_RS15630	225	True	41.0	41.0	542	0	0	0	0	0	0	542	False	0		False
+Vcholerae	ACZ5HH_RS15695	hutW	277	True	125.0	125.0	513	0	197	0	0	0	125	628	False	0		False
+Vcholerae	ACZ5HH_RS15740	ACZ5HH_RS15745	177	True	41.0	41.0	515	0	0	0	0	0	0	515	False	0		False
+Vcholerae	ACZ5HH_RS15775	cspE	348	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Vcholerae	ACZ5HH_RS15795	ACZ5HH_RS15800	99	False											False	0		False
-Vcholerae	ACZ5HH_RS15855	ACZ5HH_RS15860	215	False											False	0		False
-Vcholerae	ACZ5HH_RS15875	ppiC	174	False											False	0		False
-Vcholerae	ACZ5HH_RS15880	vdcA	171	False											False	0		False
-Vcholerae	ACZ5HH_RS15890	ACZ5HH_RS15895	232	False											False	0		False
-Vcholerae	ACZ5HH_RS15900	ACZ5HH_RS15905	341	False											False	0		False
-Vcholerae	ACZ5HH_RS15915	ACZ5HH_RS15920	100	False											False	0		False
-Vcholerae	ACZ5HH_RS15930	ACZ5HH_RS15935	174	False											False	0		False
-Vcholerae	ACZ5HH_RS15960	ACZ5HH_RS15965	203	False											False	0		False
-Vcholerae	ppsA	ppsR	173	False											False	0		False
-Vcholerae	ctlX	vcaM	371	False											False	0		False
-Vcholerae	ACZ5HH_RS16075	ACZ5HH_RS16080	149	False											False	0		False
-Vcholerae	ACZ5HH_RS16085	ACZ5HH_RS16090	203	False											False	0		False
-Vcholerae	ohr	ohrR	111	False											False	0		False
-Vcholerae	ACZ5HH_RS16140	nhaD	392	False											False	0		False
-Vcholerae	ACZ5HH_RS16160	ACZ5HH_RS16165	258	False											False	0		False
-Vcholerae	ACZ5HH_RS16170	ACZ5HH_RS16175	150	False											False	0		False
-Vcholerae	ACZ5HH_RS16185	nagB	365	False											False	0		False
-Vcholerae	glgX	lamB	431	False											False	0		False
-Vcholerae	ACZ5HH_RS16230	ACZ5HH_RS16235	203	False											False	0		False
+Vcholerae	ACZ5HH_RS15855	ACZ5HH_RS15860	215	True	41.0	41.0	389	0	0	0	0	0	0	389	False	0		False
+Vcholerae	ACZ5HH_RS15875	ppiC	174	True	67.0	78.7	568	0	0	53	0	0	67	585	False	0		False
+Vcholerae	ACZ5HH_RS15880	vdcA	171	True	67.0	78.7	541	0	0	53	0	0	67	558	False	0		False
+Vcholerae	ACZ5HH_RS15890	ACZ5HH_RS15895	232	True	67.0	67.0	592	0	353	0	0	0	67	732	False	0		False
+Vcholerae	ACZ5HH_RS15900	ACZ5HH_RS15905	341	True	41.0	41.0	441	0	0	0	0	0	0	441	False	0		False
+Vcholerae	ACZ5HH_RS15915	ACZ5HH_RS15920	100	True	41.0	41.0	599	0	170	0	0	0	0	652	False	0		False
+Vcholerae	ACZ5HH_RS15930	ACZ5HH_RS15935	174	True	41.0	41.0	602	0	0	0	0	0	0	602	False	0		False
+Vcholerae	ACZ5HH_RS15960	ACZ5HH_RS15965	203	True	41.0	41.0	491	0	0	0	0	0	0	491	False	0		False
+Vcholerae	ppsA	ppsR	173	True	132.0	648.8	586	0	621	612	0	0	132	940	False	0		False
+Vcholerae	ctlX	vcaM	371	True	41.0	41.0	398	0	0	0	0	0	0	399	False	0		False
+Vcholerae	ACZ5HH_RS16075	ACZ5HH_RS16080	149	True	69.0	382.6	551	0	172	364	0	0	69	750	False	0		False
+Vcholerae	ACZ5HH_RS16085	ACZ5HH_RS16090	203	True	41.0	41.0	553	0	155	0	0	0	0	606	False	0		False
+Vcholerae	ohr	ohrR	111	True	242.0	257.8	599	718	729	61	0	0	242	974	False	0		False
+Vcholerae	ACZ5HH_RS16140	nhaD	392	True	41.0	41.0	380	0	0	0	0	0	0	380	False	0		False
+Vcholerae	ACZ5HH_RS16160	ACZ5HH_RS16165	258	True	41.0	41.0	465	0	168	0	0	0	0	536	False	0		False
+Vcholerae	ACZ5HH_RS16170	ACZ5HH_RS16175	150	True	41.0	41.0	593	0	371	0	0	0	0	733	False	0		False
+Vcholerae	ACZ5HH_RS16185	nagB	365	True	41.0	41.0	493	0	0	0	0	0	0	493	False	0		False
+Vcholerae	glgX	lamB	431	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
+Vcholerae	ACZ5HH_RS16230	ACZ5HH_RS16235	203	True	41.0	41.0	540	0	0	0	0	0	0	540	False	0		False
 Vcholerae	ACZ5HH_RS16245	aroG	323	False											False	0		False
-Vcholerae	ACZ5HH_RS16300	ACZ5HH_RS16305	214	False											False	0		False
-Vcholerae	ACZ5HH_RS16325	ACZ5HH_RS16330	132	False											False	0		False
-Vcholerae	ACZ5HH_RS16340	ACZ5HH_RS16345	146	False											False	0		False
-Vcholerae	ACZ5HH_RS16360	ribB	306	False											False	0		False
+Vcholerae	ACZ5HH_RS16300	ACZ5HH_RS16305	214	True	41.0	41.0	531	0	0	0	0	0	0	531	False	0		False
+Vcholerae	ACZ5HH_RS16325	ACZ5HH_RS16330	132	True	41.0	41.0	599	0	185	0	0	0	0	659	False	0		False
+Vcholerae	ACZ5HH_RS16340	ACZ5HH_RS16345	146	True	41.0	41.0	581	0	183	0	0	0	0	643	False	0		False
+Vcholerae	ACZ5HH_RS16360	ribB	306	True	41.0	41.0	396	0	0	0	0	0	0	396	False	0		False
 Vcholerae	map	rpsB	339	True	904.7	977.1	436	0	231	769	833	0	453	989	False	0		False
-Vcholerae	ACZ5HH_RS16645	ACZ5HH_RS16650	164	False											False	0		False
+Vcholerae	ACZ5HH_RS16645	ACZ5HH_RS16650	164	True	68.0	68.0	614	0	0	0	0	0	68	624	False	0		False
 Vcholerae	ACZ5HH_RS16680	ACZ5HH_RS16685	237	False											False	0		False
-Vcholerae	ACZ5HH_RS16720	argA	270	False											False	0		False
-Vcholerae	ACZ5HH_RS16775	ACZ5HH_RS16780	203	False											False	0		False
-Vcholerae	ACZ5HH_RS16795	ACZ5HH_RS16800	158	False											False	0		False
+Vcholerae	ACZ5HH_RS16720	argA	270	True	41.0	41.0	543	0	0	0	0	0	0	544	False	0		False
+Vcholerae	ACZ5HH_RS16775	ACZ5HH_RS16780	203	True	41.0	41.0	551	175	770	0	0	0	0	907	False	0		False
+Vcholerae	ACZ5HH_RS16795	ACZ5HH_RS16800	158	True	202.0	202.0	519	0	161	0	202	0	0	650	False	0		False
 Vcholerae	ACZ5HH_RS16805	chrA	381	False											False	0		False
-Vcholerae	ACZ5HH_RS16835	radA	130	False											False	0		False
-Vcholerae	ACZ5HH_RS16845	serB	102	False											False	0		False
-Vcholerae	ACZ5HH_RS16885	deoC	107	False											False	0		False
+Vcholerae	ACZ5HH_RS16835	radA	130	True	41.0	41.0	589	0	0	0	0	0	0	589	False	0		False
+Vcholerae	ACZ5HH_RS16845	serB	102	True	67.0	67.0	616	0	0	0	0	0	67	626	False	0		False
+Vcholerae	ACZ5HH_RS16885	deoC	107	True	41.0	41.0	544	0	0	0	0	0	0	544	False	0		False
 Vcholerae	grcA	nfo	345	True	41.0	41.0	432	0	0	0	0	0	0	431	False	0		False
 Vcholerae	ACZ5HH_RS16960	thrL	406	False											False	0		False
-Vcholerae	ACZ5HH_RS16970	arcA	314	False											False	0		False
+Vcholerae	ACZ5HH_RS16970	arcA	314	True	41.0	41.0	0	0	0	0	0	0	0	0	False	0		False
 Vcholerae	ACZ5HH_RS17045	ACZ5HH_RS17050	257	False											False	0		False
 Vcholerae	ACZ5HH_RS17075	carA	266	False											False	0		False
-Vcholerae	ACZ5HH_RS17095	secA	353	False											False	0		False
-Vcholerae	fldB	xerD	137	False											False	0		False
-Vcholerae	ampD	nadC	297	False											False	0		False
-Vcholerae	nudF	tolC	231	False											False	0		False
-Vcholerae	ACZ5HH_RS17320	ACZ5HH_RS17325	205	False											False	0		False
-Vcholerae	ACZ5HH_RS17345	ACZ5HH_RS17350	92	False											False	0		False
-Vcholerae	barA	rlmD	171	False											False	0		False
-Vcholerae	ACZ5HH_RS17465	ygfZ	152	False											False	0		False
-Vcholerae	ACZ5HH_RS17495	ACZ5HH_RS17500	241	False											False	0		False
-Vcholerae	ACZ5HH_RS17555	leuA	382	False											False	0		False
+Vcholerae	ACZ5HH_RS17095	secA	353	True	41.0	41.0	425	0	0	0	0	0	0	424	False	0		False
+Vcholerae	fldB	xerD	137	True	41.0	41.0	610	0	0	0	0	0	0	610	False	0		False
+Vcholerae	ampD	nadC	297	True	187.0	191.2	478	0	0	46	0	0	187	560	False	0		False
+Vcholerae	nudF	tolC	231	True	192.0	192.0	524	0	183	0	192	0	0	658	False	0		False
+Vcholerae	ACZ5HH_RS17320	ACZ5HH_RS17325	205	True	41.0	41.0	554	0	0	0	0	0	0	554	False	0		False
+Vcholerae	ACZ5HH_RS17345	ACZ5HH_RS17350	92	True	41.0	41.0	573	0	0	0	0	0	0	573	False	0		False
+Vcholerae	barA	rlmD	171	True	41.0	72.0	610	0	0	72	0	0	0	623	False	0		False
+Vcholerae	ACZ5HH_RS17465	ygfZ	152	True	41.0	41.0	578	0	0	0	0	0	0	578	False	0		False
+Vcholerae	ACZ5HH_RS17495	ACZ5HH_RS17500	241	True	88.0	333.4	525	0	0	299	0	0	88	670	False	0		False
+Vcholerae	ACZ5HH_RS17555	leuA	382	True	68.0	68.0	337	0	0	0	0	0	68	356	False	0		False
 Vcholerae	ACZ5HH_RS17625	ACZ5HH_RS17630	190	False											False	0		False
-Vcholerae	lptF	pepA	193	False											False	0		False
-Vcholerae	ACZ5HH_RS17690	rapA	421	False											False	0		False
-Vcholerae	pmbA	yjgA	110	False											False	0		False
+Vcholerae	lptF	pepA	193	True	41.0	41.0	557	0	157	0	0	0	0	611	False	0		False
+Vcholerae	ACZ5HH_RS17690	rapA	421	True	41.0	42.0	156	0	0	42	0	0	0	156	False	0		False
+Vcholerae	pmbA	yjgA	110	True	41.0	54.0	599	0	0	54	0	0	0	604	False	0		False
 Vcholerae	fbp	mpl	305	True	41.0	41.0	522	0	0	0	0	0	0	522	False	0		False
-Vcholerae	msrA	tamA	178	False											False	0		False
-Vcholerae	cobA	cpdB	369	False											False	0		False
-Vcholerae	ACZ5HH_RS17955	dbpA	225	False											False	0		False
-Vcholerae	ACZ5HH_RS17965	ACZ5HH_RS17970	225	False											False	0		False
-Vcholerae	ACZ5HH_RS18130	rnr	181	False											False	0		False
-Vcholerae	ACZ5HH_RS18170	kefG	122	False											False	0		False
-Vcholerae	ACZ5HH_RS18220	rimO	253	False											False	0		False
-Vcholerae	ACZ5HH_RS18300	pilM	142	False											False	0		False
-Vcholerae	ACZ5HH_RS18310	oxyR	139	False											False	0		False
+Vcholerae	msrA	tamA	178	True	41.0	41.0	582	0	0	0	0	0	0	581	False	0		False
+Vcholerae	cobA	cpdB	369	True	41.0	41.0	522	0	0	0	0	0	0	522	False	0		False
+Vcholerae	ACZ5HH_RS17955	dbpA	225	True	41.0	41.0	475	0	0	0	0	0	0	475	False	0		False
+Vcholerae	ACZ5HH_RS17965	ACZ5HH_RS17970	225	True	41.0	41.0	547	0	0	0	0	0	0	547	False	0		False
+Vcholerae	ACZ5HH_RS18130	rnr	181	True	41.0	41.0	554	0	0	0	0	0	0	554	False	0		False
+Vcholerae	ACZ5HH_RS18170	kefG	122	True	41.0	41.0	613	0	0	0	0	0	0	613	False	0		False
+Vcholerae	ACZ5HH_RS18220	rimO	253	True	41.0	41.0	479	0	0	0	0	0	0	479	False	0		False
+Vcholerae	ACZ5HH_RS18300	pilM	142	True	174.0	174.0	594	0	0	0	0	0	174	650	False	0		False
+Vcholerae	ACZ5HH_RS18310	oxyR	139	True	71.0	71.0	589	0	0	0	0	0	71	602	False	0		False
 Vcholerae	argC	argE	155	True	737.1	894.7	592	0	169	616	202	500	394	961	False	0		False
-Vcholerae	epmA	frdA	308	False											False	0		False
-Vcholerae	efp	epmB	32	False											False	0		False
-Vcholerae	ACZ5HH_RS18425	ACZ5HH_RS18430	359	False											False	0		False
-Vcholerae	ACZ5HH_RS18445	tpiA	243	False											False	0		False
+Vcholerae	epmA	frdA	308	True	41.0	41.0	531	0	0	0	0	0	0	531	False	0		False
+Vcholerae	efp	epmB	32	True	167.0	167.0	616	0	625	0	0	0	167	869	False	0		False
+Vcholerae	ACZ5HH_RS18425	ACZ5HH_RS18430	359	True	75.0	75.0	419	0	0	0	0	0	75	440	False	0		False
+Vcholerae	ACZ5HH_RS18445	tpiA	243	True	41.0	41.0	540	0	0	0	0	0	0	541	False	0		False
 Vcholerae	priA	rpmE	254	True	41.0	41.0	514	0	0	0	0	0	0	515	False	0		False
-Vcholerae	ACZ5HH_RS18510	metJ	267	False											False	0		False
-Vcholerae	glpX	zapB	320	False											False	0		False
-Vcholerae	ACZ5HH_RS18545	ACZ5HH_RS18550	187	False											False	0		False
-Vcholerae	ACZ5HH_RS18575	aspA	244	False											False	0		False
-Vcholerae	ACZ5HH_RS18610	ACZ5HH_RS18615	378	False											False	0		False
-Vcholerae	ACZ5HH_RS18625	gmk	367	False											False	0		False
+Vcholerae	ACZ5HH_RS18510	metJ	267	True	140.0	402.8	504	0	0	334	0	0	140	691	False	0		False
+Vcholerae	glpX	zapB	320	True	192.0	192.0	430	0	0	0	0	0	192	520	False	0		False
+Vcholerae	ACZ5HH_RS18545	ACZ5HH_RS18550	187	True	68.0	68.0	529	0	0	0	0	0	68	542	False	0		False
+Vcholerae	ACZ5HH_RS18575	aspA	244	True	41.0	41.0	458	0	0	0	0	0	0	458	False	0		False
+Vcholerae	ACZ5HH_RS18610	ACZ5HH_RS18615	378	True	41.0	41.0	361	0	0	0	0	0	0	361	False	0		False
+Vcholerae	ACZ5HH_RS18625	gmk	367	True	41.0	41.0	532	0	0	0	0	0	0	532	False	0		False
 Vcholerae	ACZ5HH_RS18665	ompR	334	False											False	0		False
-Vcholerae	ACZ5HH_RS18675	greB	244	False											False	0		False
-Vcholerae	gspC	hslR	229	False											False	0		False
-Vcholerae	ACZ5HH_RS18815	glnA	144	False											False	0		False
+Vcholerae	ACZ5HH_RS18675	greB	244	True	67.0	67.0	522	0	0	0	0	0	67	536	False	0		False
+Vcholerae	gspC	hslR	229	True	41.0	41.0	538	0	0	0	0	0	0	538	False	0		False
+Vcholerae	ACZ5HH_RS18815	glnA	144	True	41.0	41.0	526	0	0	0	0	0	0	526	False	0		False
 Vcholerae	ACZ5HH_RS18895	trmA	397	False											False	0		False
 Vcholerae	ACZ5HH_RS18915	ACZ5HH_RS18920	144	False											False	0		False
 Vcholerae	ACZ5HH_RS18935	ACZ5HH_RS18940	77	False											False	0		False
 Vcholerae	ACZ5HH_RS18950	ACZ5HH_RS18955	139	False											False	0		False
 Vcholerae	ACZ5HH_RS18975	radC	317	False											False	0		False
-Vcholerae	fabR	sthA	307	False											False	0		False
-Vcholerae	ftsY	rsmD	203	False											False	0		False
-Vcholerae	ACZ5HH_RS19080	ACZ5HH_RS19085	204	False											False	0		False
-Vcholerae	ACZ5HH_RS19105	rhtB	74	False											False	0		False
+Vcholerae	fabR	sthA	307	True	68.0	68.0	467	0	0	0	0	0	68	482	False	0		False
+Vcholerae	ftsY	rsmD	203	True	191.0	191.0	551	0	401	0	0	0	191	763	False	0		False
+Vcholerae	ACZ5HH_RS19080	ACZ5HH_RS19085	204	True	41.0	41.0	506	0	0	0	0	0	0	505	False	0		False
+Vcholerae	ACZ5HH_RS19105	rhtB	74	True	41.0	41.0	564	0	0	0	0	0	0	564	False	0		False
 Vcholerae	cyaY	lptM	75	False											False	0		False
-Vcholerae	ACZ5HH_RS19165	hemC	356	False											False	0		False
-Vcholerae	ACZ5HH_RS19210	yihA	151	False											False	0		False
-Vcholerae	ACZ5HH_RS19240	hemB	176	False											False	0		False
-Vcholerae	ACZ5HH_RS19260	ACZ5HH_RS19265	203	False											False	0		False
+Vcholerae	ACZ5HH_RS19165	hemC	356	True	41.0	41.0	431	0	0	0	0	0	0	431	False	0		False
+Vcholerae	ACZ5HH_RS19210	yihA	151	True	41.0	41.0	599	0	0	0	0	0	0	599	False	0		False
+Vcholerae	ACZ5HH_RS19240	hemB	176	True	52.0	52.0	522	0	0	0	0	0	52	527	False	0		False
+Vcholerae	ACZ5HH_RS19260	ACZ5HH_RS19265	203	True	41.0	41.0	570	0	0	0	0	0	0	570	False	0		False
 Vcholerae	lexA	plsB	319	True	191.0	191.0	464	0	0	0	0	0	191	548	False	0		False
-Vcholerae	ACZ5HH_RS19335	rmuC	122	False											False	0		False
-Vcholerae	ftnA	uspA	164	False											False	0		False
-Vcholerae	ACZ5HH_RS19375	asnC	225	False											False	0		False
-Vcholerae	ACZ5HH_RS19390	ACZ5HH_RS19395	116	False											False	0		False
+Vcholerae	ACZ5HH_RS19335	rmuC	122	True	41.0	41.0	594	0	152	0	0	0	0	641	False	0		False
+Vcholerae	ftnA	uspA	164	True	41.0	41.0	581	0	0	0	0	0	0	581	False	0		False
+Vcholerae	ACZ5HH_RS19375	asnC	225	True	41.0	41.0	606	0	0	0	0	0	0	606	False	0		False
+Vcholerae	ACZ5HH_RS19390	ACZ5HH_RS19395	116	True	41.0	41.0	609	0	0	0	0	0	0	609	False	0		False

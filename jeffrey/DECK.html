@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--
+  Lightning talk (2-3 min) - Feder/Harris hackathon 2026
+  Jeffrey Carey - divergent-promoter disruption survey
+
+  Colours are the dataviz reference palette, used unchanged:
+  categorical slot 1 (blue) is the only series hue; superseded estimates use the
+  documented muted CHROME ink, not a second series colour. Every mark is
+  direct-labelled, so identity never rests on colour alone. A table view of the
+  chart data sits directly beneath it.
+
+  Navigate: arrow keys / space / click. Press T to toggle light-dark.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do phages rewire divergent promoters? — lightning talk</title>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb;
+    --page: #f9f9f7;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --series-1: #2a78d6;
+    --border: rgba(11,11,11,0.10);
+    --good: #006300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1: #1a1a19; --page: #0d0d0d; --text-primary: #fff;
+      --text-secondary: #c3c2b7; --muted: #898781; --grid: #2c2c2a;
+      --axis: #383835; --series-1: #3987e5;
+      --border: rgba(255,255,255,0.10); --good: #0ca30c;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1: #1a1a19; --page: #0d0d0d; --text-primary: #fff;
+    --text-secondary: #c3c2b7; --muted: #898781; --grid: #2c2c2a;
+    --axis: #383835; --series-1: #3987e5;
+    --border: rgba(255,255,255,0.10); --good: #0ca30c;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--page);
+    color: var(--text-primary);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .deck { width: min(980px, 96vw); height: min(660px, 94vh); position: relative; }
+  .slide {
+    display: none; position: absolute; inset: 0;
+    background: var(--surface-1);
+    border: 1px solid var(--border); border-radius: 10px;
+    padding: 40px 48px 52px;
+    overflow: auto;
+  }
+  .slide.on { display: block; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h2 { font-size: 25px; line-height: 1.2; margin: 0 0 18px; letter-spacing: -0.01em; }
+  .kicker { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em;
+            color: var(--muted); margin: 0 0 20px; }
+  p, li { color: var(--text-secondary); font-size: 16px; }
+  strong { color: var(--text-primary); }
+  ul { margin: 10px 0; padding-left: 20px; }
+  li { margin: 7px 0; }
+  .lead { font-size: 18px; color: var(--text-secondary); max-width: 60ch; }
+  .gene { font-style: italic; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+
+  /* stat row */
+  .stats { display: flex; gap: 30px; margin: 26px 0 8px; flex-wrap: wrap; }
+  .stat .v { font-size: 40px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+  .stat .l { font-size: 12.5px; color: var(--muted); margin-top: 6px;
+             text-transform: uppercase; letter-spacing: 0.06em; }
+  .hero { font-size: 56px; font-weight: 600; letter-spacing: -0.025em; line-height: 1; }
+
+  /* findings */
+  .find { border-left: 3px solid var(--series-1); padding: 2px 0 2px 14px; margin: 16px 0; }
+  .find .t { color: var(--text-primary); font-weight: 600; font-size: 17px; }
+  .find .d { font-size: 14.5px; color: var(--text-secondary); margin-top: 3px; }
+  .aside { border-left: 3px solid var(--axis); padding: 2px 0 2px 14px; margin: 16px 0;
+           font-size: 14.5px; color: var(--text-secondary); }
+
+  table { border-collapse: collapse; margin-top: 14px; font-size: 13px; width: 100%; }
+  th, td { text-align: right; padding: 5px 10px; border-bottom: 1px solid var(--grid);
+           font-variant-numeric: tabular-nums; color: var(--text-secondary); }
+  th:first-child, td:first-child { text-align: left; font-variant-numeric: normal; }
+  th { color: var(--muted); font-weight: 600; font-size: 11.5px;
+       text-transform: uppercase; letter-spacing: 0.05em; }
+  caption { caption-side: top; text-align: left; font-size: 12px; color: var(--muted);
+            padding-bottom: 4px; }
+
+  .legend { display: flex; gap: 20px; margin: 2px 0 4px; font-size: 13px; color: var(--text-secondary); }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .sw { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+
+  .nav { position: absolute; bottom: 16px; left: 48px; right: 48px;
+         display: flex; justify-content: space-between; align-items: center;
+         font-size: 12px; color: var(--muted); }
+  .nav .hint { font-size: 11px; }
+  .src { font-size: 11.5px; color: var(--muted); margin-top: 14px; }
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<!-- 1 -->
+<section class="slide on">
+  <p class="kicker">Feder / Harris hackathon · Jeffrey Carey</p>
+  <h1>A phage lands in a shared promoter<br>and rewires its host.<br>Does that generalize?</h1>
+  <p class="lead" style="margin-top:20px">
+    Carey et al. 2019: phage <strong>HK022</strong> integrates into the <strong>82 bp</strong>
+    spacer between the divergently-transcribed genes <span class="gene">torS</span> and
+    <span class="gene">torT</span>, replaces <span class="gene">torS</span>'s promoter with its
+    own, and switches off a TMAO respiratory bet-hedging strategy.
+  </p>
+  <div class="stats">
+    <div class="stat"><div class="v">213</div><div class="l">genomes</div></div>
+    <div class="stat"><div class="v">9</div><div class="l">species, 6 phyla</div></div>
+    <div class="stat"><div class="v">4,099</div><div class="l">divergent pairs</div></div>
+    <div class="stat"><div class="v">26</div><div class="l">disrupted</div></div>
+  </div>
+  <div class="nav"><span>1 / 5</span><span class="hint">→ next · T theme</span></div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <p class="kicker">The search</p>
+  <h2>Short shared spacer, blown apart in some strains</h2>
+  <svg viewBox="0 0 800 240" width="100%" height="215" role="img"
+       aria-label="Schematic: two divergently transcribed genes separated by a short shared regulatory region in most strains; in other strains a mobile element is inserted between them, expanding the gap.">
+    <!-- row 1: intact -->
+    <text x="0" y="18" font-size="12.5" fill="var(--muted)">most strains</text>
+    <polygon points="180,40 60,40 60,68 180,68 200,54" fill="var(--muted)" opacity="0.55"/>
+    <text x="92" y="59" font-size="13" fill="var(--surface-1)" font-style="italic">torS</text>
+    <polygon points="300,40 420,40 420,68 300,68 280,54" fill="var(--muted)" opacity="0.55"/>
+    <text x="332" y="59" font-size="13" fill="var(--surface-1)" font-style="italic">torT</text>
+    <line x1="200" y1="82" x2="280" y2="82" stroke="var(--axis)" stroke-width="1"/>
+    <text x="240" y="100" font-size="12" fill="var(--text-secondary)" text-anchor="middle">82 bp</text>
+    <text x="470" y="59" font-size="13" fill="var(--text-secondary)">shared regulatory region</text>
+    <text x="470" y="78" font-size="12" fill="var(--muted)">(both promoters + a common repressor site)</text>
+
+    <!-- row 2: disrupted -->
+    <text x="0" y="150" font-size="12.5" fill="var(--muted)">some strains</text>
+    <polygon points="150,172 60,172 60,200 150,200 170,186" fill="var(--muted)" opacity="0.55"/>
+    <rect x="176" y="170" width="240" height="32" rx="3" fill="var(--series-1)"/>
+    <text x="296" y="190" font-size="12.5" fill="#fff" text-anchor="middle">prophage / IS element</text>
+    <polygon points="442,172 540,172 540,200 442,200 422,186" fill="var(--muted)" opacity="0.55"/>
+    <line x1="176" y1="216" x2="416" y2="216" stroke="var(--series-1)" stroke-width="1"/>
+    <text x="296" y="233" font-size="12" fill="var(--text-secondary)" text-anchor="middle">0.8 – 45 kb</text>
+    <text x="570" y="190" font-size="12.5" fill="var(--text-secondary)">regulatory region</text>
+    <text x="570" y="208" font-size="12.5" fill="var(--text-secondary)">destroyed</text>
+  </svg>
+  <p style="font-size:14.5px;margin-top:4px">
+    Find divergent pairs with a <strong>≤500 bp</strong> spacer in a reference strain, then look
+    for the same pair pulled apart in other strains of that species. Insertion elements favour
+    short AT-rich intergenic DNA — the same property that makes a spacer a shared promoter.
+  </p>
+  <div class="nav"><span>2 / 5</span><span class="hint">→ next</span></div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <p class="kicker">Result — yes, it generalizes</p>
+  <h2>Two new functionally-coupled pairs, disrupted</h2>
+  <div class="find">
+    <div class="t"><span class="gene">metE</span> / <span class="gene">metR</span> &nbsp;·&nbsp; <em>Vibrio cholerae</em></div>
+    <div class="d">395 bp → <strong>14.7 kb</strong>, inserted element carries an integrase.
+      MetR is the documented transcriptional activator of <span class="gene">metE</span> — a
+      regulator/target pair, exactly the <span class="gene">torS</span>/<span class="gene">torT</span> architecture.</div>
+  </div>
+  <div class="find">
+    <div class="t"><span class="gene">yyaT</span> / <span class="gene">yybA</span> &nbsp;·&nbsp; <em>Bacillus subtilis</em></div>
+    <div class="d">119 bp → <strong>1.5 kb</strong> by a clean <strong>IS4-family transposase</strong> —
+      a different class of element. YybA's predicted regulon includes <span class="gene">yyaT</span>.</div>
+  </div>
+  <div class="aside">
+    <strong>Positive control:</strong> the pipeline independently re-found
+    <span class="gene">torS</span>/<span class="gene">torT</span> disrupted in
+    <strong>3 of 20</strong> randomly-sampled <em>E. coli</em> strains.<br>
+    <strong>But:</strong> of 26 disrupted pairs, most are <em>not</em> functionally coupled —
+    including <span class="gene">flk</span>/<span class="gene">pdxB</span>, documented in the
+    literature as sharing a divergent promoter purely by coincidence.
+  </div>
+  <div class="nav"><span>3 / 5</span><span class="hint">→ the catch</span></div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <p class="kicker">The catch — and the real lesson</p>
+  <h2>Is there <em>selection</em> on this? Same data, three answers.</h2>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--muted)"></i> unvalidated coupling annotation</span>
+    <span><i class="sw" style="background:var(--series-1)"></i> validated annotation (AUC 0.87)</span>
+  </div>
+  <!-- viewBox starts at -46 so the right-anchored row labels (which extend left
+       of the plot area's x=82 anchor) are inside the canvas rather than clipped -->
+  <svg viewBox="-46 0 766 250" width="100%" height="215" role="img"
+       aria-label="Odds ratios for disruption at functionally-coupled divergent pairs under three annotation methods. Keyword heuristic 2.30, CI 1.02 to 5.18. Hand-verified only 0.51, CI 0.12 to 2.20. Validated STRING score 1.15, CI 0.39 to 3.35. Values in the table below.">
+    <!-- gridlines + ticks (log scale, OR 0.1 to 10) -->
+    <g stroke="var(--grid)" stroke-width="1">
+      <line x1="90" y1="28" x2="90" y2="196"/><line x1="201" y1="28" x2="201" y2="196"/>
+      <line x1="286" y1="28" x2="286" y2="196"/>
+      <line x1="454" y1="28" x2="454" y2="196"/><line x1="566" y1="28" x2="566" y2="196"/>
+      <line x1="650" y1="28" x2="650" y2="196"/>
+    </g>
+    <!-- OR = 1 reference -->
+    <line x1="370" y1="24" x2="370" y2="200" stroke="var(--axis)" stroke-width="1"/>
+    <text x="370" y="16" font-size="11" fill="var(--muted)" text-anchor="middle">no effect</text>
+    <!-- x axis -->
+    <line x1="90" y1="196" x2="650" y2="196" stroke="var(--axis)" stroke-width="1"/>
+    <g font-size="11" fill="var(--muted)" text-anchor="middle">
+      <text x="90" y="212">0.1</text><text x="201" y="212">0.25</text><text x="286" y="212">0.5</text>
+      <text x="370" y="212">1</text><text x="454" y="212">2</text><text x="566" y="212">5</text>
+      <text x="650" y="212">10</text>
+    </g>
+    <text x="370" y="236" font-size="11.5" fill="var(--text-secondary)" text-anchor="middle">
+      odds ratio for disruption at coupled pairs (log scale)</text>
+
+    <!-- row 1: keyword heuristic -->
+    <text x="82" y="52" font-size="12.5" fill="var(--text-secondary)" text-anchor="end">keyword heuristic</text>
+    <line x1="372" y1="48" x2="570" y2="48" stroke="var(--muted)" stroke-width="2"/>
+    <line x1="372" y1="42" x2="372" y2="54" stroke="var(--muted)" stroke-width="2"/>
+    <line x1="570" y1="42" x2="570" y2="54" stroke="var(--muted)" stroke-width="2"/>
+    <circle cx="471" cy="48" r="5.5" fill="var(--muted)" stroke="var(--surface-1)" stroke-width="2"/>
+    <text x="588" y="52" font-size="12" fill="var(--text-primary)">2.30 · p=0.046</text>
+
+    <!-- row 2: hand-verified only -->
+    <text x="82" y="107" font-size="12.5" fill="var(--text-secondary)" text-anchor="end">hand-verified only</text>
+    <line x1="112" y1="103" x2="466" y2="103" stroke="var(--muted)" stroke-width="2"/>
+    <line x1="112" y1="97" x2="112" y2="109" stroke="var(--muted)" stroke-width="2"/>
+    <line x1="466" y1="97" x2="466" y2="109" stroke="var(--muted)" stroke-width="2"/>
+    <circle cx="288" cy="103" r="5.5" fill="var(--muted)" stroke="var(--surface-1)" stroke-width="2"/>
+    <text x="484" y="107" font-size="12" fill="var(--text-primary)">0.51 · p=0.56</text>
+
+    <!-- row 3: validated -->
+    <text x="82" y="162" font-size="12.5" fill="var(--text-primary)" text-anchor="end" font-weight="600">STRING, validated</text>
+    <line x1="255" y1="158" x2="517" y2="158" stroke="var(--series-1)" stroke-width="2"/>
+    <line x1="255" y1="152" x2="255" y2="164" stroke="var(--series-1)" stroke-width="2"/>
+    <line x1="517" y1="152" x2="517" y2="164" stroke="var(--series-1)" stroke-width="2"/>
+    <circle cx="387" cy="158" r="5.5" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2"/>
+    <text x="535" y="162" font-size="12" fill="var(--text-primary)">1.15 · p=0.77</text>
+  </svg>
+  <p style="font-size:14.5px;margin:2px 0 0">
+    The keyword heuristic — "is a transcriptional regulator sitting next door?" — gave a
+    <strong>nominally significant enrichment</strong>. It was an artifact: most of its hits
+    fail literature checking (<span class="gene">fabR</span>/<span class="gene">sthA</span>,
+    <span class="gene">btsS</span>/<span class="gene">mlrA</span> …). With a
+    <strong>validated</strong> coupling score the signal vanishes.
+    <strong>The bottleneck was annotation quality, not genome count.</strong>
+  </p>
+  <table>
+    <caption>Chart data · 3,666 STRING-mapped divergent pairs</caption>
+    <tr><th>Coupling definition</th><th>Odds ratio</th><th>95% CI</th><th>p</th></tr>
+    <tr><td>Regulator-keyword heuristic</td><td>2.30</td><td>1.02 – 5.18</td><td>0.046</td></tr>
+    <tr><td>Hand-verified pairs only</td><td>0.51</td><td>0.12 – 2.20</td><td>0.556</td></tr>
+    <tr><td>STRING score, validated</td><td>1.15</td><td>0.39 – 3.35</td><td>0.773</td></tr>
+  </table>
+  <div class="nav"><span>4 / 5</span><span class="hint">→ what's next</span></div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <p class="kicker">Where it stands</p>
+  <h2>The annotation layer is fixed. The sample isn't.</h2>
+  <p style="font-size:15px;margin:0 0 4px">
+    Coupling scores now come from STRING's <strong>non-positional</strong> channels only —
+    its <code>neighborhood</code> channel is built from <em>conserved genomic adjacency</em>, so
+    using it would reward our pairs for being adjacent and manufacture the result.
+    Gene-symbol joins covered just 1–6% of pairs in three species; <code>blastp</code>
+    orthologs lifted coverage to <strong>89%</strong>.
+  </p>
+  <div class="stats" style="margin:18px 0 4px">
+    <div class="stat"><div class="v">0.87</div><div class="l">AUC vs 19 hand labels</div></div>
+    <div class="stat"><div class="v">89%</div><div class="l">pairs annotated</div></div>
+    <div class="stat"><div class="v">~2,000</div><div class="l">genomes for a 2× effect</div></div>
+  </div>
+  <p style="font-size:14.5px;margin:14px 0 0">
+    Power analysis: a 5× effect would need only ~700 genomes and we don't see one, so
+    <strong>strong selection either way is provisionally excluded</strong>. A 2× effect needs
+    ~2,000 genomes — and 2–5× more after correcting for phylogeny, since our 108 strain-level
+    hits collapse to just 26 independent events.
+  </p>
+  <div class="aside" style="border-left-color:var(--series-1)">
+    <strong>Where I'd want the group's input:</strong> better ground truth for functional
+    coupling than STRING textmining (RegPrecise? RegulonDB?) — it under-calls in non-model
+    species, which is exactly where our hits are. And: is the allele-frequency design
+    (polymorphic vs fixed insertions) worth more than adding genomes?
+  </div>
+  <p class="src">Code + full write-up: <code>jeffrey/</code> on branch
+    <code>jeffrey/divergent-promoter-survey</code> · 6-part <code>SUMMARY.md</code></p>
+  <div class="nav"><span>5 / 5</span><span class="hint">← back</span></div>
+</section>
+
+</div>
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = 0;
+  const show = n => {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('on', k === i));
+  };
+  document.addEventListener('keydown', e => {
+    if (['ArrowRight', ' ', 'PageDown', 'ArrowDown'].includes(e.key)) { show(i + 1); e.preventDefault(); }
+    else if (['ArrowLeft', 'PageUp', 'ArrowUp'].includes(e.key)) { show(i - 1); e.preventDefault(); }
+    else if (e.key === 'Home') show(0);
+    else if (e.key === 'End') show(slides.length - 1);
+    else if (e.key.toLowerCase() === 't') {
+      const cur = document.documentElement.getAttribute('data-theme');
+      const dark = cur === 'dark' || (!cur && matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.setAttribute('data-theme', dark ? 'light' : 'dark');
+    }
+  });
+  document.getElementById('deck').addEventListener('click', e => {
+    if (e.target.closest('a, table')) return;
+    show(i + 1);
+  });
+</script>
+</body>
+</html>

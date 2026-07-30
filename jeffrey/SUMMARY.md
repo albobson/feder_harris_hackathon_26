@@ -447,7 +447,7 @@ measure.
    beneficial. Far more informative per genome, but requires within-species
    population depth (~100 strains each) rather than breadth.
 
-## Part 6: Fixing the annotation layer (IN PROGRESS)
+## Part 6: Fixing the annotation layer
 
 ### Motivation
 
@@ -539,25 +539,101 @@ Because this is ~CPU-hours of BLAST, it is submitted to an SGE compute node
 `$NSLOTS`) rather than run on the shared login node —
 see `analysis/submit_ortholog_map.sh`.
 
-### Status and planned validation
+### Ortholog mapping result
 
-**Incomplete as of this writing.** Done: STRING data downloaded and parsed;
-channel policy implemented; symbol-join pass run and its failure modes
-diagnosed; ortholog mapper written and submitted to the cluster. Still
-pending: the BLAST job was queued (not yet started) at time of writing, so
-coupling scores have **not** yet been recomputed with orthologs, and the
-selection test has **not** been re-run.
+The BLAST job (30 s wall-clock on 8 slots — my "CPU-hours" estimate was far too
+pessimistic, since only ~1,000 query proteins per species are needed) rescued
+all three failing species and improved every other one:
 
-The planned validation is the strongest feature of this design: Parts 2 and 4
-produced ~12 hand-verified labels that serve as a calibration set. If the
-STRING score reproduces those calls, it can be trusted at scale.
+| Species | Symbol join | BLAST orthologs |
+|---|---|---|
+| *B. fragilis* | 1% | **88%** |
+| *V. cholerae* | 5% | **88%** |
+| *S. pyogenes* | 6% | **87%** |
+| *E. coli* | 84% | 90% |
+| *B. subtilis* | 77% | 95% |
+| *M. tuberculosis*, *P. aeruginosa*, *C. jejuni* | 95% | 97% |
+| *S. aureus* | 98% | 94%* |
 
-| Should score HIGH (verified coupled) | Should score LOW (verified NOT coupled) |
-|---|---|
-| *torS*/*torT*, *metE*/*metR*, *araC*/*araB*, *soxR*/*soxS*, *acrR*/*acrA*, *rocD*/*rocR*, *yyaT*/*yybA* | *fabR*/*sthA*, *btsS*/*mlrA*, *purT*/*ybfI* |
+Overall divergent-pair coverage rose from **67% → 89%** (3,666 of 4,099), with
+no species below 78%. (*For *S. aureus*, a few genes resolve via locus-tag
+fallback rather than BLAST, so the pair-level rate shifts slightly.)
 
-Only after that check passes should the coupling scores be used to re-run the
-Part 5 selection test and ask whether the sign of the effect is now determined.
+### Validation against the hand-verified labels — PASSED
+
+Parts 2 and 4 produced **19 usable labels** (9 verified coupled, 10 verified
+*not* coupled — Part 2 checked nine pairs and found no functional link for
+any). Scoring them with the new annotation:
+
+| | n | median coupling score |
+|---|---|---|
+| verified **coupled** | 9 | **897** |
+| verified **not** coupled | 10 | **45** |
+
+**AUC = 0.872** — i.e. a truly-coupled pair outranks a truly-uncoupled one ~87%
+of the time (Mann-Whitney over all 9x10 comparisons; threshold-free, so it
+measures ranking quality rather than accuracy at some cutoff). With n=19 the
+interval around 0.872 is wide, so read it as "clearly informative," not
+"precisely 0.87."
+
+**Two informative failures**, both false negatives, and both in the same
+direction:
+
+- *V. cholerae* **metE/metR scored only 69** despite being a textbook
+  regulator/target pair — STRING's *V. cholerae* annotation is sparse.
+- *B. subtilis* **yyaT/yybA scored 41** (the prior-only floor) — its regulon
+  assignment is a comparative-genomics *prediction* (RegPrecise) that STRING
+  does not ingest.
+
+Both are consequences of a real weakness: **the score is carried almost
+entirely by the `textmining` channel** (`experimental` and `database` are 0 for
+nearly every pair here), so coupling detection tracks *literature depth*. That
+biases toward under-calling coupling in non-model organisms — which is exactly
+where our two novel findings live. Any future use of this layer should treat
+its negatives in understudied species as unreliable.
+
+On the excluded channels: `neighborhood` alone gives AUC 0.656 on the same
+labels. That is well below the coupling score's 0.872 but not the ~0.5 of pure
+noise — conserved adjacency genuinely correlates with functional coupling
+(that is why STRING ships the channel). It remains the wrong channel *here*,
+because every pair in this study is adjacent in the reference genome by
+construction, so including it would partly score pairs on the property that
+defines the study population.
+
+### Payoff: the selection test no longer flips
+
+Re-running the Part 5 comparison on the 3,666 mapped pairs, calling a pair
+coupled at STRING's conventional medium-confidence cutoff (score ≥ 400):
+
+| Coupling definition | Disruption rate | Odds ratio (95% CI) | Fisher p |
+|---|---|---|---|
+| Regulator-keyword heuristic | 1.17% vs 0.51% | 2.30 [1.02, 5.18] | **0.046** |
+| Hand-verified pairs only | 0.26% vs 0.51% | 0.51 [0.12, 2.20] | 0.556 |
+| **STRING score, validated** | **0.80% vs 0.70%** | **1.15 [0.39, 3.35]** | **0.773** |
+
+The nominally significant enrichment was an **annotation artifact**. With a
+validated coupling score there is no detectable effect in either direction, and
+the confidence interval [0.39, 3.35] is exactly what Part 5's power analysis
+predicted for this sample size: only effects stronger than roughly 3x are
+excluded.
+
+Two useful side results:
+
+- **Spacer length is not a confound** — median 174 bp (coupled) vs 180 bp
+  (uncoupled), so the obvious non-selective driver of insertion is balanced
+  across the comparison groups.
+- Disruptions remain overwhelmingly concentrated in *E. coli* (18 of 26) and
+  *B. subtilis* (6), so the test is effectively powered by two species.
+
+### What this part did and did not settle
+
+**Settled:** the annotation layer is fixed and, importantly, *validated* rather
+than merely automated. The Part 5 sign ambiguity is resolved — the honest
+estimate is "no effect detectable," not "enriched."
+
+**Not settled:** the sample is still far too small (26 independent events). The
+annotation fix makes the *estimate* trustworthy; it does not make the *sample*
+adequate. Part 5's genome targets still stand.
 
 ## Files
 
@@ -583,7 +659,11 @@ Part 5 selection test and ask whether the sign of the effect is now determined.
 - `data/refprot/` — reference-genome protein FASTAs (BLAST queries)
 - `data/coupling_scores.json` / `.tsv` — per-pair coupling scores (symbol-join
   pass; to be regenerated with the ortholog map)
-- `data/ortholog_map.json` — BLAST ortholog map (pending job completion)
+- `analysis/validate_coupling.py` — scores the 19 hand-verified labels, reports
+  AUC, and quantifies the `neighborhood` circularity
+- `analysis/test_selection.py` — re-runs the selection test on validated scores
+- `data/ortholog_map.json` — BLAST ortholog map (89% pair coverage)
+- `DECK.html` — 2-3 min lightning talk (self-contained; arrow keys, T for theme)
 - `logs/` — SGE job logs
 - `data/species_list.txt`, `data/genome_manifest.tsv` — exact species/accessions used
 - `data/genomes/` — downloaded GFF3 + FASTA per genome (180 requested / 179

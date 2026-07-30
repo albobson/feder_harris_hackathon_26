@@ -4,3 +4,7 @@ __pycache__/
 figs/*.png
 figs/*.pdf
 .DS_Store
+
+# Downloaded genome assemblies (GFF3 + FASTA) -- large and fully re-fetchable
+# via jeffrey/analysis/fetch_genomes.py + jeffrey/data/genome_manifest.tsv
+jeffrey/data/genomes/

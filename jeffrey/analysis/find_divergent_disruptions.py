@@ -156,60 +156,72 @@ def intervening_products(genes, seqid, left_end, right_start, length, wrapped):
             prods.append((g["symbol"] or g["locus_tag"], g["product"]))
     return prods
 
-results = {}
+def run_full_scan():
+    """The original entry point: for every downloaded species, find all short-spacer
+    divergent pairs in the reference strain and check every other strain for
+    disruption. Wrapped in a function (rather than bare module-level code) so other
+    scripts can `import find_divergent_disruptions as fdd` and reuse its parsing
+    helpers (load_gff, divergent_pairs, gene_lookup, find_span, intervening_products)
+    without re-running this whole scan as a side effect of the import."""
+    results = {}
 
-for species_dir in sorted(os.listdir(GDIR)):
-    sp_path = os.path.join(GDIR, species_dir)
-    if not os.path.isdir(sp_path):
-        continue
-    ref_acc = REFERENCE_STRAIN.get(species_dir)
-    accs = sorted(os.listdir(sp_path))
-    if ref_acc not in accs:
-        ref_acc = accs[0]  # fallback if the intended reference wasn't downloaded
-
-    genome_genes = {}
-    genome_seqlens = {}
-    for acc in accs:
-        gff = os.path.join(sp_path, acc, "genomic.gff")
-        if os.path.exists(gff):
-            genes, seq_lengths = load_gff(gff)
-            genome_genes[acc] = genes
-            genome_seqlens[acc] = seq_lengths
-
-    ref_genes = genome_genes.get(ref_acc)
-    if not ref_genes:
-        continue
-    ref_pairs = divergent_pairs(ref_genes, max_len=500)
-    print(f"{species_dir}: reference {ref_acc}, {len(ref_pairs)} divergent pairs (<=500bp spacer) found")
-
-    species_hits = []
-    for acc, genes in genome_genes.items():
-        if acc == ref_acc:
+    for species_dir in sorted(os.listdir(GDIR)):
+        sp_path = os.path.join(GDIR, species_dir)
+        if not os.path.isdir(sp_path):
             continue
-        lookup = gene_lookup(genes)
-        seq_lengths = genome_seqlens[acc]
-        for (symA, symB), refinfo in ref_pairs.items():
-            span_info = find_span(lookup, symA, symB, seq_lengths)
-            if span_info is None:
+        ref_acc = REFERENCE_STRAIN.get(species_dir)
+        accs = sorted(os.listdir(sp_path))
+        if ref_acc not in accs:
+            ref_acc = accs[0]  # fallback if the intended reference wasn't downloaded
+
+        genome_genes = {}
+        genome_seqlens = {}
+        for acc in accs:
+            gff = os.path.join(sp_path, acc, "genomic.gff")
+            if os.path.exists(gff):
+                genes, seq_lengths = load_gff(gff)
+                genome_genes[acc] = genes
+                genome_seqlens[acc] = seq_lengths
+
+        ref_genes = genome_genes.get(ref_acc)
+        if not ref_genes:
+            continue
+        ref_pairs = divergent_pairs(ref_genes, max_len=500)
+        print(f"{species_dir}: reference {ref_acc}, {len(ref_pairs)} divergent pairs (<=500bp spacer) found")
+
+        species_hits = []
+        for acc, genes in genome_genes.items():
+            if acc == ref_acc:
                 continue
-            # Flag as a candidate disruption if the spacer blew up far beyond the
-            # reference size (>5x, and an absolute floor of 800bp so noise in small
-            # reference spacers doesn't trigger false positives).
-            if span_info["span"] > 5 * max(refinfo["length"], 50) and span_info["span"] > 800:
-                prods = intervening_products(genes, span_info["seqid"],
-                                              span_info["left"]["end"], span_info["right"]["start"],
-                                              span_info["length"], span_info["wrapped"])
-                species_hits.append({
-                    "genome": acc, "pair": (symA, symB),
-                    "ref_length": refinfo["length"], "expanded_length": span_info["span"],
-                    "n_intervening_genes": len(prods),
-                    "intervening_products": prods,
-                })
-    results[species_dir] = {"reference": ref_acc, "n_ref_pairs": len(ref_pairs), "hits": species_hits}
+            lookup = gene_lookup(genes)
+            seq_lengths = genome_seqlens[acc]
+            for (symA, symB), refinfo in ref_pairs.items():
+                span_info = find_span(lookup, symA, symB, seq_lengths)
+                if span_info is None:
+                    continue
+                # Flag as a candidate disruption if the spacer blew up far beyond the
+                # reference size (>5x, and an absolute floor of 800bp so noise in small
+                # reference spacers doesn't trigger false positives).
+                if span_info["span"] > 5 * max(refinfo["length"], 50) and span_info["span"] > 800:
+                    prods = intervening_products(genes, span_info["seqid"],
+                                                  span_info["left"]["end"], span_info["right"]["start"],
+                                                  span_info["length"], span_info["wrapped"])
+                    species_hits.append({
+                        "genome": acc, "pair": (symA, symB),
+                        "ref_length": refinfo["length"], "expanded_length": span_info["span"],
+                        "n_intervening_genes": len(prods),
+                        "intervening_products": prods,
+                    })
+        results[species_dir] = {"reference": ref_acc, "n_ref_pairs": len(ref_pairs), "hits": species_hits}
 
-with open(os.path.join(DATA_DIR, "divergent_disruption_results.json"), "w") as f:
-    json.dump(results, f, indent=2)
+    with open(os.path.join(DATA_DIR, "divergent_disruption_results.json"), "w") as f:
+        json.dump(results, f, indent=2)
 
-print("\n=== SUMMARY ===")
-for sp, r in results.items():
-    print(f"{sp}: {len(r['hits'])} candidate disruption(s) across {r['n_ref_pairs']} reference divergent pairs")
+    print("\n=== SUMMARY ===")
+    for sp, r in results.items():
+        print(f"{sp}: {len(r['hits'])} candidate disruption(s) across {r['n_ref_pairs']} reference divergent pairs")
+    return results
+
+
+if __name__ == "__main__":
+    run_full_scan()

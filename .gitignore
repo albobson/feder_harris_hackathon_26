@@ -1,10 +1,8 @@
 # mmseqs intermediate dbs and search work
 tmp/
 queries/*_db*
-results/*.duckdb
-results/*.m8
-results/*_db*
-results/*.tsv
+results/
+cache/
 
 # slurm and logs
 logs/

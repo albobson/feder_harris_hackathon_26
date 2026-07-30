@@ -1,0 +1,20 @@
+# mmseqs intermediate dbs and search work
+tmp/
+queries/*_db*
+results/*.duckdb
+results/*.m8
+results/*_db*
+results/*.tsv
+
+# slurm and logs
+logs/
+slurm-*.out
+*.log
+
+# python cache
+__pycache__/
+*.pyc
+
+# editor
+.vscode/
+.idea/

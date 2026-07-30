@@ -1,27 +1,25 @@
 #!/bin/bash
 #SBATCH --job-name=mmseqs_integrases
-#SBATCH --partition=campus-new
-#SBATCH --gpus=rtx2080ti:1
-#SBATCH --cpus-per-task=8
+#SBATCH --partition=short
+#SBATCH --cpus-per-task=16
 #SBATCH --mem=64G
-#SBATCH --time=04:00:00
+#SBATCH --time=02:00:00
 #SBATCH --output=logs/mmseqs_integrases_%j.out
 #SBATCH --error=logs/mmseqs_integrases_%j.err
 
-# GPU mmseqs2 search: 11 phage integrases -> OMG 10M padded cluster DB.
-# See mmseqs_search_torT_torS.sbatch for chorus/L40S fallback details.
+# CPU mmseqs2 search: 10 phage integrases -> OMG 10M cluster reps.
+# See mmseqs_search_torT_torS.sbatch for the v13/GPU note.
 
 set -euo pipefail
 
 REPO=/fh/fast/srivatsan_s/grp/SrivatsanLab/Dustin/feder_harris_hackathon_26
-DB=/fh/working/srivatsan_s/databases/mmseqs2/omg_cds_10M/omg_cds_clustered90_seqs_pad
+DB=/fh/working/srivatsan_s/databases/mmseqs2/omg_cds_10M/omg_cds_clustered90_seqs
 
 cd "$REPO"
 mkdir -p results tmp logs
 
 ml MMseqs2/13-45111-gompi-2021b
 mmseqs version
-nvidia-smi
 
 mmseqs createdb queries/phage_integrases.faa queries/phage_integrases_db
 
@@ -30,7 +28,6 @@ mmseqs search \
     "$DB" \
     results/integrases_vs_omg10M \
     tmp/integrases \
-    --gpu 1 \
     -s 7.5 \
     -e 1e-10 \
     --max-seqs 20000 \

@@ -85,39 +85,69 @@ strains but not others. Key results, relevant to this model:
   long-lived/heritable across several generations. A ~20 min switching rate is the
   *opposite* regime (comparable to one generation, not several).
 - Consequence: we do not assume a fast- or slow-switching quasi-equilibrium.
-  `k_switch` is an explicit, swept parameter. See `derivation.md` for the math and
-  a real modeling error caught during implementation (an earlier draft treated
-  environment as a per-cell compartment cells could be distributed across, like
-  phenotype — wrong, since oxygen level is one shared condition, not something
-  cells experience independently of each other). The corrected picture: the
-  lysogen's growth rate is exact for any `σ` (no internal phenotype compartment,
-  so it's a plain weighted time-average). The non-lysogen's growth rate has closed
-  forms only in the fast (`k_switch ≫ σ`) and slow (`k_switch ≪ σ`) limits — for
-  `k_switch` comparable to `σ` (plausibly the free-living/high-`σ` regime the
-  host-lifestyle hypothesis cares about most), there is genuinely no closed form
-  (it's a top-Lyapunov-exponent-of-a-random-matrix-product problem), and either
-  `lib/fitness.py`'s numeric estimator or full simulation is required — not
-  optional, not just a validation step.
+  `k_switch` is an explicit parameter and both genotypes carry it. There is no
+  closed form when `k_switch` and `σ` are comparable (a top-Lyapunov-exponent-of-a-
+  random-matrix-product problem), so `lib/fitness.py`'s numeric estimator is the
+  primary tool, not a validation step. Both genotypes must be evaluated on the
+  **same** realized environment path — they compete in one shared environment.
 
-## Stochastic simulator limitation: no carrying capacity
+## Both genotypes get the SAME machinery — this is the model's core commitment
 
-`sim/dynamics_stochastic.py` has no population cap. Any compartment left with a
-sustained positive net growth rate and no depletion mechanism (e.g. a susceptible
-background population when `delta=0`, or any run over a long horizon) will grow
-without bound — and since it's an exact Gillespie simulator, that means simulating
-one discrete event per birth, which becomes computationally infeasible long before
-it becomes numerically wrong. Keep stochastic-simulator horizons short and/or add a
-carrying-capacity cap (open design choice, not yet implemented) before running
-longer sweeps. `sim/dynamics_ode.py` already supports an optional `K` for exactly
-this reason on the mean-field side.
+Lysogen and non-lysogen are the same object: a population split between unprepared
+and prepared cells relaxing at the same `k_switch`. They differ only in the aerobic
+target prepared fraction (`q_A` = 0 for the lysogen, ~0.1 for the non-lysogen) and
+in the lysogen's lysis rate. Anaerobic targets are identical, because the papers
+find anaerobic torCAD expression experimentally indistinguishable between them.
 
-## Open design choices (see plan, "Open design choices" section)
+**Do not "simplify" the lysogen back into a single compartment that tracks oxygen
+directly.** An earlier draft did exactly that, which meant the lysogen never paid
+the post-transition stall penalty the non-lysogen paid — backwards relative to
+Carey Fig 1C/D, where it is the *lysogens* that fail to grow after rapid oxygen
+depletion. The asymmetry inverted the model's headline result and produced a
+"surprising" conclusion that was written into SUMMARY.md before being caught. See
+`derivation.md` §4(c).
 
-1. `B` (stall penalty): smooth growth-rate deduction vs. true stochastic
-   death/extinction event. Papers describe cells that fail to grow at all
-   post-transition — leaning toward the latter as more faithful.
-2. Whether to track free phage `P(t)` explicitly or fold it into an implicit
-   quasi-steady-state infection rate (lighter default; upgrade only if the
-   phage-invasion dynamics turn out to be sensitive to it).
-3. Weighting of vertical vs. horizontal transmission in the phage fitness score —
-   an explicit modeling choice we make, not something the data determines.
+## Stochastic simulator: no carrying capacity, and turnover matters
+
+`sim/dynamics_stochastic.py` has no population cap. Any compartment with sustained
+positive net growth and no depletion will grow without bound, and since it is an
+exact Gillespie simulator that means one event per birth — computationally
+infeasible long before it is numerically wrong. Always pass an `extinction_check`
+covering **both** absorbing outcomes (gone, and past threshold), and keep horizons
+short. `sim/dynamics_ode.py` supports an optional `K` on the mean-field side.
+
+Separately: demographic stochasticity depends on birth and death rates
+**separately**, not on their difference. The simulator therefore takes a baseline
+turnover `d0` and splits a net rate `g` as `b = max(g + d0, 0)`, `d = b − g`. An
+earlier version used `max(g,0)` births and `max(−g,0)` deaths — never both — making
+every lineage with positive growth a pure-birth process that could not go extinct,
+so establishment probability was identically 1.0. `d0` cancels out of growth-rate
+comparisons and only affects stochastic quantities.
+
+## Open design choices
+
+1. `D` (stall penalty): currently a growth-rate deduction applied while a cell is
+   unprepared under anaerobiosis. The papers describe cells that fail to grow at
+   all post-transition, so a discrete stochastic death may be more faithful.
+2. Every infection is assumed to produce a lysogen; a real temperate phage
+   sometimes goes lytic instead. This makes lysogeny slightly "too easy" for the
+   phage.
+3. Vertical vs. horizontal transmission are reported as a *decomposition*
+   (`sim/metrics.phage_fitness_decomposition`) rather than a weighted score —
+   choosing weights would invent a parameter the data does not determine.
+4. `q_A` for the lysogen is set to exactly 0. Fig 1B shows a sharp peak at
+   background, so this is close, but it is a choice, and the host's entire
+   possible benefit lives in the small difference `q_A_S − q_A_L`.
+5. Two-state environment with exponential dwell times. `sim/environment.py`
+   supports Gamma-distributed dwells (`gamma_shape`) as a separate
+   "predictability" axis, which no result currently uses.
+
+## Sensitivity worth knowing before quoting any number
+
+The host's maximum growth advantage from losing the hedge is small — of order
+`p_A · q_A · c`, which with the illustrative values (`p_A`≈0.5, `q_A`=0.1,
+`c`=0.1) is ~0.005, i.e. half a percent of a generation. Any lysis rate above
+about that value erases it entirely. So conclusions about *the host* benefiting
+are sensitive to `c` and `q_A` in a way that conclusions about the phage are not.
+If the real `c` is much larger than we assumed, the host-benefit window widens; if
+it is genuinely undetectable (as the 2018 competition assays suggest), it closes.

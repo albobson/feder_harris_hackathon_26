@@ -1,8 +1,27 @@
-"""Closed-form and numerically-exact fitness quantities for the torCAD bet-hedging /
-HK022-lysogeny model. See derivation.md for the math, what's exact vs. a limiting
-approximation, and a corrected modeling error (environment is an exogenous, SHARED
-condition -- not a per-cell compartment cells can be distributed across, unlike
-phenotype, which genuinely is per-cell). All functions are plain and stateless.
+"""Growth-rate and invasion quantities for the torCAD bet-hedging / HK022-lysogeny
+model. See derivation.md for the math and for two modeling errors that were caught
+and corrected along the way.
+
+Key structural point (this is what the model is *for*): lysogen and non-lysogen are
+the SAME kind of object -- a population split between "unprepared" (U, torCAD off)
+and "prepared" (P, torCAD on) cells, relaxing toward an environment-dependent target
+prepared fraction q_E at rate k_switch. Growth rates depend only on phenotype and
+environment, never on genotype. The genotypes differ in exactly two ways:
+
+  1. their AEROBIC target prepared fraction q_A -- ~0.1 for the non-lysogen (the
+     noisy bet-hedging state), 0 for the lysogen (uniformly off, which is precisely
+     what Carey et al. 2019 Fig 5 says the prophage does);
+  2. the lysogen additionally dies at the lysis rate lambda(E).
+
+Their ANAEROBIC target q_N is the same, because the papers find lysogen and
+non-lysogen anaerobic torCAD expression experimentally indistinguishable.
+
+Modeling the lysogen this way -- rather than as a genotype whose expression tracks
+oxygen instantaneously -- is what lets the model represent Carey Fig 1C/D, where it
+is the LYSOGENS that fail to grow after rapid oxygen depletion (nobody is prepared
+when the oxygen goes). An earlier version of this file gave the lysogen a lag-free,
+penalty-free response, which silently handed it an advantage no cell has and
+inverted the model's headline result. See derivation.md.
 """
 import numpy as np
 from scipy.linalg import expm
@@ -16,43 +35,39 @@ def stationary_fractions(sigma_AN, sigma_NA):
 
 
 def weighted_time_average(sigma_AN, sigma_NA, val_A, val_N):
-    """p_A * val_A + p_N * val_N -- the natural 'mean rate' for anything that is a
-    simple (non-compartmental) function of the current environment.
+    """p_A * val_A + p_N * val_N -- the mean rate for anything that is a simple
+    (non-compartmental) function of the current environment, e.g. the lysis rate.
     """
     p_A, p_N = stationary_fractions(sigma_AN, sigma_NA)
     return p_A * val_A + p_N * val_N
 
 
-def lysogen_growth_rate(sigma_AN, sigma_NA, g_A, g_N, lambda_A=0.0, lambda_N=0.0):
-    """Exact long-run growth rate of the lysogen population, for ANY switching
-    rates. The lysogen's torCAD state is a deterministic function of the CURRENT
-    environment (no internal phenotype compartment, no lag) -- so population size
-    N obeys dN/dt = r(E(t))*N with r(A)=g_A-lambda_A, r(N)=g_N-lambda_N, and
-    log(N(t)) is exactly the time-integral of r(E(s)). By the ergodic theorem this
-    converges (almost surely, for any realized environment path) to the simple
-    time-average, NOT to any eigenvalue of a "switching-rate matrix" -- there is no
-    matrix here, because there is nothing to mix: environment is one shared
-    condition, not a set of compartments the population is split across.
-    """
-    return weighted_time_average(sigma_AN, sigma_NA, g_A - lambda_A, g_N - lambda_N)
+def phenotype_growth_rates(state, g_A, g_N, c, D):
+    """(unprepared, prepared) per-capita growth rates in the given environment.
 
-
-def _phenotype_matrix(state, k_switch, q_A, q_N, g_A, g_N, c, D):
-    """2x2 matrix for the (U_S, P_S) phenotype-compartment ODE dv/dt = A(state) v,
-    for the given (exogenous, currently-fixed) environment state.
+    Depends on phenotype and environment ONLY -- not on genotype. Aerobically a
+    prepared cell pays cost c for machinery it isn't using; anaerobically an
+    unprepared cell pays the stall penalty D because it cannot respire TMAO yet.
     """
     if state == "A":
-        q = q_A
-        return np.array([
-            [g_A - k_switch * q, k_switch * (1 - q)],
-            [k_switch * q, (g_A - c) - k_switch * (1 - q)],
-        ])
-    else:
-        q = q_N
-        return np.array([
-            [(g_N - D) - k_switch * q, k_switch * (1 - q)],
-            [k_switch * q, g_N - k_switch * (1 - q)],
-        ])
+        return g_A, g_A - c
+    return g_N - D, g_N
+
+
+def _phenotype_matrix(state, k_switch, q_A, q_N, g_A, g_N, c, D, lam=0.0):
+    """2x2 matrix for the (U, P) phenotype ODE dv/dt = A(state) v for one genotype,
+    in the given (exogenous, currently-fixed) environment state.
+
+    q_A / q_N are THIS genotype's target prepared fractions; lam is its lysis rate
+    in this environment (0 for a non-lysogen), which applies uniformly to both
+    phenotypes and so just shifts the whole matrix by -lam*I.
+    """
+    q = q_A if state == "A" else q_N
+    g_U, g_P = phenotype_growth_rates(state, g_A, g_N, c, D)
+    return np.array([
+        [g_U - lam - k_switch * q, k_switch * (1 - q)],
+        [k_switch * q, g_P - lam - k_switch * (1 - q)],
+    ])
 
 
 def _top_eigenvalue_2x2(M):
@@ -62,73 +77,33 @@ def _top_eigenvalue_2x2(M):
     return (tr + np.sqrt(disc)) / 2.0
 
 
-def nonlysogen_growth_rate_fast_limit(sigma_AN, sigma_NA, k_switch, q_A, q_N,
-                                       g_A, g_N, c, D):
-    """Closed-form growth rate in the "quasi-static environment" limit: each
-    environment dwell is long compared to the (U_S,P_S) phenotype system's own
-    relaxation time, so within a dwell the population's growth rate settles onto
-    the TOP EIGENVALUE of the LOCAL (frozen-environment) 2x2 phenotype-mixing
-    matrix -- then combine across environments with the same plain time-average
-    used elsewhere (environment itself still isn't a compartment).
+def growth_rate_numeric(segments, k_switch, q_A, q_N, g_A, g_N, c, D,
+                         lambda_A=0.0, lambda_N=0.0, v0=(1.0, 1.0)):
+    """Long-run growth rate of one genotype along a GIVEN realized environment path.
 
-    An earlier version of this function used a naive q-weighted ARITHMETIC MEAN
-    of the two phenotype compartments' bare growth rates instead of this local
-    eigenvalue. That's only correct in the further k_switch -> infinity sub-limit
-    (where the local eigenvalue itself converges to the naive average); at
-    finite k_switch it was a poor approximation whenever k_switch wasn't ALSO
-    large relative to the internal rate scales c, D, g_A, g_N (not just large
-    relative to sigma) -- caught by comparing against
-    nonlysogen_growth_rate_numeric on a case where D was large enough for the two
-    formulas to disagree by >2x. This version is exact in the k_switch->infinity
-    limit and a much better approximation than the old one at any finite
-    k_switch, valid whenever environment dwell times are long relative to the
-    LOCAL matrix's relaxation time (a combination of k_switch, c, D, g_A, g_N --
-    not simply k_switch vs. sigma_AN/sigma_NA).
-    """
-    top_A = _top_eigenvalue_2x2(_phenotype_matrix("A", k_switch, q_A, q_N, g_A, g_N, c, D))
-    top_N = _top_eigenvalue_2x2(_phenotype_matrix("N", k_switch, q_A, q_N, g_A, g_N, c, D))
-    return weighted_time_average(sigma_AN, sigma_NA, top_A, top_N)
+    This is the top Lyapunov exponent of a product of random matrices -- exact for
+    any k_switch/sigma ratio, with no closed form in general (which is exactly why
+    classical bet-hedging theory restricts its clean results to limiting regimes).
+    Estimated directly: propagate a population vector through the matrix exponential
+    of each environment segment, renormalizing every step and accumulating log-growth.
 
-
-def nonlysogen_growth_rate_slow_limit(sigma_AN, sigma_NA, g_A, g_N, c, D):
-    """Closed-form growth rate in the k_switch << sigma limit: phenotype is nearly
-    a fixed lineage trait across many environment cycles (the classical bet-hedging
-    regime most of the literature assumes -- see NOTES.md). The population is
-    dominated by whichever committed sub-lineage (always-unprepared vs.
-    always-prepared) has the higher environment-averaged growth rate; k_switch>0
-    only matters for replenishing the losing type after a switch (not captured
-    here -- this is the k_switch->0 growth-rate ceiling, not a full model of the
-    replenishment dynamics).
-    """
-    r_unprepared = weighted_time_average(sigma_AN, sigma_NA, g_A, g_N - D)
-    r_prepared = weighted_time_average(sigma_AN, sigma_NA, g_A - c, g_N)
-    return max(r_unprepared, r_prepared)
-
-
-def nonlysogen_growth_rate_numeric(segments, k_switch, q_A, q_N, g_A, g_N, c, D,
-                                    v0=(1.0, 1.0)):
-    """Numerically-exact top Lyapunov exponent of the (U_S, P_S) system for a
-    GIVEN realized environment path (segments, from sim.environment), for any
-    k_switch/sigma ratio. There is no closed form in the general case (a genuine
-    'product of random matrices' problem -- the reason classical bet-hedging
-    theory restricts itself to the fast/slow limits above). This estimates it
-    directly: propagate a population vector through the exact matrix exponential
-    of each environment segment, renormalizing every step to avoid overflow and
-    accumulating the log-growth. Equivalent to (and a faster, non-stochastic
-    alternative to) running sim/dynamics_ode.py with delta=beta=0 and reading off
-    log(N(T))/T.
+    Both genotypes MUST be evaluated on the SAME `segments` to be compared: they
+    live in one shared environment, so the fair comparison is between their
+    growth along one common realization, not between separate random draws.
     """
     v = np.array(v0, dtype=float)
     log_growth = 0.0
     t_total = 0.0
-    max_rate = max(k_switch, abs(g_A), abs(g_A - c), abs(g_N), abs(g_N - D), 1.0)
+    max_rate = max(k_switch, abs(g_A), abs(g_A - c), abs(g_N), abs(g_N - D),
+                   abs(lambda_A), abs(lambda_N), 1.0)
     chunk_dt = 200.0 / max_rate  # keeps any one exponent well under float64's ~709 limit
 
     for seg_start, seg_end, state in segments:
         dt_remaining = seg_end - seg_start
         if dt_remaining <= 0:
             continue
-        A = _phenotype_matrix(state, k_switch, q_A, q_N, g_A, g_N, c, D)
+        lam = lambda_A if state == "A" else lambda_N
+        A = _phenotype_matrix(state, k_switch, q_A, q_N, g_A, g_N, c, D, lam)
         # Long dwell times need chunking -- a single expm(A*dt) with a large dt
         # overflows before we ever get a chance to renormalize.
         n_chunks = max(1, int(np.ceil(dt_remaining / chunk_dt)))
@@ -143,30 +118,71 @@ def nonlysogen_growth_rate_numeric(segments, k_switch, q_A, q_N, g_A, g_N, c, D,
     return log_growth / t_total
 
 
-def phage_invasion_growth_rate(r_L, lambda_bar, m, delta, S_star, beta):
-    """Top eigenvalue of the linearized (rare lysogen/phage) L-P system near an
-    all-susceptible population at density S_star, using MEAN (time-averaged) host
-    growth rate r_L and lysis rate lambda_bar -- i.e. this is itself a fast/
-    quasi-static approximation in the environment, same spirit as the "fast
-    limit" functions above (get r_L from lysogen_growth_rate(..., lambda_A=0,
-    lambda_N=0) and lambda_bar from weighted_time_average(sigma_AN, sigma_NA,
-    lambda_A, lambda_N)). Positive => the phage-carrying lineage grows when rare.
+def growth_rate_fast_limit(sigma_AN, sigma_NA, k_switch, q_A, q_N, g_A, g_N, c, D,
+                            lambda_A=0.0, lambda_N=0.0):
+    """Closed form in the quasi-static-environment limit: each environment dwell is
+    long compared to the phenotype system's own relaxation time, so within a dwell
+    growth settles onto the TOP EIGENVALUE of the local frozen-environment matrix,
+    and those combine across environments by a plain time-average.
+
+    Note the validity condition is NOT simply k_switch >> sigma -- the local
+    matrix's relaxation time depends on k_switch together with c, D, g_A, g_N. Using
+    a naive q-weighted arithmetic mean of the bare compartment rates here (only
+    correct as k_switch -> infinity) was an earlier bug; see derivation.md.
+    """
+    top_A = _top_eigenvalue_2x2(
+        _phenotype_matrix("A", k_switch, q_A, q_N, g_A, g_N, c, D, lambda_A))
+    top_N = _top_eigenvalue_2x2(
+        _phenotype_matrix("N", k_switch, q_A, q_N, g_A, g_N, c, D, lambda_N))
+    return weighted_time_average(sigma_AN, sigma_NA, top_A, top_N)
+
+
+def growth_rate_slow_limit(sigma_AN, sigma_NA, g_A, g_N, c, D,
+                            lambda_A=0.0, lambda_N=0.0):
+    """Closed form in the k_switch -> 0 limit: phenotype is effectively a fixed
+    lineage trait, so the population is dominated by whichever committed
+    sub-lineage has the higher environment-averaged rate. This is the classical
+    bet-hedging regime that most of the literature assumes -- and per NOTES.md it
+    is probably NOT the relevant one here, since switching takes ~one generation.
+
+    Independent of q_A/q_N: with no switching, the targets are never approached.
+    """
+    g_U_A, g_P_A = phenotype_growth_rates("A", g_A, g_N, c, D)
+    g_U_N, g_P_N = phenotype_growth_rates("N", g_A, g_N, c, D)
+    lam_bar = weighted_time_average(sigma_AN, sigma_NA, lambda_A, lambda_N)
+    r_unprepared = weighted_time_average(sigma_AN, sigma_NA, g_U_A, g_U_N) - lam_bar
+    r_prepared = weighted_time_average(sigma_AN, sigma_NA, g_P_A, g_P_N) - lam_bar
+    return max(r_unprepared, r_prepared)
+
+
+def phage_invasion_growth_rate(growth_advantage, lambda_bar, m, delta, S_star, beta):
+    """Top eigenvalue of the linearized (rare lysogen + free phage) system against a
+    resident non-lysogen population sitting at its ecological equilibrium S_star.
+
+    `growth_advantage` is the lysogen's growth rate MINUS the resident non-lysogen's
+    (both from growth_rate_numeric, both with lysis excluded -- lysis enters via
+    lambda_bar). Measuring it relative to the resident is the whole point: in a
+    density-regulated population the resident's own net per-capita growth is zero at
+    equilibrium, so a rare lineage spreads iff it beats the RESIDENT, not iff it
+    beats zero. An earlier version compared against zero, which put the invasion
+    boundary roughly an order of magnitude too high in lambda. See derivation.md.
+
+    Returns > 0 iff the phage-carrying lineage increases in frequency when rare.
     """
     A = np.array([
-        [r_L - lambda_bar, delta * S_star],
+        [growth_advantage - lambda_bar, delta * S_star],
         [beta * lambda_bar, -(m + delta * S_star)],
     ])
     eigvals = np.linalg.eigvals(A)
     return float(np.max(eigvals.real))
 
 
-def phage_invades(r_L, lambda_bar, m, delta, S_star, beta):
-    """Boolean invasion condition, equivalent to phage_invasion_growth_rate(...) > 0
-    but derived as a closed-form inequality (see derivation.md section 3):
+def phage_invades(growth_advantage, lambda_bar, m, delta, S_star, beta):
+    """Boolean form of the same condition, as a closed-form inequality:
 
-        r_L * (m + delta*S_star)  >  lambda_bar * (m - delta*S_star*(beta - 1))
+        growth_advantage * (m + delta*S_star) > lambda_bar * (m - delta*S_star*(beta - 1))
     """
-    lhs = r_L * (m + delta * S_star)
+    lhs = growth_advantage * (m + delta * S_star)
     rhs = lambda_bar * (m - delta * S_star * (beta - 1))
     return lhs > rhs
 
@@ -178,56 +194,62 @@ def _sanity_checks():
     from environment import generate_environment_sequence
 
     rng = np.random.default_rng(7)
-    sigma_AN, sigma_NA = 0.2, 0.2
-    g_A, g_N, lambda_A, lambda_N = 1.0, 0.4, 0.05, 0.05
-    t_max = 20000.0
-    segs = generate_environment_sequence(t_max, sigma_AN, sigma_NA, rng)
+    g_A, g_N, c, D = 1.0, 0.4, 0.3, 5.0
+    q_A_NON, q_A_LYS, q_N = 0.1, 0.0, 0.95
 
-    # Lysogen: formula must match the direct path-integral of the instantaneous
-    # rate to high precision (it's an exact ergodic average, not an approximation).
-    Lambda_L = lysogen_growth_rate(sigma_AN, sigma_NA, g_A, g_N, lambda_A, lambda_N)
-    log_N = sum((g_A - lambda_A if st == "A" else g_N - lambda_N) * (e - s) for s, e, st in segs)
-    direct = log_N / t_max
-    assert abs(Lambda_L - direct) < 0.01, (Lambda_L, direct)
+    sigma = 0.2
+    segs = generate_environment_sequence(20000.0, sigma, sigma, rng)
 
-    # Lysis strictly reduces lysogen growth rate.
-    assert lysogen_growth_rate(sigma_AN, sigma_NA, g_A, g_N, 0.1, 0.1) < \
-        lysogen_growth_rate(sigma_AN, sigma_NA, g_A, g_N, 0.0, 0.0)
-
-    # Non-lysogen fast-limit closed form must match the numeric Lyapunov estimator
-    # when environment dwell times are genuinely long relative to the LOCAL
-    # matrix's own relaxation time (D=20 makes that relaxation time short, ~0.05,
-    # so this needs sigma small enough that mean dwell 1/sigma is well above
-    # that -- sigma=0.2 (mean dwell 5) is NOT long enough here and was exactly
-    # the case that exposed the old naive-average formula being off by >2x).
-    q_A, q_N, c, D = 0.1, 0.95, 0.3, 20.0
-    slow_sigma = 0.001
-    segs_slow_env = generate_environment_sequence(2_000_000.0, slow_sigma, slow_sigma, rng)
-    numeric_at_k1 = nonlysogen_growth_rate_numeric(segs_slow_env, 1.0, q_A, q_N, g_A, g_N, c, D)
-    fast_pred_at_k1 = nonlysogen_growth_rate_fast_limit(slow_sigma, slow_sigma, 1.0, q_A, q_N, g_A, g_N, c, D)
-    assert abs(fast_pred_at_k1 - numeric_at_k1) < 0.02, (fast_pred_at_k1, numeric_at_k1)
-
-    q_A, q_N, c, D = 0.1, 0.95, 0.3, 5.0
-    fast_pred = nonlysogen_growth_rate_fast_limit(sigma_AN, sigma_NA, 1e4, q_A, q_N, g_A, g_N, c, D)
-    numeric_fast = nonlysogen_growth_rate_numeric(segs, 1e4, q_A, q_N, g_A, g_N, c, D)
-    numeric_slow = nonlysogen_growth_rate_numeric(segs, 1e-4, q_A, q_N, g_A, g_N, c, D)
+    # --- Limits agree with the numeric estimator in their regimes ---
+    fast_pred = growth_rate_fast_limit(sigma, sigma, 1e4, q_A_NON, q_N, g_A, g_N, c, D)
+    numeric_fast = growth_rate_numeric(segs, 1e4, q_A_NON, q_N, g_A, g_N, c, D)
+    numeric_slow = growth_rate_numeric(segs, 1e-4, q_A_NON, q_N, g_A, g_N, c, D)
+    slow_pred = growth_rate_slow_limit(sigma, sigma, g_A, g_N, c, D)
     assert abs(fast_pred - numeric_fast) < 0.02, (fast_pred, numeric_fast)
-    assert abs(fast_pred - numeric_slow) > 0.005, "fast limit unexpectedly matches slow regime too"
-
-    # Slow-limit closed form should match the numeric estimator at tiny k_switch.
-    slow_pred = nonlysogen_growth_rate_slow_limit(sigma_AN, sigma_NA, g_A, g_N, c, D)
     assert abs(slow_pred - numeric_slow) < 0.02, (slow_pred, numeric_slow)
+    assert abs(fast_pred - numeric_slow) > 0.005, "fast limit unexpectedly matches slow regime"
 
-    # Phage: no horizontal transmission (delta=0) collapses invasion rate onto the
-    # host's own net rate (r_L - lambda_bar).
-    r_L, lambda_bar, m, delta, S_star, beta = 0.2, 0.05, 0.5, 0.0, 2.0, 20.0
-    rate = phage_invasion_growth_rate(r_L, lambda_bar, m, delta, S_star, beta)
-    assert abs(rate - (r_L - lambda_bar)) < 1e-10, rate
+    # --- Lysis is a uniform tax: it shifts a genotype's growth rate by exactly
+    # -lambda_bar, since it hits both phenotypes equally. ---
+    lam = 0.07
+    base = growth_rate_numeric(segs, 1.0, q_A_LYS, q_N, g_A, g_N, c, D)
+    taxed = growth_rate_numeric(segs, 1.0, q_A_LYS, q_N, g_A, g_N, c, D,
+                                 lambda_A=lam, lambda_N=lam)
+    assert abs((base - taxed) - lam) < 1e-9, (base, taxed, lam)
 
-    # phage_invades boolean matches sign of exact eigenvalue across a random sweep.
+    # --- The two genotypes differ ONLY via q_A, and with q_A equal they are
+    # literally the same population. ---
+    same_1 = growth_rate_numeric(segs, 1.0, 0.1, q_N, g_A, g_N, c, D)
+    same_2 = growth_rate_numeric(segs, 1.0, 0.1, q_N, g_A, g_N, c, D)
+    assert same_1 == same_2
+
+    # --- The structural fix, stated as a test: with NO aerobic cost (c=0), being
+    # uniformly off aerobically is never an advantage, because the only thing it
+    # buys you is avoiding a cost that doesn't exist -- while it still leaves you
+    # with nobody prepared when the oxygen goes. So the lysogen must lose (or at
+    # best tie) at every environmental switching rate. The pre-fix model, which
+    # let the lysogen respond instantly and skip the stall penalty D entirely,
+    # got this backwards and had it WIN by a growing margin as sigma rose.
+    for sig in [0.01, 0.1, 1.0, 10.0]:
+        r = np.random.default_rng(3)
+        sg = generate_environment_sequence(3000.0 / sig, sig, sig, r)
+        lys = growth_rate_numeric(sg, 1.0, q_A_LYS, q_N, g_A, g_N, c=0.0, D=D)
+        non = growth_rate_numeric(sg, 1.0, q_A_NON, q_N, g_A, g_N, c=0.0, D=D)
+        assert lys <= non + 1e-9, f"sigma={sig}: lysogen {lys} should not beat non-lysogen {non} at c=0"
+
+    # --- Phage invasion: with no horizontal transmission (delta=0) the phage's
+    # fate collapses onto its host's relative advantage minus the lysis tax. ---
+    rate = phage_invasion_growth_rate(0.2, 0.05, m=0.5, delta=0.0, S_star=2.0, beta=20.0)
+    assert abs(rate - (0.2 - 0.05)) < 1e-10, rate
+
+    # A lysogen with zero growth advantage and any lysis at all needs horizontal
+    # transmission to survive; with beta=0 it strictly cannot invade.
+    assert phage_invasion_growth_rate(0.0, 0.1, 0.5, 0.01, 50.0, 0.0) < 0
+
+    # Boolean form matches the sign of the exact eigenvalue.
     rng2 = np.random.default_rng(0)
     for _ in range(2000):
-        args = (rng2.uniform(0, 2), rng2.uniform(0, 2), rng2.uniform(0.01, 2),
+        args = (rng2.uniform(-1, 1), rng2.uniform(0, 2), rng2.uniform(0.01, 2),
                 rng2.uniform(0.01, 2), rng2.uniform(0.01, 5), rng2.uniform(0.1, 50))
         assert (phage_invasion_growth_rate(*args) > 0) == phage_invades(*args)
 

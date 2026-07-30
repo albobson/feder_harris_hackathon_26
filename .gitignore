@@ -1,6 +1,10 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+# Ad-hoc/exploratory plot output is ignored by default; curated figures used in
+# SUMMARY.md are explicitly un-ignored below so they get committed.
 figs/*.png
 figs/*.pdf
+!figs/phase_diagram.png
+!figs/crossover_line.png
 .DS_Store

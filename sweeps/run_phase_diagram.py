@@ -58,7 +58,8 @@ def _compute_point(sigma_AN, sigma_NA, k_switch, q_A, q_N, g_A, g_N, c, D,
 
 def run_phase_diagram(sigma_values, k_switch_values, c_values, lambda0_values,
                        alpha_values, q_A, q_N, g_A, g_N, D, m, delta, beta, S_star,
-                       sigma_NA_values=None, env_t_max=20000.0, env_seed=0, n_jobs=-1):
+                       sigma_NA_values=None, target_env_segments=3000, env_seed=0,
+                       n_jobs=-1):
     """Returns a pandas DataFrame, one row per grid point.
 
     sigma_values is used for BOTH sigma_AN and sigma_NA unless sigma_NA_values is
@@ -66,32 +67,47 @@ def run_phase_diagram(sigma_values, k_switch_values, c_values, lambda0_values,
     exploration will want a single "environmental switching rate" axis with
     symmetric dwell times, but asymmetric dwell (e.g. long anaerobic, short
     aerobic bouts) is supported via sigma_NA_values.
+
+    Each sigma value gets its own environment realization sized so it has
+    roughly `target_env_segments` segments regardless of sigma (mean dwell time
+    is 1/sigma, so total simulated time = target_env_segments / sigma) -- a
+    single FIXED total time across a wide sigma range is a trap: at low sigma
+    it under-samples (too few segments to converge), and at high sigma it
+    over-samples catastrophically (a sigma=10 point with a fixed t_max=200,000
+    generates ~2 million segments, both slow to compute and expensive to ship
+    to worker processes for every grid point sharing that sigma).
     """
     if sigma_NA_values is None:
         sigma_NA_values = sigma_values
 
-    # One shared, long environment realization per sigma pair, reused across all
-    # other (k_switch, c, lambda0, alpha) grid points at that sigma -- environment
-    # doesn't depend on those, and generating a fresh path per point would be both
-    # wasteful and would inject spurious point-to-point noise into what should be
-    # a smooth sweep.
-    env_cache = {}
+    # One shared environment realization per sigma pair, reused across all other
+    # (k_switch, c, lambda0, alpha) grid points at that sigma -- environment
+    # doesn't depend on those, and generating a fresh path per point would be
+    # both wasteful and would inject spurious point-to-point noise into what
+    # should be a smooth sweep.
+    env_by_sigma = {}
     for sigma_AN, sigma_NA in zip(sigma_values, sigma_NA_values):
         rng = np.random.default_rng(env_seed)
-        env_cache[_env_cache_key(sigma_AN, sigma_NA, env_seed)] = \
+        env_t_max = target_env_segments / max(sigma_AN, sigma_NA)
+        env_by_sigma[_env_cache_key(sigma_AN, sigma_NA, env_seed)] = \
             generate_environment_sequence(env_t_max, sigma_AN, sigma_NA, rng)
 
-    grid = list(itertools.product(
-        zip(sigma_values, sigma_NA_values), k_switch_values, c_values,
-        lambda0_values, alpha_values))
+    # Build the flat argument list with each point's segments passed explicitly
+    # (not looked up from a shared dict captured by closure) -- keeps what gets
+    # pickled to each worker down to the one relevant segment list.
+    jobs = []
+    for sigma_AN, sigma_NA in zip(sigma_values, sigma_NA_values):
+        segments = env_by_sigma[_env_cache_key(sigma_AN, sigma_NA, env_seed)]
+        for k_switch, c, lambda0, alpha in itertools.product(
+                k_switch_values, c_values, lambda0_values, alpha_values):
+            jobs.append((sigma_AN, sigma_NA, k_switch, c, lambda0, alpha, segments))
 
     def _job(item):
-        (sigma_AN, sigma_NA), k_switch, c, lambda0, alpha = item
-        segments = env_cache[_env_cache_key(sigma_AN, sigma_NA, env_seed)]
+        sigma_AN, sigma_NA, k_switch, c, lambda0, alpha, segments = item
         return _compute_point(sigma_AN, sigma_NA, k_switch, q_A, q_N, g_A, g_N, c, D,
                                lambda0, alpha, m, delta, beta, S_star, segments)
 
-    results = Parallel(n_jobs=n_jobs)(delayed(_job)(item) for item in grid)
+    results = Parallel(n_jobs=n_jobs)(delayed(_job)(item) for item in jobs)
     return pd.DataFrame(results)
 
 
@@ -114,7 +130,7 @@ def _sanity_checks():
         sigma_values=[sigma_AN], k_switch_values=[1e-4, 1.0, 1e4],
         c_values=[c], lambda0_values=[lambda0], alpha_values=[alpha],
         q_A=q_A, q_N=q_N, g_A=g_A, g_N=g_N, D=D, m=m, delta=delta, beta=beta,
-        S_star=S_star, env_t_max=200_000.0, env_seed=0, n_jobs=1,
+        S_star=S_star, target_env_segments=2000, env_seed=0, n_jobs=1,
     )
     assert len(df) == 3
     assert set(df.columns) == {"sigma_AN", "sigma_NA", "k_switch", "c", "D",

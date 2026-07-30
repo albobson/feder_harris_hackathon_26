@@ -1,0 +1,9 @@
+562	Ecoli
+1280	Saureus
+287	Paeruginosa
+666	Vcholerae
+1773	Mtuberculosis
+1423	Bsubtilis
+1314	Spyogenes
+817	Bfragilis
+197	Cjejuni

@@ -447,6 +447,118 @@ measure.
    beneficial. Far more informative per genome, but requires within-species
    population depth (~100 strains each) rather than breadth.
 
+## Part 6: Fixing the annotation layer (IN PROGRESS)
+
+### Motivation
+
+Part 5 identified the binding constraint: the sign of the selection effect
+flips depending on whether "functionally coupled" is defined by the
+regulator-keyword heuristic or by hand literature verification. Hand
+verification does not scale past a dozen pairs, and the heuristic is wrong
+often enough to invert the answer. So the annotation layer — not genome count
+— is what needs fixing first.
+
+### Source choice: STRING, not KEGG
+
+KEGG pathway co-membership was rejected because it captures *metabolic*
+co-membership and misses *regulatory* relationships. MetR is a transcriptional
+activator, not a member of the methionine-biosynthesis map, so KEGG would
+score *metE*/*metR* — our strongest Part 4 finding — as uncoupled. STRING
+covers all 9 species, captures regulatory/physical/curated associations, and
+yields a **continuous** score, which supports regression rather than a
+low-power 2x2.
+
+Downloads are modest: STRING v12 per-species detailed links + aliases for 9
+species is **73 MB**, plus 6 MB of proteomes — no bulk database install.
+
+### The circularity trap (most important methodological point)
+
+STRING's headline `combined_score` folds in a **`neighborhood` channel computed
+from conserved genomic adjacency**, plus `fusion` and `cooccurence`, which are
+likewise genomic-context-derived. Our pairs are adjacent *by construction*, so
+scoring them with `combined_score` would reward them for being neighbours and
+manufacture the very association we are trying to test.
+
+Channel policy adopted:
+
+| Channels | Use |
+|---|---|
+| `neighborhood`, `fusion`, `cooccurence` | **excluded always** (genomic-context; circular here) |
+| `experimental`, `database`, `textmining` | **primary coupling score** |
+| + `coexpression` | sensitivity variant only — not positional, but two genes sharing a divergent promoter are co-regulated *as a consequence of the architecture*, so it is reported separately rather than trusted |
+
+Channels are combined with STRING's own probabilistic formula (remove the
+0.041 prior per channel, combine as independent evidence, re-add prior) rather
+than a crude sum or max.
+
+A second deliberate choice: pairs that cannot be mapped to STRING are recorded
+as **missing (`None`), never as zero**. "No annotation available" and
+"annotated as uncoupled" are different states, and conflating them would bias
+the selection test toward whichever direction the unmappable pairs happen to lean.
+
+### Problem found: gene-symbol joins fail badly for a third of the species
+
+The first pass joined our genes to STRING by gene symbol. Overall 67% of the
+4,099 divergent pairs mapped, but the failures were wildly uneven:
+
+| Species | Pairs mapped by symbol |
+|---|---|
+| *S. aureus* | 98% |
+| *M. tuberculosis*, *P. aeruginosa*, *C. jejuni* | 95% |
+| *E. coli* | 84% |
+| *B. subtilis* | 77% |
+| *S. pyogenes* | **6%** |
+| *V. cholerae* | **5%** |
+| *B. fragilis* | **1%** |
+
+Diagnosis: STRING's reference strain for those three carries no gene-symbol
+aliases — only locus tags, and for *V. cholerae* 2000-era GenBank protein
+accessions (`AAF93179.1`) that share no namespace with our RefSeq `WP_`
+accessions. STRING's `preferred_name` field was checked as a cheap fallback and
+supplies real symbols for only 10–30% of proteins in those species. This is
+precisely the standardized-symbol fragility already flagged as a limitation in
+Part 3 — and it matters, because *V. cholerae* holds our best finding
+(*metE*/*metR*).
+
+### Fix: sequence-based ortholog mapping
+
+Replaced the name join with homology: for each species, the proteins of
+genes appearing in a divergent pair are searched with `blastp` against that
+species' STRING proteome, taking the best hit by bitscore under strict
+thresholds (≥70% identity, ≥70% query coverage, E ≤ 1e-20). One-directional
+best-hit is defensible here because query and subject are the *same species*,
+so the true ortholog is a near-identical, unambiguous top hit; reciprocal best
+hits would be the stricter choice for cross-species work. The annotation
+script prefers the ortholog map and falls back to symbol, then locus tag.
+
+Beyond rescuing the three failing species, this **removes the gene-symbol
+dependency** that has limited every part of the survey since Part 1.
+
+Because this is ~CPU-hours of BLAST, it is submitted to an SGE compute node
+(`feder-short.q`, 8 slots on one host via the `serial` PE, threads bound to
+`$NSLOTS`) rather than run on the shared login node —
+see `analysis/submit_ortholog_map.sh`.
+
+### Status and planned validation
+
+**Incomplete as of this writing.** Done: STRING data downloaded and parsed;
+channel policy implemented; symbol-join pass run and its failure modes
+diagnosed; ortholog mapper written and submitted to the cluster. Still
+pending: the BLAST job was queued (not yet started) at time of writing, so
+coupling scores have **not** yet been recomputed with orthologs, and the
+selection test has **not** been re-run.
+
+The planned validation is the strongest feature of this design: Parts 2 and 4
+produced ~12 hand-verified labels that serve as a calibration set. If the
+STRING score reproduces those calls, it can be trusted at scale.
+
+| Should score HIGH (verified coupled) | Should score LOW (verified NOT coupled) |
+|---|---|
+| *torS*/*torT*, *metE*/*metR*, *araC*/*araB*, *soxR*/*soxS*, *acrR*/*acrA*, *rocD*/*rocR*, *yyaT*/*yybA* | *fabR*/*sthA*, *btsS*/*mlrA*, *purT*/*ybfI* |
+
+Only after that check passes should the coupling scores be used to re-run the
+Part 5 selection test and ask whether the sign of the effect is now determined.
+
 ## Files
 
 - `analysis/fetch_genomes.py` — pulls genome assemblies from NCBI Datasets API
@@ -460,6 +572,19 @@ measure.
   above module
 - `analysis/power_analysis.py` — Part 5 design/power analysis; derives base
   rates from the result JSONs and reports genomes needed per goal
+- `analysis/annotate_coupling_string.py` — Part 6 annotation layer: attaches
+  continuous STRING coupling scores to every divergent pair, excluding the
+  circular genomic-context channels
+- `analysis/build_ortholog_map.py` — Part 6 BLAST ortholog mapper (replaces the
+  fragile gene-symbol join); run via the SGE submit script below
+- `analysis/submit_ortholog_map.sh` — SGE submit script (`feder-short.q`, 8
+  slots); keeps the BLAST work off the login node
+- `data/string/` — STRING v12 per-species links/aliases/proteomes (73 MB + 6 MB)
+- `data/refprot/` — reference-genome protein FASTAs (BLAST queries)
+- `data/coupling_scores.json` / `.tsv` — per-pair coupling scores (symbol-join
+  pass; to be regenerated with the ortholog map)
+- `data/ortholog_map.json` — BLAST ortholog map (pending job completion)
+- `logs/` — SGE job logs
 - `data/species_list.txt`, `data/genome_manifest.tsv` — exact species/accessions used
 - `data/genomes/` — downloaded GFF3 + FASTA per genome (180 requested / 179
   retrieved / 213 present including Part 1 holdovers, as of Part 3).

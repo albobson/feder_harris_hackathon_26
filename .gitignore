@@ -8,3 +8,10 @@ figs/*.pdf
 # Downloaded genome assemblies (GFF3 + FASTA) -- large and fully re-fetchable
 # via jeffrey/analysis/fetch_genomes.py + jeffrey/data/genome_manifest.tsv
 jeffrey/data/genomes/
+
+# STRING downloads, reference proteomes, BLAST databases -- all re-fetchable
+# via jeffrey/analysis/{annotate_coupling_string,build_ortholog_map}.py
+jeffrey/data/string/
+jeffrey/data/refprot/
+jeffrey/data/blast_work/
+jeffrey/logs/

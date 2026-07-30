@@ -1,10 +1,26 @@
+# mmseqs intermediate dbs and search work
+tmp/
+queries/*_db*
+results/
+cache/
+
+# slurm and logs
+logs/
+slurm-*.out
+*.log
+
+# python cache
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-# Ad-hoc/exploratory plot output is ignored by default; curated figures used in
-# SUMMARY.md are explicitly un-ignored below so they get committed.
+
+# bet-hedging model figure outputs (curated figures un-ignored below)
 figs/*.png
 figs/*.pdf
 !figs/phase_diagram.png
 !figs/crossover_line.png
+
+# editor / OS
+.vscode/
+.idea/
 .DS_Store
